@@ -1,0 +1,1160 @@
+3 -logL: 79.1681 SSB(Vir_Start_End): 437872 427060 242542
+3 Files: data.dat control.dat
+3 N_iter: 1644 runtime(sec): 46 starttime: Thu Aug 26 17:27:06 2021
+3#V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+#This is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+3 F_Method: 3 Retro_YR: 2020 Forecast_Type: 1 MSY_Type: 2
+3 Comment S_1 #C starter comment here
+3 Comment D_1 #C this comment will be stored because it starts with #C.  It will be written to output files																																						
+3 Comment C_1 #C this is an example control file setup																	
+3 Comment F_1 #C generic forecast file
+3 Like_Emph Total 1 
+3 Like_Value Total 79.1681
+3 Like_Emph Indices All  0 0 0 0 1
+3 Like_Value Indices -8.38416  0 0 0 0 -8.38416
+3 Like_Emph AgeComp All  1 1 0 0 0
+3 Like_Value AgeComp 81.5189  44.9069 36.6119 0 0 268.774
+3 Like_Emph Catch All  1 1 1 1 1
+3 Like_Value Catch 1.21447e-09  8.66776e-10 1.06433e-10 1.26627e-10 1.14631e-10 0
+3 Like_Comp Equ_Catch Recruits Fcast_Recr Biasadj Priors ParmDevs CrashPen
+3 Like_Emph 1 1 1 1 1 1
+3 Like_Value*Emph 0 -1.39122 0 7.40197 0 1.9984e-14
+3 TimeSeries Yr Vir Equ  1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 
+3 Timeseries SpawnBio  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+3 Timeseries Recruit  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+3 Timeseries TotBio  0 594125 594125 664143 662457 703937 769877 860620 939458 965600 934451 854723 729913 586888 415053 268718 197567 184158 185089 190989 189885 174229 160928 153791 155282 163136 193390 220552 249550 278456 303948 324031 364653 379083 408576 440161 463969 476042 477776 470209 453348 428387
+3 Timeseries SmryBio-0  0 0 0 637498 622220 665120 748116 838042 923658 956647 927815 850083 722961 578284 405549 254311 186914 174638 177753 183772 180358 164489 150585 143657 144991 150885 181514 208966 239611 265633 285529 303255 364653 379083 408576 440161 463969 476042 477776 470209 453348 428387
+3 Timeseries TotCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60948.9 57783.9 54040.9 53086.9 31544 37036 36943 41222 46597 48870 32778 74333.3 74709.3 81603.3 92250.9 103705 112755 121125 130177 138884 144421
+3 Timeseries RetCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60948.9 57783.9 54040.9 53086.9 31544 37036 36943 41222 46597 48870 32778 0 0 0 0 0 0 0 0 0 0
+3 Mgmt_Quant  437872 594125 594125 696313 175149 0.233946
+3 Parm Labels  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1 SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020 ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030 Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030 LnQ_base_Crucero(5) AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+3 Parm Values   0.334301 5 65 0.200001 0.100004 0.255548 1.8e-05 2.79996 35 -46.9 1 0 0 0 0 1 0.5  13.4536 0.902989 0.128548 0.6 0 0  -0.0742066 0.467853 1.08497 1.36187 0.482033 0.447705 0.446488 0.561695 0.63433 0.294594 -0.264318 -0.565746 -0.931376 -0.542678 -0.376282 -0.956862 -0.0976047 0.0107921 -0.0138721 -0.272476 -0.484931 -0.28198 -0.182013 0.0220244 0.171626 0.198448 0.309574 0.0140699 -0.202881 -0.523232 -0.427112 -0.188518 -0.121982  0 0 0 0 0 0 0 0 0 0  0 0 0 0 0 0 0 0 0 0  0.25569  4.31259 1.71256 4.36716 2.00089 4.19775 1.65156 4.08692 1.78365 0.0119379 0.568973 -0.289079 -0.207136 -0.19199 -0.319653 0.103677 0.138555 0.00036254 0.0115078 
+3 MG_parm  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1
+3 MG_parm  0.334301 5 65 0.200001 0.100004 0.255548 1.8e-05 2.79996 35 -46.9 1 0 0 0 0 1 0.5
+3 SR_parm  SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr
+3 SR_parm  13.4536 0.902989 0.128548 0.6 0 0 
+3 Recr_main  Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020
+3 Recr_main  -0.0742066 0.467853 1.08497 1.36187 0.482033 0.447705 0.446488 0.561695 0.63433 0.294594 -0.264318 -0.565746 -0.931376 -0.542678 -0.376282 -0.956862 -0.0976047 0.0107921 -0.0138721 -0.272476 -0.484931 -0.28198 -0.182013 0.0220244 0.171626 0.198448 0.309574 0.0140699 -0.202881 -0.523232 -0.427112 -0.188518 -0.121982
+3 Recr_fore  ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030
+3 Recr_fore  0 0 0 0 0 0 0 0 0 0
+3 Impl_err  Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030
+3 Impl_err  0 0 0 0 0 0 0 0 0 0
+3 init_F 
+3 init_F 
+3 Q_parm  LnQ_base_Crucero(5)
+3 Q_parm  0.25569
+3 Sel_parm  AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+3 Sel_parm  4.31259 1.71256 4.36716 2.00089 4.19775 1.65156 4.08692 1.78365 0.0119379 0.568973 -0.289079 -0.207136 -0.19199 -0.319653 0.103677 0.138555 0.00036254 0.0115078
+3 Index:5 Yr 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 2018.58 2019.58 2020.58 
+3 Index:5 OBS  198540 505765 712878 899207 891598 917122 272084 223721 266596 278700 313778 322729 284575 290331 273954 224977 204997 211884 242920 301330 304710 356883 354003
+3 Index:5 EXP  774885 968730 1.16694e+06 1.10217e+06 968857 795426 251248 209941 208058 216691 219340 205497 185603 172097 169184 174731 202632 237583 274549 309915 339261 361377 397273
+3 Age:1 YR 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+3 Age:1 effN  133.793 137.368 24.4671 98.5074 27.6237 38.2104 46.1216 35.1792 20.3542 28.6564 115.901 16.1403 70.5003 30.1022 23.3436 14.7181 129.991 101.261 91.2329 118.617 55.5264 1035.21 551.976 353.544 79.5743 155.592 83.802 101.119 22.4594
+3 Age:2 YR 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 
+3 Age:2 effN  51.6442 24.7001 8.46843 29.703 10.3741 70.4321 28.147 103.295 54.4028 94.1168 467.172 24.9207 108.629 50.3457 15.7348
+3 Age:5 YR 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 
+3 Age:5 effN  1.2354 1.29152 4.96087 5.13448 51.3221 11.9393 4.63236 147.876 29.5467 80.6763 42.3209 1.97673 1.68526 1.62208 1.95751 1.09422 1.22454 1.11529 2.4365 1.2839
+
+4 -logL: 82.0572 SSB(Vir_Start_End): 1.67806e-20 2.17694e-20 9.77285e-21
+4 Files: data.dat control.dat
+4 N_iter: 932 runtime(sec): 35 starttime: Fri Aug 27 10:59:40 2021
+4#V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+#This is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+4 F_Method: 3 Retro_YR: 2020 Forecast_Type: 1 MSY_Type: 2
+4 Comment S_1 #C starter comment here
+4 Comment D_1 #C this comment will be stored because it starts with #C.  It will be written to output files																																						
+4 Comment C_1 #C this is an example control file setup																	
+4 Comment F_1 #C generic forecast file
+4 Like_Emph Total 1 
+4 Like_Value Total 82.0572
+4 Like_Emph Indices All  0 0 0 0 1
+4 Like_Value Indices -5.16496  0 0 0 0 -5.16496
+4 Like_Emph AgeComp All  1 1 0 0 0
+4 Like_Value AgeComp 81.2765  44.6168 36.6597 0 0 265.963
+4 Like_Emph Catch All  1 1 1 1 1
+4 Like_Value Catch 4.53718e-10  3.22748e-10 4.0021e-11 4.79488e-11 4.30002e-11 0
+4 Like_Comp Equ_Catch Recruits Fcast_Recr Biasadj Priors ParmDevs CrashPen
+4 Like_Emph 1 1 1 1 1 1
+4 Like_Value*Emph 0 0.567762 0 5.34606 0 1.9984e-14
+4 TimeSeries Yr Vir Equ  1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 
+4 Timeseries SpawnBio  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+4 Timeseries Recruit  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+4 Timeseries TotBio  0 848782 848782 930864 923063 953308 985933 1.0429e+06 1.08548e+06 1.07507e+06 1.0159e+06 914624 777063 627327 450320 304990 231015 213067 209363 212292 212151 198105 187110 182564 187439 201879 237936 270050 300654 327658 346956 353862 370488 86523 94037.7 89413.8 75608.5 53990.9 25146.7 23130.3 23130.3 23130.3
+4 Timeseries SmryBio-0  0 0 0 889785 848551 881072 943710 999083 1.05487e+06 1.05783e+06 1.00331e+06 905902 763922 610913 432903 277520 210438 194684 195215 198526 193726 178631 165539 160692 165171 176108 214279 248065 283478 309463 324817 330732 370488 86523 94037.7 89413.8 75608.5 53990.9 25146.7 23130.3 23130.3 23130.3
+4 Timeseries TotCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53086.9 31544 37036 36943 41222 46597 48870 32778 371871 43131.2 57268.5 63631.2 63338.5 62398.9 24868.9 22833.6 22833.6 22833.6
+4 Timeseries RetCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53086.9 31544 37036 36943 41222 46597 48870 32778 0 0 0 0 0 0 0 0 0 0
+4 Mgmt_Quant  1.67806e-20 848782 848782 2.37964e+06 1.65044e-20 0.95811
+4 Parm Labels  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_wt_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1 SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020 ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030 Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030 LnQ_base_Crucero(5) AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+4 Parm Values   0.359999 5 60 0.170001 0.100012 0.399996 1.8e-05 2.70002 35 -46.9 1 0 0 0 0 1 0.5  14.6825 1.6 1 0.6 0 0  -0.179621 0.281524 0.862278 1.10196 1.05553 1.12934 1.09833 0.56134 0.598496 0.239679 -0.334507 -0.648604 -1.01572 -0.605911 -0.383498 -0.324174 0.131486 -0.157416 -0.27017 -0.532013 -0.559419 -0.267924 -0.212568 -0.110265 -0.0964094 -0.0784551 0.0676389 -0.0179823 -0.115767 -0.403456 -0.386716 -0.231308 -0.195702  0 0 0 0 0 0 0 0 0 0  0 0 0 0 0 0 0 0 0 0  0.129719  4.19408 1.66303 4.47361 2.02778 4.19775 1.65156 4.08692 1.78365 0.010679 0.562842 -0.261576 -0.188573 -0.213006 -0.346185 0.0999086 0.109972 0.000131363 0.00848075 
+4 MG_parm  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_wt_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1
+4 MG_parm  0.359999 5 60 0.170001 0.100012 0.399996 1.8e-05 2.70002 35 -46.9 1 0 0 0 0 1 0.5
+4 SR_parm  SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr
+4 SR_parm  14.6825 1.6 1 0.6 0 0 
+4 Recr_main  Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020
+4 Recr_main  -0.179621 0.281524 0.862278 1.10196 1.05553 1.12934 1.09833 0.56134 0.598496 0.239679 -0.334507 -0.648604 -1.01572 -0.605911 -0.383498 -0.324174 0.131486 -0.157416 -0.27017 -0.532013 -0.559419 -0.267924 -0.212568 -0.110265 -0.0964094 -0.0784551 0.0676389 -0.0179823 -0.115767 -0.403456 -0.386716 -0.231308 -0.195702
+4 Recr_fore  ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030
+4 Recr_fore  0 0 0 0 0 0 0 0 0 0
+4 Impl_err  Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030
+4 Impl_err  0 0 0 0 0 0 0 0 0 0
+4 init_F 
+4 init_F 
+4 Q_parm  LnQ_base_Crucero(5)
+4 Q_parm  0.129719
+4 Sel_parm  AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+4 Sel_parm  4.19408 1.66303 4.47361 2.02778 4.19775 1.65156 4.08692 1.78365 0.010679 0.562842 -0.261576 -0.188573 -0.213006 -0.346185 0.0999086 0.109972 0.000131363 0.00848075
+4 Index:5 Yr 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 2018.58 2019.58 2020.58 
+4 Index:5 OBS  198540 505765 712878 899207 891598 917122 272084 223721 266596 278700 313778 322729 284575 290331 273954 224977 204997 211884 242920 301330 304710 356883 354003
+4 Index:5 EXP  929555 1.05114e+06 1.15455e+06 1.04154e+06 905028 739544 247891 209484 204350 208818 208933 196720 180214 169946 170096 179440 211093 249648 288664 322469 345893 357136 370321
+4 Age:1 YR 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+4 Age:1 effN  145.633 121.8 21.5191 80.114 36.228 50.2425 62.9969 38.3174 19.0031 28.9975 86.6642 15.6341 73.4606 29.922 23.4281 15.0636 140.829 114.604 86.6299 111.839 60.9117 766.246 667.304 398.643 86.7449 182.111 68.5279 101.562 30.3299
+4 Age:2 YR 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 
+4 Age:2 effN  50.0984 25.1246 8.31385 29.6383 10.5273 80.1987 28.0049 96.9272 54.3858 90.9098 493.686 24.4486 100.351 54.9814 17.3079
+4 Age:5 YR 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 
+4 Age:5 effN  1.45975 1.36771 4.49742 4.81461 45.6303 11.3627 4.24994 190.484 22.8882 71.1505 50.7008 1.84112 1.54211 1.41608 1.62544 0.936567 1.08038 1.06512 2.52657 1.41025
+
+5 -logL: 82.2199 SSB(Vir_Start_End): 6.97838e-21 9.07426e-21 4.06587e-21
+5 Files: data.dat control.dat
+5 N_iter: 1002 runtime(sec): 37 starttime: Fri Aug 27 11:04:11 2021
+5#V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+#This is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+5 F_Method: 3 Retro_YR: 2020 Forecast_Type: 1 MSY_Type: 2
+5 Comment S_1 #C starter comment here
+5 Comment D_1 #C this comment will be stored because it starts with #C.  It will be written to output files																																						
+5 Comment C_1 #C this is an example control file setup																	
+5 Comment F_1 #C generic forecast file
+5 Like_Emph Total 1 
+5 Like_Value Total 82.2199
+5 Like_Emph Indices All  0 0 0 0 1
+5 Like_Value Indices -5.30411  0 0 0 0 -5.30411
+5 Like_Emph AgeComp All  1 1 0 0 0
+5 Like_Value AgeComp 81.2951  44.6069 36.6881 0 0 267.188
+5 Like_Emph Catch All  1 1 1 1 1
+5 Like_Value Catch 4.12997e-10  2.93971e-10 3.62968e-11 4.36634e-11 3.90665e-11 0
+5 Like_Comp Equ_Catch Recruits Fcast_Recr Biasadj Priors ParmDevs CrashPen
+5 Like_Emph 1 1 1 1 1 1
+5 Like_Value*Emph 0 0.79413 0 5.40443 0 1.9984e-14
+5 TimeSeries Yr Vir Equ  1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 
+5 Timeseries SpawnBio  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+5 Timeseries Recruit  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+5 Timeseries TotBio  0 815100 815100 870361 871918 910202 966198 1.03968e+06 1.08782e+06 1.08707e+06 1.03091e+06 926844 781544 621992 439690 288774 215686 203988 204198 208659 205479 188724 177022 172600 178391 192070 228702 263310 297049 324878 340673 345015 361655 75619.5 83864.2 78957.7 64896.9 43253.5 12953.5 12333.9 12333.9 12333.9
+5 Timeseries SmryBio-0  0 0 0 848360 831850 871393 943429 1.01602e+06 1.07128e+06 1.07778e+06 1.02415e+06 922184 774569 613338 430569 274455 204970 194419 196831 201498 195900 178589 165799 161227 166777 178565 216251 251714 287966 315198 328894 332681 361655 75619.5 83864.2 78957.7 64896.9 43253.5 12953.5 12333.9 12333.9 12333.9
+5 Timeseries TotCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53087 31544 37036 36943 41222 46597 48870 32778 376795 46800.8 62004.2 68524.2 68185.5 65536.2 13392.5 12186.4 12186.4 12186.4
+5 Timeseries RetCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53087 31544 37036 36943 41222 46597 48870 32778 0 0 0 0 0 0 0 0 0 0
+5 Mgmt_Quant  6.97838e-21 815100 815100 989592 6.86383e-21 0.95823
+5 Parm Labels  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_wt_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1 SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020 ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030 Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030 LnQ_base_Crucero(5) AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+5 Parm Values   0.359998 8.73562 70 0.170001 0.100008 0.399996 1.8e-05 2.79994 35 -46.9 1 0 0 0 0 1 0.5  13.805 1.6 1 0.6 0 0  -0.174162 0.286103 0.86451 1.10165 1.06312 1.14618 1.11425 0.581012 0.619452 0.261714 -0.315144 -0.632943 -1.00533 -0.601954 -0.38644 -0.333873 0.117176 -0.17265 -0.285907 -0.547445 -0.575749 -0.284793 -0.228427 -0.126457 -0.113187 -0.0921341 0.0587028 -0.0226157 -0.118277 -0.4034 -0.380558 -0.225156 -0.187274  0 0 0 0 0 0 0 0 0 0  0 0 0 0 0 0 0 0 0 0  0.118419  4.20914 1.66944 4.47836 2.03515 4.19775 1.65156 4.08692 1.78365 0.0113238 0.510541 -0.265677 -0.192505 -0.215256 -0.35027 0.110363 0.10785 0.00152671 0.00192918 
+5 MG_parm  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_wt_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1
+5 MG_parm  0.359998 8.73562 70 0.170001 0.100008 0.399996 1.8e-05 2.79994 35 -46.9 1 0 0 0 0 1 0.5
+5 SR_parm  SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr
+5 SR_parm  13.805 1.6 1 0.6 0 0 
+5 Recr_main  Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020
+5 Recr_main  -0.174162 0.286103 0.86451 1.10165 1.06312 1.14618 1.11425 0.581012 0.619452 0.261714 -0.315144 -0.632943 -1.00533 -0.601954 -0.38644 -0.333873 0.117176 -0.17265 -0.285907 -0.547445 -0.575749 -0.284793 -0.228427 -0.126457 -0.113187 -0.0921341 0.0587028 -0.0226157 -0.118277 -0.4034 -0.380558 -0.225156 -0.187274
+5 Recr_fore  ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030
+5 Recr_fore  0 0 0 0 0 0 0 0 0 0
+5 Impl_err  Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030
+5 Impl_err  0 0 0 0 0 0 0 0 0 0
+5 init_F 
+5 init_F 
+5 Q_parm  LnQ_base_Crucero(5)
+5 Q_parm  0.118419
+5 Sel_parm  AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+5 Sel_parm  4.20914 1.66944 4.47836 2.03515 4.19775 1.65156 4.08692 1.78365 0.0113238 0.510541 -0.265677 -0.192505 -0.215256 -0.35027 0.110363 0.10785 0.00152671 0.00192918
+5 Index:5 Yr 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 2018.58 2019.58 2020.58 
+5 Index:5 OBS  198540 505765 712878 899207 891598 917122 272084 223721 266596 278700 313778 322729 284575 290331 273954 224977 204997 211884 242920 301330 304710 356883 354003
+5 Index:5 EXP  909535 1.05386e+06 1.16448e+06 1.05132e+06 910456 739048 241177 205821 204132 210118 210084 196099 179083 169355 170422 180741 212204 251269 291141 325682 348184 357118 369392
+5 Age:1 YR 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+5 Age:1 effN  146.116 121.07 21.6292 79.6793 35.7816 49.6145 60.2385 37.4889 18.8867 28.6016 87.4103 15.6574 72.6438 30.2316 23.6087 15.0403 141.566 113.72 87.5926 113.999 60.5104 744.367 675.056 382.357 87.5317 175.813 69.7751 101.423 29.9356
+5 Age:2 YR 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 
+5 Age:2 effN  50.1525 24.9078 8.29274 29.8112 10.5006 80.4968 28.1472 97.3227 54.6815 91.5527 497.994 24.2951 98.4459 53.6922 17.0887
+5 Age:5 YR 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 
+5 Age:5 effN  1.44123 1.33664 4.41062 4.7754 45.2349 11.5044 4.3669 178.72 23.2051 71.268 50.1942 1.85093 1.55195 1.42575 1.6373 0.944645 1.08558 1.06192 2.50438 1.3995
+
+6 -logL: 82.2199 SSB(Vir_Start_End): 6.97838e-21 9.07426e-21 4.06587e-21
+6 Files: data.dat control.dat
+6 N_iter: 1002 runtime(sec): 37 starttime: Fri Aug 27 11:06:44 2021
+6#V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+#This is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+6 F_Method: 3 Retro_YR: 2020 Forecast_Type: 1 MSY_Type: 2
+6 Comment S_1 #C starter comment here
+6 Comment D_1 #C this comment will be stored because it starts with #C.  It will be written to output files																																						
+6 Comment C_1 #C this is an example control file setup																	
+6 Comment F_1 #C generic forecast file
+6 Like_Emph Total 1 
+6 Like_Value Total 82.2199
+6 Like_Emph Indices All  0 0 0 0 1
+6 Like_Value Indices -5.30411  0 0 0 0 -5.30411
+6 Like_Emph AgeComp All  1 1 0 0 0
+6 Like_Value AgeComp 81.2951  44.6069 36.6881 0 0 267.188
+6 Like_Emph Catch All  1 1 1 1 1
+6 Like_Value Catch 4.12997e-10  2.93971e-10 3.62968e-11 4.36634e-11 3.90665e-11 0
+6 Like_Comp Equ_Catch Recruits Fcast_Recr Biasadj Priors ParmDevs CrashPen
+6 Like_Emph 1 1 1 1 1 1
+6 Like_Value*Emph 0 0.79413 0 5.40443 0 1.9984e-14
+6 TimeSeries Yr Vir Equ  1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 
+6 Timeseries SpawnBio  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+6 Timeseries Recruit  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+6 Timeseries TotBio  0 815100 815100 870361 871918 910202 966198 1.03968e+06 1.08782e+06 1.08707e+06 1.03091e+06 926844 781544 621992 439690 288774 215686 203988 204198 208659 205479 188724 177022 172600 178391 192070 228702 263310 297049 324878 340673 345015 361655 75619.5 83864.2 78957.7 64896.9 43253.5 12953.5 12333.9 12333.9 12333.9
+6 Timeseries SmryBio-0  0 0 0 848360 831850 871393 943429 1.01602e+06 1.07128e+06 1.07778e+06 1.02415e+06 922184 774569 613338 430569 274455 204970 194419 196831 201498 195900 178589 165799 161227 166777 178565 216251 251714 287966 315198 328894 332681 361655 75619.5 83864.2 78957.7 64896.9 43253.5 12953.5 12333.9 12333.9 12333.9
+6 Timeseries TotCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53087 31544 37036 36943 41222 46597 48870 32778 376795 46800.8 62004.2 68524.2 68185.5 65536.2 13392.5 12186.4 12186.4 12186.4
+6 Timeseries RetCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53087 31544 37036 36943 41222 46597 48870 32778 0 0 0 0 0 0 0 0 0 0
+6 Mgmt_Quant  6.97838e-21 815100 815100 989592 6.86383e-21 0.95823
+6 Parm Labels  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1 SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020 ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030 Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030 LnQ_base_Crucero(5) AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+6 Parm Values   0.359998 8.73562 70 0.170001 0.100008 0.399996 1.8e-05 2.79994 35 -46.9 1 0 0 0 0 1 0.5  13.805 1.6 1 0.6 0 0  -0.174162 0.286103 0.86451 1.10165 1.06312 1.14618 1.11425 0.581012 0.619452 0.261714 -0.315144 -0.632943 -1.00533 -0.601954 -0.38644 -0.333873 0.117176 -0.17265 -0.285907 -0.547445 -0.575749 -0.284793 -0.228427 -0.126457 -0.113187 -0.0921341 0.0587028 -0.0226157 -0.118277 -0.4034 -0.380558 -0.225156 -0.187274  0 0 0 0 0 0 0 0 0 0  0 0 0 0 0 0 0 0 0 0  0.118419  4.20914 1.66944 4.47836 2.03515 4.19775 1.65156 4.08692 1.78365 0.0113238 0.510541 -0.265677 -0.192505 -0.215256 -0.35027 0.110363 0.10785 0.00152671 0.00192918 
+6 MG_parm  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1
+6 MG_parm  0.359998 8.73562 70 0.170001 0.100008 0.399996 1.8e-05 2.79994 35 -46.9 1 0 0 0 0 1 0.5
+6 SR_parm  SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr
+6 SR_parm  13.805 1.6 1 0.6 0 0 
+6 Recr_main  Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020
+6 Recr_main  -0.174162 0.286103 0.86451 1.10165 1.06312 1.14618 1.11425 0.581012 0.619452 0.261714 -0.315144 -0.632943 -1.00533 -0.601954 -0.38644 -0.333873 0.117176 -0.17265 -0.285907 -0.547445 -0.575749 -0.284793 -0.228427 -0.126457 -0.113187 -0.0921341 0.0587028 -0.0226157 -0.118277 -0.4034 -0.380558 -0.225156 -0.187274
+6 Recr_fore  ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030
+6 Recr_fore  0 0 0 0 0 0 0 0 0 0
+6 Impl_err  Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030
+6 Impl_err  0 0 0 0 0 0 0 0 0 0
+6 init_F 
+6 init_F 
+6 Q_parm  LnQ_base_Crucero(5)
+6 Q_parm  0.118419
+6 Sel_parm  AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+6 Sel_parm  4.20914 1.66944 4.47836 2.03515 4.19775 1.65156 4.08692 1.78365 0.0113238 0.510541 -0.265677 -0.192505 -0.215256 -0.35027 0.110363 0.10785 0.00152671 0.00192918
+6 Index:5 Yr 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 2018.58 2019.58 2020.58 
+6 Index:5 OBS  198540 505765 712878 899207 891598 917122 272084 223721 266596 278700 313778 322729 284575 290331 273954 224977 204997 211884 242920 301330 304710 356883 354003
+6 Index:5 EXP  909535 1.05386e+06 1.16448e+06 1.05132e+06 910456 739048 241177 205821 204132 210118 210084 196099 179083 169355 170422 180741 212204 251269 291141 325682 348184 357118 369392
+6 Age:1 YR 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+6 Age:1 effN  146.116 121.07 21.6292 79.6793 35.7816 49.6145 60.2385 37.4889 18.8867 28.6016 87.4103 15.6574 72.6438 30.2316 23.6087 15.0403 141.566 113.72 87.5926 113.999 60.5104 744.367 675.056 382.357 87.5317 175.813 69.7751 101.423 29.9356
+6 Age:2 YR 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 
+6 Age:2 effN  50.1525 24.9078 8.29274 29.8112 10.5006 80.4968 28.1472 97.3227 54.6815 91.5527 497.994 24.2951 98.4459 53.6922 17.0887
+6 Age:5 YR 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 
+6 Age:5 effN  1.44123 1.33664 4.41062 4.7754 45.2349 11.5044 4.3669 178.72 23.2051 71.268 50.1942 1.85093 1.55195 1.42575 1.6373 0.944645 1.08558 1.06192 2.50438 1.3995
+
+9 -logL: 106.437 SSB(Vir_Start_End): 1.96315e+06 1.86763e+06 858928
+9 Files: data.dat control.dat
+9 N_iter: 657 runtime(sec): 27 starttime: Fri Aug 27 11:15:28 2021
+9#V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+#This is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+9 F_Method: 3 Retro_YR: 2020 Forecast_Type: 1 MSY_Type: 2
+9 Comment S_1 #C starter comment here
+9 Comment D_1 #C this comment will be stored because it starts with #C.  It will be written to output files																																						
+9 Comment C_1 #C this is an example control file setup																	
+9 Comment F_1 #C generic forecast file
+9 Like_Emph Total 1 
+9 Like_Value Total 106.437
+9 Like_Emph Indices All  0 0 0 0 1
+9 Like_Value Indices -2.90674  0 0 0 0 -2.90674
+9 Like_Emph AgeComp All  1 1 0 0 0
+9 Like_Value AgeComp 83.3506  46.0818 37.2689 0 0 147.839
+9 Like_Emph Catch All  1 1 1 1 1
+9 Like_Value Catch 2.82138e-09  8.74571e-10 1.30237e-10 9.93799e-10 8.22772e-10 0
+9 Like_Comp Equ_Catch Recruits Fcast_Recr Biasadj Priors ParmDevs CrashPen
+9 Like_Emph 1 1 1 1 1 1
+9 Like_Value*Emph 0 1.71213 0 24.2494 0 1.9984e-14
+9 TimeSeries Yr Vir Equ  1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 
+9 Timeseries SpawnBio  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+9 Timeseries Recruit  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+9 Timeseries TotBio  0 2.53252e+06 2.53252e+06 4.29442e+06 4.80439e+06 5.21115e+06 4.88711e+06 4.61968e+06 4.04548e+06 3.28607e+06 2.57289e+06 1.94617e+06 1.5319e+06 1.27006e+06 1.06568e+06 1.06594e+06 1.02716e+06 1.00723e+06 932383 869569 890824 936304 1.01727e+06 1.08683e+06 1.15563e+06 1.26778e+06 1.34607e+06 1.38269e+06 1.32812e+06 1.32189e+06 1.41008e+06 1.49093e+06 1.56821e+06 1.42552e+06 1.49428e+06 1.47109e+06 1.46064e+06 1.47625e+06 1.48179e+06 1.47971e+06 1.48569e+06 1.48873e+06
+9 Timeseries SmryBio-0  0 0 0 3.50519e+06 3.23101e+06 3.60373e+06 3.90455e+06 3.60689e+06 3.38882e+06 2.93282e+06 2.32654e+06 1.78228e+06 1.30614e+06 1.01191e+06 809018 670559 736386 738599 719223 660386 608655 625745 669201 735758 791517 843653 948897 1.001e+06 1.02492e+06 973429 964800 1.03734e+06 1.56821e+06 1.42552e+06 1.49428e+06 1.47109e+06 1.46064e+06 1.47625e+06 1.48179e+06 1.47971e+06 1.48569e+06 1.48873e+06
+9 Timeseries TotCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101298 60891 59464 57059 60730 66434.9 60949 57784 54040.9 53086.8 31544 37036 36943 41222 46597 48870 32778 276294 66998.3 155081 147536 119419 126310 133663 124564 126089 127950
+9 Timeseries RetCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101298 60891 59464 57059 60730 66434.9 60949 57784 54040.9 53086.8 31544 37036 36943 41222 46597 48870 32778 0 0 0 0 0 0 0 0 0 0
+9 Mgmt_Quant  1.96315e+06 2.53252e+06 2.53252e+06 1.98926e+06 785260 0.490233
+9 Parm Labels  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1 SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020 ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030 Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030 LnQ_base_Crucero(5) AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+9 Parm Values   0.35 30 65 0.15 0.063 0.085 0.17 0.25 35 -46.9 1 0 0 0 0 1 0.5  14.5033 0.544046 1.17896 0.6 0 0  -0.186567 0.235184 0.775747 1.00221 0.993047 1.09317 1.11456 0.622332 0.652636 0.219331 -0.400653 -0.761076 -1.16864 -0.848355 -0.681717 -0.584014 0.0968633 -0.0562113 -0.13766 -0.475018 -0.547836 -0.230627 -0.0589138 0.134209 0.136175 0.0998411 0.169358 0.00791109 -0.110395 -0.433354 -0.364339 -0.167335 -0.139867  0 0 0 0 0 0 0 0 0 0  0 0 0 0 0 0 0 0 0 0  -0.0624253  4.02146 1.51986 3.74916 1.37769 4.99899 1.90139 4.99986 0.0392376 3.16386 3.62533 -0.255777 -0.123493 -0.100284 -0.0438256 0.226642 -0.00591393 -0.010642 -0.000137335 
+9 MG_parm  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1
+9 MG_parm  0.35 30 65 0.15 0.063 0.085 0.17 0.25 35 -46.9 1 0 0 0 0 1 0.5
+9 SR_parm  SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr
+9 SR_parm  14.5033 0.544046 1.17896 0.6 0 0 
+9 Recr_main  Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020
+9 Recr_main  -0.186567 0.235184 0.775747 1.00221 0.993047 1.09317 1.11456 0.622332 0.652636 0.219331 -0.400653 -0.761076 -1.16864 -0.848355 -0.681717 -0.584014 0.0968633 -0.0562113 -0.13766 -0.475018 -0.547836 -0.230627 -0.0589138 0.134209 0.136175 0.0998411 0.169358 0.00791109 -0.110395 -0.433354 -0.364339 -0.167335 -0.139867
+9 Recr_fore  ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030
+9 Recr_fore  0 0 0 0 0 0 0 0 0 0
+9 Impl_err  Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030
+9 Impl_err  0 0 0 0 0 0 0 0 0 0
+9 init_F 
+9 init_F 
+9 Q_parm  LnQ_base_Crucero(5)
+9 Q_parm  -0.0624253
+9 Sel_parm  AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+9 Sel_parm  4.02146 1.51986 3.74916 1.37769 4.99899 1.90139 4.99986 0.0392376 3.16386 3.62533 -0.255777 -0.123493 -0.100284 -0.0438256 0.226642 -0.00591393 -0.010642 -0.000137335
+9 Index:5 Yr 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 2018.58 2019.58 2020.58 
+9 Index:5 OBS  198540 505765 712878 899207 891598 917122 272084 223721 266596 278700 313778 322729 284575 290331 273954 224977 204997 211884 242920 301330 304710 356883 354003
+9 Index:5 EXP  981149 1.17461e+06 1.21282e+06 978588 796077 608952 203024 192140 198336 202717 199390 189600 183338 185925 197781 216345 248546 280043 306889 322446 329016 333804 346373
+9 Age:1 YR 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+9 Age:1 effN  157.88 107.547 26.4981 120.989 29.3075 47.997 52.6375 28.1232 15.3423 25.1311 97.5971 17.3088 66.542 30.1153 21.1499 13.7028 178.945 74.6929 126.831 154.953 54.2601 262.499 314.639 154.623 80.739 135.242 79.2193 125.681 26.5735
+9 Age:2 YR 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 
+9 Age:2 effN  74.147 16.7943 8.47532 25.1337 9.79416 83.2809 32.8177 125.707 61.3874 129.805 515.587 24.5048 80.0083 44.4108 16.1758
+9 Age:5 YR 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 
+9 Age:5 effN  13.4142 7.1852 89.9882 15.7014 17.9467 7.84657 66.5116 5.0145 12.179 7.06227 4.00315 8.87745 9.30423 13.9193 18.5272 7.13907 9.1237 5.6186 18.3901 5.36866
+
+10 -logL: 107.862 SSB(Vir_Start_End): 1.84729e+06 1.75385e+06 773442
+10 Files: data.dat control.dat
+10 N_iter: 557 runtime(sec): 24 starttime: Fri Aug 27 11:19:17 2021
+10#V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+#This is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+10 F_Method: 3 Retro_YR: 2020 Forecast_Type: 1 MSY_Type: 2
+10 Comment S_1 #C starter comment here
+10 Comment D_1 #C this comment will be stored because it starts with #C.  It will be written to output files																																						
+10 Comment C_1 #C this is an example control file setup																	
+10 Comment F_1 #C generic forecast file
+10 Like_Emph Total 1 
+10 Like_Value Total 107.862
+10 Like_Emph Indices All  0 0 0 0 1
+10 Like_Value Indices -2.48047  0 0 0 0 -2.48047
+10 Like_Emph AgeComp All  1 1 0 0 0
+10 Like_Value AgeComp 83.5708  46.4467 37.1241 0 0 140.349
+10 Like_Emph Catch All  1 1 1 1 1
+10 Like_Value Catch 1.32108e-09  8.37181e-10 1.13063e-10 1.88724e-10 1.8211e-10 0
+10 Like_Comp Equ_Catch Recruits Fcast_Recr Biasadj Priors ParmDevs CrashPen
+10 Like_Emph 1 1 1 1 1 1
+10 Like_Value*Emph 0 1.53376 0 25.2297 0 1.9984e-14
+10 TimeSeries Yr Vir Equ  1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 
+10 Timeseries SpawnBio  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+10 Timeseries Recruit  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+10 Timeseries TotBio  0 2.38306e+06 2.38306e+06 3.96397e+06 4.43152e+06 4.84539e+06 4.56317e+06 4.36081e+06 3.88409e+06 3.18854e+06 2.50964e+06 1.89694e+06 1.48284e+06 1.21444e+06 1.00596e+06 994267 959229 939995 866347 803680 819214 854053 925577 988322 1.04734e+06 1.15047e+06 1.22776e+06 1.26456e+06 1.22253e+06 1.22633e+06 1.31407e+06 1.3898e+06 1.46263e+06 1.3751e+06 1.40938e+06 1.40296e+06 1.38644e+06 1.38565e+06 1.38667e+06 1.38124e+06 1.37928e+06 1.37897e+06
+10 Timeseries SmryBio-0  0 0 0 3.26506e+06 2.97458e+06 3.31659e+06 3.62646e+06 3.36403e+06 3.19782e+06 2.81836e+06 2.25938e+06 1.73842e+06 1.27085e+06 975329 766545 625019 681345 687067 668493 610465 558795 571178 606148 665491 716232 760810 859176 911036 935423 894217 893391 964913 1.46263e+06 1.3751e+06 1.40938e+06 1.40296e+06 1.38644e+06 1.38565e+06 1.38667e+06 1.38124e+06 1.37928e+06 1.37897e+06
+10 Timeseries TotCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57784 54041 53087 31544 37036 36943 41222 46597 48870 32778 203668 85589.2 123317 137859 124387 122480 129994 127641 126308 127757
+10 Timeseries RetCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57784 54041 53087 31544 37036 36943 41222 46597 48870 32778 0 0 0 0 0 0 0 0 0 0
+10 Mgmt_Quant  1.84729e+06 2.38306e+06 2.38306e+06 1.87185e+06 738915 0.477863
+10 Parm Labels  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1 SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020 ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030 Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030 LnQ_base_Crucero(5) AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+10 Parm Values   0.35 30 65 0.15 0.063 0.085 0.17 0.25 35 -46.9 1 0 0 0 0 1 0.5  14.4424 0.565623 1.18907 0.6 0 0  -0.189391 0.227775 0.764223 0.98135 0.959306 1.07712 1.12525 0.635369 0.697523 0.324267 -0.293005 -0.684531 -1.1411 -0.850453 -0.705549 -0.620395 0.0601071 -0.0519149 -0.140707 -0.493552 -0.57549 -0.259194 -0.0934151 0.117307 0.125471 0.0787628 0.156391 -0.00302605 -0.125319 -0.428586 -0.355401 -0.168241 -0.15095  0 0 0 0 0 0 0 0 0 0  0 0 0 0 0 0 0 0 0 0  -0.127402  4.10265 1.61268 4.21643 1.96866 4.19775 1.65156 4.08692 1.78365 2.7478 3.62352 -0.258919 -0.180854 -0.182257 -0.34401 0.14846 -0.0656193 0.1112 -0.30161 
+10 MG_parm  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1
+10 MG_parm  0.35 30 65 0.15 0.063 0.085 0.17 0.25 35 -46.9 1 0 0 0 0 1 0.5
+10 SR_parm  SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr
+10 SR_parm  14.4424 0.565623 1.18907 0.6 0 0 
+10 Recr_main  Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020
+10 Recr_main  -0.189391 0.227775 0.764223 0.98135 0.959306 1.07712 1.12525 0.635369 0.697523 0.324267 -0.293005 -0.684531 -1.1411 -0.850453 -0.705549 -0.620395 0.0601071 -0.0519149 -0.140707 -0.493552 -0.57549 -0.259194 -0.0934151 0.117307 0.125471 0.0787628 0.156391 -0.00302605 -0.125319 -0.428586 -0.355401 -0.168241 -0.15095
+10 Recr_fore  ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030
+10 Recr_fore  0 0 0 0 0 0 0 0 0 0
+10 Impl_err  Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030
+10 Impl_err  0 0 0 0 0 0 0 0 0 0
+10 init_F 
+10 init_F 
+10 Q_parm  LnQ_base_Crucero(5)
+10 Q_parm  -0.127402
+10 Sel_parm  AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+10 Sel_parm  4.10265 1.61268 4.21643 1.96866 4.19775 1.65156 4.08692 1.78365 2.7478 3.62352 -0.258919 -0.180854 -0.182257 -0.34401 0.14846 -0.0656193 0.1112 -0.30161
+10 Index:5 Yr 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 2018.58 2019.58 2020.58 
+10 Index:5 OBS  198540 505765 712878 899207 891598 917122 272084 223721 266596 278700 313778 322729 284575 290331 273954 224977 204997 211884 242920 301330 304710 356883 354003
+10 Index:5 EXP  1.0075e+06 1.19421e+06 1.2103e+06 962248 777601 592198 205092 196933 203515 206191 200006 188634 181904 185516 198624 217292 249002 279648 305006 318683 324383 330123 344957
+10 Age:1 YR 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+10 Age:1 effN  152.514 115.479 21.6969 76.8897 34.5506 57.0941 56.4585 29.5811 15.6257 25.4937 73.6454 16.5595 61.6292 33.7898 23.7981 14.285 157.616 95.4853 104.964 140.139 56.7269 545.997 523.16 248.348 76.7427 158.322 75.453 106.106 25.449
+10 Age:2 YR 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 
+10 Age:2 effN  64.2404 19.6026 8.3336 29.4581 9.93155 87.5148 28.9088 115.949 56.6684 101.795 549.372 24.3551 89.8291 46.3514 15.8783
+10 Age:5 YR 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 
+10 Age:5 effN  9.36013 5.35477 37.0696 13.9468 23.4239 9.72264 163.646 6.52515 20.212 9.94323 5.06021 8.39223 8.14713 9.47787 12.0973 4.69471 6.12757 4.62849 16.2928 4.71499
+
+11 -logL: 107.862 SSB(Vir_Start_End): 1.84729e+06 1.75385e+06 773442
+11 Files: data.dat control.dat
+11 N_iter: 557 runtime(sec): 26 starttime: Fri Aug 27 11:36:28 2021
+11#V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+#This is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+11 F_Method: 3 Retro_YR: 2020 Forecast_Type: 1 MSY_Type: 2
+11 Comment S_1 #C starter comment here
+11 Comment D_1 #C this comment will be stored because it starts with #C.  It will be written to output files																																						
+11 Comment C_1 #C this is an example control file setup																	
+11 Comment F_1 #C generic forecast file
+11 Like_Emph Total 1 
+11 Like_Value Total 107.862
+11 Like_Emph Indices All  0 0 0 0 1
+11 Like_Value Indices -2.48047  0 0 0 0 -2.48047
+11 Like_Emph AgeComp All  1 1 0 0 0
+11 Like_Value AgeComp 83.5708  46.4467 37.1241 0 0 140.349
+11 Like_Emph Catch All  1 1 1 1 1
+11 Like_Value Catch 1.32108e-09  8.37181e-10 1.13063e-10 1.88724e-10 1.8211e-10 0
+11 Like_Comp Equ_Catch Recruits Fcast_Recr Biasadj Priors ParmDevs CrashPen
+11 Like_Emph 1 1 1 1 1 1
+11 Like_Value*Emph 0 1.53376 0 25.2297 0 1.9984e-14
+11 TimeSeries Yr Vir Equ  1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 
+11 Timeseries SpawnBio  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+11 Timeseries Recruit  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+11 Timeseries TotBio  0 2.38306e+06 2.38306e+06 3.96397e+06 4.43152e+06 4.84539e+06 4.56317e+06 4.36081e+06 3.88409e+06 3.18854e+06 2.50964e+06 1.89694e+06 1.48284e+06 1.21444e+06 1.00596e+06 994267 959229 939995 866347 803680 819214 854053 925577 988322 1.04734e+06 1.15047e+06 1.22776e+06 1.26456e+06 1.22253e+06 1.22633e+06 1.31407e+06 1.3898e+06 1.46263e+06 1.3751e+06 1.40938e+06 1.40296e+06 1.38644e+06 1.38565e+06 1.38667e+06 1.38124e+06 1.37928e+06 1.37897e+06
+11 Timeseries SmryBio-0  0 0 0 3.26506e+06 2.97458e+06 3.31659e+06 3.62646e+06 3.36403e+06 3.19782e+06 2.81836e+06 2.25938e+06 1.73842e+06 1.27085e+06 975329 766545 625019 681345 687067 668493 610465 558795 571178 606148 665491 716232 760810 859176 911036 935423 894217 893391 964913 1.46263e+06 1.3751e+06 1.40938e+06 1.40296e+06 1.38644e+06 1.38565e+06 1.38667e+06 1.38124e+06 1.37928e+06 1.37897e+06
+11 Timeseries TotCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57784 54041 53087 31544 37036 36943 41222 46597 48870 32778 203668 85589.2 123317 137859 124387 122480 129994 127641 126308 127757
+11 Timeseries RetCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57784 54041 53087 31544 37036 36943 41222 46597 48870 32778 0 0 0 0 0 0 0 0 0 0
+11 Mgmt_Quant  1.84729e+06 2.38306e+06 2.38306e+06 1.87185e+06 738915 0.477863
+11 Parm Labels  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1 SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020 ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030 Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030 LnQ_base_Crucero(5) AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+11 Parm Values   0.35 30 65 0.15 0.063 0.085 0.17 0.25 35 -46.9 1 0 0 0 0 1 0.5  14.4424 0.565623 1.18907 0.6 0 0  -0.189391 0.227775 0.764223 0.98135 0.959306 1.07712 1.12525 0.635369 0.697523 0.324267 -0.293005 -0.684531 -1.1411 -0.850453 -0.705549 -0.620395 0.0601071 -0.0519149 -0.140707 -0.493552 -0.57549 -0.259194 -0.0934151 0.117307 0.125471 0.0787628 0.156391 -0.00302605 -0.125319 -0.428586 -0.355401 -0.168241 -0.15095  0 0 0 0 0 0 0 0 0 0  0 0 0 0 0 0 0 0 0 0  -0.127402  4.10265 1.61268 4.21643 1.96866 4.19775 1.65156 4.08692 1.78365 2.7478 3.62352 -0.258919 -0.180854 -0.182257 -0.34401 0.14846 -0.0656193 0.1112 -0.30161 
+11 MG_parm  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1
+11 MG_parm  0.35 30 65 0.15 0.063 0.085 0.17 0.25 35 -46.9 1 0 0 0 0 1 0.5
+11 SR_parm  SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr
+11 SR_parm  14.4424 0.565623 1.18907 0.6 0 0 
+11 Recr_main  Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020
+11 Recr_main  -0.189391 0.227775 0.764223 0.98135 0.959306 1.07712 1.12525 0.635369 0.697523 0.324267 -0.293005 -0.684531 -1.1411 -0.850453 -0.705549 -0.620395 0.0601071 -0.0519149 -0.140707 -0.493552 -0.57549 -0.259194 -0.0934151 0.117307 0.125471 0.0787628 0.156391 -0.00302605 -0.125319 -0.428586 -0.355401 -0.168241 -0.15095
+11 Recr_fore  ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030
+11 Recr_fore  0 0 0 0 0 0 0 0 0 0
+11 Impl_err  Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030
+11 Impl_err  0 0 0 0 0 0 0 0 0 0
+11 init_F 
+11 init_F 
+11 Q_parm  LnQ_base_Crucero(5)
+11 Q_parm  -0.127402
+11 Sel_parm  AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+11 Sel_parm  4.10265 1.61268 4.21643 1.96866 4.19775 1.65156 4.08692 1.78365 2.7478 3.62352 -0.258919 -0.180854 -0.182257 -0.34401 0.14846 -0.0656193 0.1112 -0.30161
+11 Index:5 Yr 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 2018.58 2019.58 2020.58 
+11 Index:5 OBS  198540 505765 712878 899207 891598 917122 272084 223721 266596 278700 313778 322729 284575 290331 273954 224977 204997 211884 242920 301330 304710 356883 354003
+11 Index:5 EXP  1.0075e+06 1.19421e+06 1.2103e+06 962248 777601 592198 205092 196933 203515 206191 200006 188634 181904 185516 198624 217292 249002 279648 305006 318683 324383 330123 344957
+11 Age:1 YR 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+11 Age:1 effN  152.514 115.479 21.6969 76.8897 34.5506 57.0941 56.4585 29.5811 15.6257 25.4937 73.6454 16.5595 61.6292 33.7898 23.7981 14.285 157.616 95.4853 104.964 140.139 56.7269 545.997 523.16 248.348 76.7427 158.322 75.453 106.106 25.449
+11 Age:2 YR 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 
+11 Age:2 effN  64.2404 19.6026 8.3336 29.4581 9.93155 87.5148 28.9088 115.949 56.6684 101.795 549.372 24.3551 89.8291 46.3514 15.8783
+11 Age:5 YR 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 
+11 Age:5 effN  9.36013 5.35477 37.0696 13.9468 23.4239 9.72264 163.646 6.52515 20.212 9.94323 5.06021 8.39223 8.14713 9.47787 12.0973 4.69471 6.12757 4.62849 16.2928 4.71499
+
+12 -logL: 103.574 SSB(Vir_Start_End): 992066 954857 447443
+12 Files: data.dat control.dat
+12 N_iter: 680 runtime(sec): 27 starttime: Fri Aug 27 11:39:26 2021
+12#V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+#This is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+12 F_Method: 3 Retro_YR: 2020 Forecast_Type: 1 MSY_Type: 2
+12 Comment S_1 #C starter comment here
+12 Comment D_1 #C this comment will be stored because it starts with #C.  It will be written to output files																																						
+12 Comment C_1 #C this is an example control file setup																	
+12 Comment F_1 #C generic forecast file
+12 Like_Emph Total 1 
+12 Like_Value Total 103.574
+12 Like_Emph Indices All  0 0 0 0 1
+12 Like_Value Indices -3.32463  0 0 0 0 -3.32463
+12 Like_Emph AgeComp All  1 1 0 0 0
+12 Like_Value AgeComp 81.8823  45.814 36.0683 0 0 261.368
+12 Like_Emph Catch All  1 1 1 1 1
+12 Like_Value Catch 1.08729e-09  7.74141e-10 9.65732e-11 1.09613e-10 1.06959e-10 0
+12 Like_Comp Equ_Catch Recruits Fcast_Recr Biasadj Priors ParmDevs CrashPen
+12 Like_Emph 1 1 1 1 1 1
+12 Like_Value*Emph 0 0.590035 0 24.4098 0 1.9984e-14
+12 TimeSeries Yr Vir Equ  1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 
+12 Timeseries SpawnBio  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+12 Timeseries Recruit  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+12 Timeseries TotBio  0 1.04663e+06 1.04663e+06 1.23921e+06 1.33669e+06 1.44089e+06 1.54496e+06 1.59403e+06 1.5612e+06 1.47663e+06 1.3165e+06 1.10965e+06 884301 678147 486045 343269 294562 305080 306143 299371 280579 260209 257259 265216 282842 304086 348984 390171 422883 440859 446286 456676 491272 406418 404299 401199 384917 374502 369684 361931 354702 349343
+12 Timeseries SmryBio-0  0 0 0 1.2206e+06 1.29857e+06 1.40339e+06 1.52241e+06 1.57061e+06 1.54493e+06 1.46762e+06 1.31003e+06 1.10534e+06 878247 671008 478737 331975 286011 297357 300140 293527 272820 252033 248174 256075 273510 293031 338439 380042 414569 431398 434748 444789 491272 406418 404299 401199 384917 374502 369684 361931 354702 349343
+12 Timeseries TotCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53087 31544 37036 36943 41222 46597 48870 32778 165065 90014.1 93405 108945 104944 100384 104366 104839 103754 104119
+12 Timeseries RetCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53087 31544 37036 36943 41222 46597 48870 32778 0 0 0 0 0 0 0 0 0 0
+12 Mgmt_Quant  992066 1.04663e+06 1.04663e+06 1.00526e+06 396827 0.441044
+12 Parm Labels  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1 SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020 ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030 Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030 LnQ_base_Crucero(5) AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+12 Parm Values   0.35 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5  13.8208 0.631998 1.18327 0.6 0 0  -0.16295 0.271972 0.813895 1.01226 0.972799 1.09374 1.07733 0.568422 0.606172 0.242457 -0.348243 -0.680297 -1.08791 -0.746463 -0.58491 -0.511422 0.113153 -0.0501099 -0.157009 -0.501051 -0.572565 -0.268575 -0.137697 0.0542024 0.0625608 0.0303082 0.137087 -0.00610006 -0.120946 -0.407583 -0.346936 -0.198026 -0.167551  0 0 0 0 0 0 0 0 0 0  0 0 0 0 0 0 0 0 0 0  -0.220165  4.12293 1.63513 4.37531 2.00682 4.19775 1.65156 4.08692 1.78365 0.0128155 0.594399 -0.236718 -0.156493 -0.178687 -0.306202 0.0518738 0.0849541 0.0223496 -0.0811251 
+12 MG_parm  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1
+12 MG_parm  0.35 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5
+12 SR_parm  SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr
+12 SR_parm  13.8208 0.631998 1.18327 0.6 0 0 
+12 Recr_main  Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020
+12 Recr_main  -0.16295 0.271972 0.813895 1.01226 0.972799 1.09374 1.07733 0.568422 0.606172 0.242457 -0.348243 -0.680297 -1.08791 -0.746463 -0.58491 -0.511422 0.113153 -0.0501099 -0.157009 -0.501051 -0.572565 -0.268575 -0.137697 0.0542024 0.0625608 0.0303082 0.137087 -0.00610006 -0.120946 -0.407583 -0.346936 -0.198026 -0.167551
+12 Recr_fore  ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030
+12 Recr_fore  0 0 0 0 0 0 0 0 0 0
+12 Impl_err  Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030
+12 Impl_err  0 0 0 0 0 0 0 0 0 0
+12 init_F 
+12 init_F 
+12 Q_parm  LnQ_base_Crucero(5)
+12 Q_parm  -0.220165
+12 Sel_parm  AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+12 Sel_parm  4.12293 1.63513 4.37531 2.00682 4.19775 1.65156 4.08692 1.78365 0.0128155 0.594399 -0.236718 -0.156493 -0.178687 -0.306202 0.0518738 0.0849541 0.0223496 -0.0811251
+12 Index:5 Yr 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 2018.58 2019.58 2020.58 
+12 Index:5 OBS  198540 505765 712878 899207 891598 917122 272084 223721 266596 278700 313778 322729 284575 290331 273954 224977 204997 211884 242920 301330 304710 356883 354003
+12 Index:5 EXP  1.01243e+06 1.17744e+06 1.15152e+06 923040 753061 581169 216582 212625 220235 220858 209918 190876 181203 182399 192996 207866 235406 268926 299236 320141 326678 329740 348517
+12 Age:1 YR 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+12 Age:1 effN  154.518 120.095 21.5604 70.5456 37.7084 54.0476 56.892 33.7841 17.4358 28.2213 78.301 16.1044 66.4468 33.6185 24.9584 14.1579 135.99 107.596 82.641 103.909 62.8101 814.788 549.763 409.077 77.3544 180.558 74.9697 97.0943 26.0916
+12 Age:2 YR 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 
+12 Age:2 effN  55.4416 22.9857 8.51573 32.1953 10.6643 92.3805 25.8399 110.183 52.8095 92.6352 458.149 25.0833 99.4728 48.9742 15.6213
+12 Age:5 YR 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 
+12 Age:5 effN  1.62935 1.32543 4.37367 4.97168 50.0875 12.7703 5.14186 133.771 24.3069 70.2108 51.2834 1.85748 1.56561 1.43102 1.65678 0.967225 1.12391 1.07302 2.41617 1.31237
+
+13 -logL: 102.377 SSB(Vir_Start_End): 1.04409e+06 1.00115e+06 472333
+13 Files: data.dat control.dat
+13 N_iter: 629 runtime(sec): 25 starttime: Fri Aug 27 11:43:11 2021
+13#V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+#This is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+13 F_Method: 3 Retro_YR: 2020 Forecast_Type: 1 MSY_Type: 2
+13 Comment S_1 #C starter comment here
+13 Comment D_1 #C this comment will be stored because it starts with #C.  It will be written to output files																																						
+13 Comment C_1 #C this is an example control file setup																	
+13 Comment F_1 #C generic forecast file
+13 Like_Emph Total 1 
+13 Like_Value Total 102.377
+13 Like_Emph Indices All  0 0 0 0 1
+13 Like_Value Indices -3.13207  0 0 0 0 -3.13207
+13 Like_Emph AgeComp All  1 1 0 0 0
+13 Like_Value AgeComp 81.9976  45.4745 36.5232 0 0 258.958
+13 Like_Emph Catch All  1 1 1 1 1
+13 Like_Value Catch 5.26397e-10  3.74297e-10 4.64813e-11 5.33003e-11 5.23178e-11 0
+13 Like_Comp Equ_Catch Recruits Fcast_Recr Biasadj Priors ParmDevs CrashPen
+13 Like_Emph 1 1 1 1 1 1
+13 Like_Value*Emph 0 0.755202 0 22.7391 0 1.9984e-14
+13 TimeSeries Yr Vir Equ  1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 
+13 Timeseries SpawnBio  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+13 Timeseries Recruit  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+13 Timeseries TotBio  0 1.10229e+06 1.10229e+06 1.31731e+06 1.43447e+06 1.55782e+06 1.67625e+06 1.72934e+06 1.68719e+06 1.58744e+06 1.40608e+06 1.17621e+06 930736 709734 509225 363430 314886 326690 327584 319809 299897 279690 278753 289744 310766 335180 382780 425852 458595 475180 479157 489809 525869 426563 429849 425513 409893 404119 402987 397579 393526 391294
+13 Timeseries SmryBio-0  0 0 0 1.2954e+06 1.38978e+06 1.51371e+06 1.6499e+06 1.70211e+06 1.6684e+06 1.57709e+06 1.39875e+06 1.17135e+06 923915 701705 501027 350761 305296 318011 320822 313208 291075 270317 268300 279231 300043 322509 370739 414335 449129 464341 465864 476167 525869 426563 429849 425513 409893 404119 402987 397579 393526 391294
+13 Timeseries TotCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57784 54041 53087 31544 37036 36943 41222 46597 48870 32778 184292 90230.4 100210 113989 105654 101566 106564 105884 104510 105254
+13 Timeseries RetCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57784 54041 53087 31544 37036 36943 41222 46597 48870 32778 0 0 0 0 0 0 0 0 0 0
+13 Mgmt_Quant  1.04409e+06 1.10229e+06 1.10229e+06 1.18706e+06 417634 0.464123
+13 Parm Labels  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1 SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020 ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030 Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030 LnQ_base_Crucero(5) AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+13 Parm Values   0.37 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5  13.987 0.587691 1.18004 0.6 0 0  -0.168597 0.263047 0.801284 1.00087 0.973218 1.08644 1.07332 0.55819 0.590887 0.220194 -0.376286 -0.720197 -1.13217 -0.793298 -0.614926 -0.516764 0.125623 -0.0362393 -0.14202 -0.488471 -0.558623 -0.24661 -0.105209 0.0902903 0.0926956 0.0529304 0.151526 0.00445919 -0.115073 -0.40192 -0.336113 -0.181011 -0.151454  0 0 0 0 0 0 0 0 0 0  0 0 0 0 0 0 0 0 0 0  -0.261659  4.18251 1.65026 4.38613 1.99565 4.19775 1.65156 4.08692 1.78365 0.0177419 1.69234 -0.250003 -0.173489 -0.184949 -0.314706 0.0559183 0.0591462 0.0345766 -0.104334 
+13 MG_parm  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1
+13 MG_parm  0.37 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5
+13 SR_parm  SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr
+13 SR_parm  13.987 0.587691 1.18004 0.6 0 0 
+13 Recr_main  Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020
+13 Recr_main  -0.168597 0.263047 0.801284 1.00087 0.973218 1.08644 1.07332 0.55819 0.590887 0.220194 -0.376286 -0.720197 -1.13217 -0.793298 -0.614926 -0.516764 0.125623 -0.0362393 -0.14202 -0.488471 -0.558623 -0.24661 -0.105209 0.0902903 0.0926956 0.0529304 0.151526 0.00445919 -0.115073 -0.40192 -0.336113 -0.181011 -0.151454
+13 Recr_fore  ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030
+13 Recr_fore  0 0 0 0 0 0 0 0 0 0
+13 Impl_err  Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030
+13 Impl_err  0 0 0 0 0 0 0 0 0 0
+13 init_F 
+13 init_F 
+13 Q_parm  LnQ_base_Crucero(5)
+13 Q_parm  -0.261659
+13 Sel_parm  AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+13 Sel_parm  4.18251 1.65026 4.38613 1.99565 4.19775 1.65156 4.08692 1.78365 0.0177419 1.69234 -0.250003 -0.173489 -0.184949 -0.314706 0.0559183 0.0591462 0.0345766 -0.104334
+13 Index:5 Yr 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 2018.58 2019.58 2020.58 
+13 Index:5 OBS  198540 505765 712878 899207 891598 917122 272084 223721 266596 278700 313778 322729 284575 290331 273954 224977 204997 211884 242920 301330 304710 356883 354003
+13 Index:5 EXP  1.00812e+06 1.18507e+06 1.16469e+06 929741 754679 579251 214151 208400 217359 218625 208649 190243 180351 182544 194266 210607 238797 271446 301377 321331 327535 329210 346149
+13 Age:1 YR 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+13 Age:1 effN  150.482 115.51 22.2727 72.0455 37.6825 53.1075 55.6572 33.0999 17.2786 27.013 79.8856 15.7622 67.9705 33.7176 24.8566 13.9909 137.969 106.613 84.3806 107.71 62.4867 758.178 564.842 381.926 77.5393 177.752 75.6916 96.0472 25.3354
+13 Age:2 YR 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 
+13 Age:2 effN  54.9379 22.0849 8.31142 31.3261 10.5717 92.228 25.9526 110.49 54.1166 93.6714 451.931 24.8781 96.2283 47.7099 15.6264
+13 Age:5 YR 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 
+13 Age:5 effN  1.59951 1.36069 4.5479 5.07665 50.4525 13.095 5.34073 100.869 27.5347 78.6216 46.3607 1.90677 1.62355 1.48153 1.73884 1.01753 1.1757 1.12771 2.55973 1.37731
+
+14 -logL: 80.4956 SSB(Vir_Start_End): 931568 899600 423905
+14 Files: data.dat control.dat
+14 N_iter: 593 runtime(sec): 25 starttime: Fri Aug 27 11:45:05 2021
+14#V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+#This is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+14 F_Method: 3 Retro_YR: 2020 Forecast_Type: 1 MSY_Type: 2
+14 Comment S_1 #C starter comment here
+14 Comment D_1 #C this comment will be stored because it starts with #C.  It will be written to output files																																						
+14 Comment C_1 #C this is an example control file setup																	
+14 Comment F_1 #C generic forecast file
+14 Like_Emph Total 1 
+14 Like_Value Total 80.4956
+14 Like_Emph Indices All  0 0 0 0 1
+14 Like_Value Indices -3.719  0 0 0 0 -3.719
+14 Like_Emph AgeComp All  1 1 0 0 0
+14 Like_Value AgeComp 82.1994  46.501 35.6985 0 0 248.958
+14 Like_Emph Catch All  1 1 1 1 1
+14 Like_Value Catch 2.35573e-09  1.67813e-09 2.10297e-10 2.37098e-10 2.30211e-10 0
+14 Like_Comp Equ_Catch Recruits Fcast_Recr Biasadj Priors ParmDevs CrashPen
+14 Like_Emph 1 1 1 1 1 1
+14 Like_Value*Emph 0 0.524667 0 1.47498 0 1.9984e-14
+14 TimeSeries Yr Vir Equ  1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 
+14 Timeseries SpawnBio  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+14 Timeseries Recruit  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+14 Timeseries TotBio  0 985456 985456 1.15264e+06 1.22942e+06 1.31426e+06 1.4031e+06 1.44811e+06 1.42502e+06 1.35666e+06 1.21927e+06 1.03732e+06 833974 644308 461761 322595 273933 283283 284649 279079 261638 241293 236440 241360 255493 273469 315646 354977 387688 407046 413806 423591 456417 386364 377791 375545 358539 342973 333450 322565 311630 302327
+14 Timeseries SmryBio-0  0 0 0 1.1371e+06 1.19806e+06 1.28336e+06 1.38444e+06 1.42856e+06 1.41133e+06 1.34902e+06 1.21372e+06 1.0336e+06 828712 638078 455366 312697 266446 276533 279417 274000 254940 234305 228717 233581 247533 264009 306591 346250 380547 399040 404074 413505 456417 386364 377791 375545 358539 342973 333450 322565 311630 302327
+14 Timeseries TotCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101298 60891 59464 57059 60730 66435 60948.9 57783.9 54040.9 53087 31544 37036 36943 41222 46597 48870 32778 145420 90692.9 86852.9 103829 104492 99888 102561 103826 103197 103243
+14 Timeseries RetCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101298 60891 59464 57059 60730 66435 60948.9 57783.9 54040.9 53087 31544 37036 36943 41222 46597 48870 32778 0 0 0 0 0 0 0 0 0 0
+14 Mgmt_Quant  931568 985456 985456 815962 372627 0.409806
+14 Parm Labels  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1 SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020 ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030 Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030 LnQ_base_Crucero(5) AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+14 Parm Values   0.325497 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5  13.6121 0.699882 1.17987 0.6 0 0  -0.159487 0.280108 0.828005 1.02854 0.985411 1.1069 1.09241 0.587745 0.634424 0.278312 -0.30513 -0.624059 -1.02622 -0.678064 -0.540169 -0.502302 0.0965684 -0.0724521 -0.180766 -0.520917 -0.593061 -0.29824 -0.182286 0.00191781 0.0170927 -0.00433971 0.113569 -0.0237299 -0.133332 -0.419521 -0.370685 -0.224558 -0.191679  0 0 0 0 0 0 0 0 0 0  0 0 0 0 0 0 0 0 0 0  -0.14229  4.0515 1.61497 4.3574 2.01522 4.19775 1.65156 4.08692 1.78365 0.0121202 0.51245 -0.222246 -0.13663 -0.172791 -0.297298 0.0503849 0.109955 0.012719 -0.0626276 
+14 MG_parm  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1
+14 MG_parm  0.325497 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5
+14 SR_parm  SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr
+14 SR_parm  13.6121 0.699882 1.17987 0.6 0 0 
+14 Recr_main  Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020
+14 Recr_main  -0.159487 0.280108 0.828005 1.02854 0.985411 1.1069 1.09241 0.587745 0.634424 0.278312 -0.30513 -0.624059 -1.02622 -0.678064 -0.540169 -0.502302 0.0965684 -0.0724521 -0.180766 -0.520917 -0.593061 -0.29824 -0.182286 0.00191781 0.0170927 -0.00433971 0.113569 -0.0237299 -0.133332 -0.419521 -0.370685 -0.224558 -0.191679
+14 Recr_fore  ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030
+14 Recr_fore  0 0 0 0 0 0 0 0 0 0
+14 Impl_err  Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030
+14 Impl_err  0 0 0 0 0 0 0 0 0 0
+14 init_F 
+14 init_F 
+14 Q_parm  LnQ_base_Crucero(5)
+14 Q_parm  -0.14229
+14 Sel_parm  AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+14 Sel_parm  4.0515 1.61497 4.3574 2.01522 4.19775 1.65156 4.08692 1.78365 0.0121202 0.51245 -0.222246 -0.13663 -0.172791 -0.297298 0.0503849 0.109955 0.012719 -0.0626276
+14 Index:5 Yr 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 2018.58 2019.58 2020.58 
+14 Index:5 OBS  198540 505765 712878 899207 891598 917122 272084 223721 266596 278700 313778 322729 284575 290331 273954 224977 204997 211884 242920 301330 304710 356883 354003
+14 Index:5 EXP  1.00814e+06 1.15996e+06 1.14297e+06 930212 765779 596061 219252 214077 221703 222842 212204 192530 181460 180796 189491 202810 230306 264592 296450 319615 328343 332415 351706
+14 Age:1 YR 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+14 Age:1 effN  142.48 118.034 20.3286 66.8159 36.9566 54.5321 58.7581 34.5681 17.6086 29.7111 76.6124 16.5405 64.6876 33.2718 24.9589 14.4311 134.824 108.419 81.9027 102.061 62.4354 869.82 530.654 426.25 78.0594 181.349 74.0674 98.7183 27.2987
+14 Age:2 YR 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 
+14 Age:2 effN  55.8275 24.0526 8.75517 32.8463 10.7087 90.8893 26.049 109.04 51.7116 91.8129 473.802 25.2149 103.118 50.4239 15.6762
+14 Age:5 YR 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 
+14 Age:5 effN  1.83049 1.44716 4.81913 5.32676 57.0984 13.2951 5.5941 108.814 27.1761 79.2842 44.5727 1.99224 1.68364 1.53845 1.77372 1.0084 1.17361 1.12252 2.56628 1.38212
+
+15 -logL: 105.311 SSB(Vir_Start_End): 942222 909323 427978
+15 Files: data.dat control.dat
+15 N_iter: 536 runtime(sec): 24 starttime: Wed Sep 15 12:21:49 2021
+15#V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+#This is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+15 F_Method: 3 Retro_YR: 2020 Forecast_Type: 1 MSY_Type: 2
+15 Comment S_1 #C starter comment here
+15 Comment D_1 #C this comment will be stored because it starts with #C.  It will be written to output files																																						
+15 Comment C_1 #C this is an example control file setup																	
+15 Comment F_1 #C generic forecast file
+15 Like_Emph Total 1 
+15 Like_Value Total 105.311
+15 Like_Emph Indices All  0 0 0 0 1
+15 Like_Value Indices -3.6477  0 0 0 0 -3.6477
+15 Like_Emph AgeComp All  1 1 0 0 0
+15 Like_Value AgeComp 82.1086  46.3479 35.7607 0 0 251.224
+15 Like_Emph Catch All  1 1 1 1 1
+15 Like_Value Catch 2.05219e-09  1.46176e-09 1.83033e-10 2.06607e-10 2.00786e-10 0
+15 Like_Comp Equ_Catch Recruits Fcast_Recr Biasadj Priors ParmDevs CrashPen
+15 Like_Emph 1 1 1 1 1 1
+15 Like_Value*Emph 0 0.527112 0 26.307 0 1.9984e-14
+15 TimeSeries Yr Vir Equ  1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 
+15 Timeseries SpawnBio  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+15 Timeseries Recruit  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+15 Timeseries TotBio  0 995928 995928 1.16748e+06 1.24786e+06 1.3361e+06 1.42764e+06 1.47343e+06 1.44874e+06 1.37761e+06 1.23631e+06 1.05003e+06 842831 650256 466009 326194 277518 287069 288380 282593 264906 244540 240002 245439 260178 278731 321394 361062 393784 412906 419425 429302 462428 389755 382301 379952 363060 348399 339762 329483 319224 310660
+15 Timeseries SmryBio-0  0 0 0 1.15142e+06 1.21536e+06 1.30408e+06 1.40832e+06 1.45323e+06 1.4346e+06 1.36974e+06 1.2306e+06 1.04621e+06 837434 643871 459457 316057 269848 280152 283015 277384 258027 237351 232048 237429 251985 269000 312086 352095 386443 404652 409386 418909 462428 389755 382301 379952 363060 348399 339762 329483 319224 310660
+15 Timeseries TotCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60948.9 57783.9 54040.9 53087 31544 37036 36943 41222 46597 48870 32778 148857 90571.4 87945.8 104731 104575 99930.6 102846 104014 103299 103390
+15 Timeseries RetCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60948.9 57783.9 54040.9 53087 31544 37036 36943 41222 46597 48870 32778 0 0 0 0 0 0 0 0 0 0
+15 Mgmt_Quant  942222 995928 995928 848043 376889 0.415653
+15 Parm Labels  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1 SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020 ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030 Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030 LnQ_base_Crucero(5) AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+15 Parm Values   0.33 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5  13.6507 0.686345 1.18088 0.6 0 0  -0.16014 0.278528 0.825256 1.02536 0.982876 1.10422 1.08932 0.583863 0.628841 0.271302 -0.313449 -0.63475 -1.03792 -0.691089 -0.548683 -0.504056 0.0997572 -0.068108 -0.176197 -0.517129 -0.589231 -0.292743 -0.17395 0.0118373 0.0258741 0.00249285 0.118353 -0.0201019 -0.130732 -0.417063 -0.366079 -0.219457 -0.187002  0 0 0 0 0 0 0 0 0 0  0 0 0 0 0 0 0 0 0 0  -0.156281  4.06464 1.61879 4.36044 2.01362 4.19775 1.65156 4.08692 1.78365 0.0122059 0.521299 -0.224903 -0.140322 -0.173779 -0.298842 0.0505971 0.105367 0.0144218 -0.0659682 
+15 MG_parm  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1
+15 MG_parm  0.33 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5
+15 SR_parm  SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr
+15 SR_parm  13.6507 0.686345 1.18088 0.6 0 0 
+15 Recr_main  Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020
+15 Recr_main  -0.16014 0.278528 0.825256 1.02536 0.982876 1.10422 1.08932 0.583863 0.628841 0.271302 -0.313449 -0.63475 -1.03792 -0.691089 -0.548683 -0.504056 0.0997572 -0.068108 -0.176197 -0.517129 -0.589231 -0.292743 -0.17395 0.0118373 0.0258741 0.00249285 0.118353 -0.0201019 -0.130732 -0.417063 -0.366079 -0.219457 -0.187002
+15 Recr_fore  ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030
+15 Recr_fore  0 0 0 0 0 0 0 0 0 0
+15 Impl_err  Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030
+15 Impl_err  0 0 0 0 0 0 0 0 0 0
+15 init_F 
+15 init_F 
+15 Q_parm  LnQ_base_Crucero(5)
+15 Q_parm  -0.156281
+15 Sel_parm  AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+15 Sel_parm  4.06464 1.61879 4.36044 2.01362 4.19775 1.65156 4.08692 1.78365 0.0122059 0.521299 -0.224903 -0.140322 -0.173779 -0.298842 0.0505971 0.105367 0.0144218 -0.0659682
+15 Index:5 Yr 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 2018.58 2019.58 2020.58 
+15 Index:5 OBS  198540 505765 712878 899207 891598 917122 272084 223721 266596 278700 313778 322729 284575 290331 273954 224977 204997 211884 242920 301330 304710 356883 354003
+15 Index:5 EXP  1.00886e+06 1.16322e+06 1.14466e+06 929006 763529 593373 218770 213826 221442 222480 211776 192209 181390 181061 190105 203716 231229 265386 296966 319717 328034 331910 351099
+15 Age:1 YR 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+15 Age:1 effN  146.08 119.125 20.5733 67.6645 37.0957 54.4415 58.4217 34.4277 17.5787 29.4296 76.941 16.4594 65.0183 33.3427 24.9619 14.3789 134.996 108.248 82.0286 102.377 62.5211 860.077 534.421 423.346 77.9183 181.247 74.2284 98.4222 27.07
+15 Age:2 YR 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 
+15 Age:2 effN  55.7867 23.8502 8.71101 32.7338 10.7012 91.2003 26.0041 109.248 51.8944 91.9465 470.87 25.1923 102.444 50.1531 15.6645
+15 Age:5 YR 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 
+15 Age:5 effN  1.79072 1.42355 4.73239 5.25887 55.7367 13.2018 5.5073 112.919 26.613 77.6211 45.7337 1.96671 1.66107 1.51775 1.75095 1.00044 1.16409 1.11306 2.53745 1.36882
+
+16 -logL: 105.311 SSB(Vir_Start_End): 942222 909323 427978
+16 Files: data.dat control.dat
+16 N_iter: 536 runtime(sec): 22 starttime: Wed Sep 15 17:06:31 2021
+16#V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+#This is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+16 F_Method: 3 Retro_YR: 2020 Forecast_Type: 1 MSY_Type: 2
+16 Comment S_1 #C starter comment here
+16 Comment D_1 #C this comment will be stored because it starts with #C.  It will be written to output files																																						
+16 Comment C_1 #C this is an example control file setup																	
+16 Comment F_1 #C generic forecast file
+16 Like_Emph Total 1 
+16 Like_Value Total 105.311
+16 Like_Emph Indices All  0 0 0 0 1
+16 Like_Value Indices -3.6477  0 0 0 0 -3.6477
+16 Like_Emph AgeComp All  1 1 0 0 0
+16 Like_Value AgeComp 82.1086  46.3479 35.7607 0 0 251.224
+16 Like_Emph Catch All  1 1 1 1 1
+16 Like_Value Catch 2.05219e-09  1.46176e-09 1.83033e-10 2.06607e-10 2.00786e-10 0
+16 Like_Comp Equ_Catch Recruits Fcast_Recr Biasadj Priors ParmDevs CrashPen
+16 Like_Emph 1 1 1 1 1 1
+16 Like_Value*Emph 0 0.527112 0 26.307 0 1.9984e-14
+16 TimeSeries Yr Vir Equ  1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 
+16 Timeseries SpawnBio  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+16 Timeseries Recruit  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+16 Timeseries TotBio  0 995928 995928 1.16748e+06 1.24786e+06 1.3361e+06 1.42764e+06 1.47343e+06 1.44874e+06 1.37761e+06 1.23631e+06 1.05003e+06 842831 650256 466009 326194 277518 287069 288380 282593 264906 244540 240002 245439 260178 278731 321394 361062 393784 412906 419425 429302 462428 389755 382301 379952 363060 348399 339762 329483 319224 310660
+16 Timeseries SmryBio-0  0 0 0 1.15142e+06 1.21536e+06 1.30408e+06 1.40832e+06 1.45323e+06 1.4346e+06 1.36974e+06 1.2306e+06 1.04621e+06 837434 643871 459457 316057 269848 280152 283015 277384 258027 237351 232048 237429 251985 269000 312086 352095 386443 404652 409386 418909 462428 389755 382301 379952 363060 348399 339762 329483 319224 310660
+16 Timeseries TotCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60948.9 57783.9 54040.9 53087 31544 37036 36943 41222 46597 48870 32778 148857 90571.4 87945.8 104731 104575 99930.6 102846 104014 103299 103390
+16 Timeseries RetCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60948.9 57783.9 54040.9 53087 31544 37036 36943 41222 46597 48870 32778 0 0 0 0 0 0 0 0 0 0
+16 Mgmt_Quant  942222 995928 995928 848043 376889 0.415653
+16 Parm Labels  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1 SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020 ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030 Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030 LnQ_base_Crucero(5) AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+16 Parm Values   0.33 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5  13.6507 0.686345 1.18088 0.6 0 0  -0.16014 0.278528 0.825256 1.02536 0.982876 1.10422 1.08932 0.583863 0.628841 0.271302 -0.313449 -0.63475 -1.03792 -0.691089 -0.548683 -0.504056 0.0997572 -0.068108 -0.176197 -0.517129 -0.589231 -0.292743 -0.17395 0.0118373 0.0258741 0.00249285 0.118353 -0.0201019 -0.130732 -0.417063 -0.366079 -0.219457 -0.187002  0 0 0 0 0 0 0 0 0 0  0 0 0 0 0 0 0 0 0 0  -0.156281  4.06464 1.61879 4.36044 2.01362 4.19775 1.65156 4.08692 1.78365 0.0122059 0.521299 -0.224903 -0.140322 -0.173779 -0.298842 0.0505971 0.105367 0.0144218 -0.0659682 
+16 MG_parm  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1
+16 MG_parm  0.33 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5
+16 SR_parm  SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr
+16 SR_parm  13.6507 0.686345 1.18088 0.6 0 0 
+16 Recr_main  Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020
+16 Recr_main  -0.16014 0.278528 0.825256 1.02536 0.982876 1.10422 1.08932 0.583863 0.628841 0.271302 -0.313449 -0.63475 -1.03792 -0.691089 -0.548683 -0.504056 0.0997572 -0.068108 -0.176197 -0.517129 -0.589231 -0.292743 -0.17395 0.0118373 0.0258741 0.00249285 0.118353 -0.0201019 -0.130732 -0.417063 -0.366079 -0.219457 -0.187002
+16 Recr_fore  ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030
+16 Recr_fore  0 0 0 0 0 0 0 0 0 0
+16 Impl_err  Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030
+16 Impl_err  0 0 0 0 0 0 0 0 0 0
+16 init_F 
+16 init_F 
+16 Q_parm  LnQ_base_Crucero(5)
+16 Q_parm  -0.156281
+16 Sel_parm  AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+16 Sel_parm  4.06464 1.61879 4.36044 2.01362 4.19775 1.65156 4.08692 1.78365 0.0122059 0.521299 -0.224903 -0.140322 -0.173779 -0.298842 0.0505971 0.105367 0.0144218 -0.0659682
+16 Index:5 Yr 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 2018.58 2019.58 2020.58 
+16 Index:5 OBS  198540 505765 712878 899207 891598 917122 272084 223721 266596 278700 313778 322729 284575 290331 273954 224977 204997 211884 242920 301330 304710 356883 354003
+16 Index:5 EXP  1.00886e+06 1.16322e+06 1.14466e+06 929006 763529 593373 218770 213826 221442 222480 211776 192209 181390 181061 190105 203716 231229 265386 296966 319717 328034 331910 351099
+16 Age:1 YR 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+16 Age:1 effN  146.08 119.125 20.5733 67.6645 37.0957 54.4415 58.4217 34.4277 17.5787 29.4296 76.941 16.4594 65.0183 33.3427 24.9619 14.3789 134.996 108.248 82.0286 102.377 62.5211 860.077 534.421 423.346 77.9183 181.247 74.2284 98.4222 27.07
+16 Age:2 YR 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 
+16 Age:2 effN  55.7867 23.8502 8.71101 32.7338 10.7012 91.2003 26.0041 109.248 51.8944 91.9465 470.87 25.1923 102.444 50.1531 15.6645
+16 Age:5 YR 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 
+16 Age:5 effN  1.79072 1.42355 4.73239 5.25887 55.7367 13.2018 5.5073 112.919 26.613 77.6211 45.7337 1.96671 1.66107 1.51775 1.75095 1.00044 1.16409 1.11306 2.53745 1.36882
+
+17 -logL: 105.311 SSB(Vir_Start_End): 942222 909323 427978
+17 Files: data.dat control.dat
+17 N_iter: 536 runtime(sec): 23 starttime: Wed Sep 15 17:08:13 2021
+17#V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+#This is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+17 F_Method: 3 Retro_YR: 2020 Forecast_Type: 1 MSY_Type: 2
+17 Comment S_1 #C starter comment here
+17 Comment D_1 #C this comment will be stored because it starts with #C.  It will be written to output files																																						
+17 Comment C_1 #C this is an example control file setup																	
+17 Comment F_1 #C generic forecast file
+17 Like_Emph Total 1 
+17 Like_Value Total 105.311
+17 Like_Emph Indices All  0 0 0 0 1
+17 Like_Value Indices -3.6477  0 0 0 0 -3.6477
+17 Like_Emph AgeComp All  1 1 0 0 0
+17 Like_Value AgeComp 82.1086  46.3479 35.7607 0 0 251.224
+17 Like_Emph Catch All  1 1 1 1 1
+17 Like_Value Catch 2.05219e-09  1.46176e-09 1.83033e-10 2.06607e-10 2.00786e-10 0
+17 Like_Comp Equ_Catch Recruits Fcast_Recr Biasadj Priors ParmDevs CrashPen
+17 Like_Emph 1 1 1 1 1 1
+17 Like_Value*Emph 0 0.527112 0 26.307 0 1.9984e-14
+17 TimeSeries Yr Vir Equ  1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 
+17 Timeseries SpawnBio  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+17 Timeseries Recruit  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+17 Timeseries TotBio  0 995928 995928 1.16748e+06 1.24786e+06 1.3361e+06 1.42764e+06 1.47343e+06 1.44874e+06 1.37761e+06 1.23631e+06 1.05003e+06 842831 650256 466009 326194 277518 287069 288380 282593 264906 244540 240002 245439 260178 278731 321394 361062 393784 412906 419425 429302 462428 389755 382301 379952 363060 348399 339762 329483 319224 310660
+17 Timeseries SmryBio-0  0 0 0 1.15142e+06 1.21536e+06 1.30408e+06 1.40832e+06 1.45323e+06 1.4346e+06 1.36974e+06 1.2306e+06 1.04621e+06 837434 643871 459457 316057 269848 280152 283015 277384 258027 237351 232048 237429 251985 269000 312086 352095 386443 404652 409386 418909 462428 389755 382301 379952 363060 348399 339762 329483 319224 310660
+17 Timeseries TotCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60948.9 57783.9 54040.9 53087 31544 37036 36943 41222 46597 48870 32778 148857 90571.4 87945.8 104731 104575 99930.6 102846 104014 103299 103390
+17 Timeseries RetCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60948.9 57783.9 54040.9 53087 31544 37036 36943 41222 46597 48870 32778 0 0 0 0 0 0 0 0 0 0
+17 Mgmt_Quant  942222 995928 995928 848043 376889 0.415653
+17 Parm Labels  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1 SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020 ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030 Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030 LnQ_base_Crucero(5) AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+17 Parm Values   0.33 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5  13.6507 0.686345 1.18088 0.6 0 0  -0.16014 0.278528 0.825256 1.02536 0.982876 1.10422 1.08932 0.583863 0.628841 0.271302 -0.313449 -0.63475 -1.03792 -0.691089 -0.548683 -0.504056 0.0997572 -0.068108 -0.176197 -0.517129 -0.589231 -0.292743 -0.17395 0.0118373 0.0258741 0.00249285 0.118353 -0.0201019 -0.130732 -0.417063 -0.366079 -0.219457 -0.187002  0 0 0 0 0 0 0 0 0 0  0 0 0 0 0 0 0 0 0 0  -0.156281  4.06464 1.61879 4.36044 2.01362 4.19775 1.65156 4.08692 1.78365 0.0122059 0.521299 -0.224903 -0.140322 -0.173779 -0.298842 0.0505971 0.105367 0.0144218 -0.0659682 
+17 MG_parm  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1
+17 MG_parm  0.33 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5
+17 SR_parm  SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr
+17 SR_parm  13.6507 0.686345 1.18088 0.6 0 0 
+17 Recr_main  Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020
+17 Recr_main  -0.16014 0.278528 0.825256 1.02536 0.982876 1.10422 1.08932 0.583863 0.628841 0.271302 -0.313449 -0.63475 -1.03792 -0.691089 -0.548683 -0.504056 0.0997572 -0.068108 -0.176197 -0.517129 -0.589231 -0.292743 -0.17395 0.0118373 0.0258741 0.00249285 0.118353 -0.0201019 -0.130732 -0.417063 -0.366079 -0.219457 -0.187002
+17 Recr_fore  ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030
+17 Recr_fore  0 0 0 0 0 0 0 0 0 0
+17 Impl_err  Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030
+17 Impl_err  0 0 0 0 0 0 0 0 0 0
+17 init_F 
+17 init_F 
+17 Q_parm  LnQ_base_Crucero(5)
+17 Q_parm  -0.156281
+17 Sel_parm  AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+17 Sel_parm  4.06464 1.61879 4.36044 2.01362 4.19775 1.65156 4.08692 1.78365 0.0122059 0.521299 -0.224903 -0.140322 -0.173779 -0.298842 0.0505971 0.105367 0.0144218 -0.0659682
+17 Index:5 Yr 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 2018.58 2019.58 2020.58 
+17 Index:5 OBS  198540 505765 712878 899207 891598 917122 272084 223721 266596 278700 313778 322729 284575 290331 273954 224977 204997 211884 242920 301330 304710 356883 354003
+17 Index:5 EXP  1.00886e+06 1.16322e+06 1.14466e+06 929006 763529 593373 218770 213826 221442 222480 211776 192209 181390 181061 190105 203716 231229 265386 296966 319717 328034 331910 351099
+17 Age:1 YR 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+17 Age:1 effN  146.08 119.125 20.5733 67.6645 37.0957 54.4415 58.4217 34.4277 17.5787 29.4296 76.941 16.4594 65.0183 33.3427 24.9619 14.3789 134.996 108.248 82.0286 102.377 62.5211 860.077 534.421 423.346 77.9183 181.247 74.2284 98.4222 27.07
+17 Age:2 YR 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 
+17 Age:2 effN  55.7867 23.8502 8.71101 32.7338 10.7012 91.2003 26.0041 109.248 51.8944 91.9465 470.87 25.1923 102.444 50.1531 15.6645
+17 Age:5 YR 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 
+17 Age:5 effN  1.79072 1.42355 4.73239 5.25887 55.7367 13.2018 5.5073 112.919 26.613 77.6211 45.7337 1.96671 1.66107 1.51775 1.75095 1.00044 1.16409 1.11306 2.53745 1.36882
+
+18 -logL: 120.918 SSB(Vir_Start_End): 976919 943241 480084
+18 Files: data.dat control.dat
+18 N_iter: 532 runtime(sec): 19 starttime: Tue Sep 21 16:00:37 2021
+18#V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+#This is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+18 F_Method: 3 Retro_YR: 2020 Forecast_Type: 1 MSY_Type: 2
+18 Comment S_1 #C starter comment here
+18 Comment D_1 #C this comment will be stored because it starts with #C.  It will be written to output files																																						
+18 Comment C_1 #C this is an example control file setup																	
+18 Comment F_1 #C generic forecast file
+18 Like_Emph Total 1 
+18 Like_Value Total 120.918
+18 Like_Emph Indices All  0 0 0 0 1
+18 Like_Value Indices -3.50787  0 0 0 0 -3.50787
+18 Like_Emph AgeComp All  1 1 0 0 0
+18 Like_Value AgeComp 96.092  48.3561 47.7359 0 0 249.697
+18 Like_Emph Catch All  1 1 1 1 1
+18 Like_Value Catch 4.13815e-10  2.83261e-10 3.88334e-11 4.45254e-11 4.71952e-11 0
+18 Like_Comp Equ_Catch Recruits Fcast_Recr Biasadj Priors ParmDevs CrashPen
+18 Like_Emph 1 1 1 1 1 1
+18 Like_Value*Emph 0 0.919797 0 27.3917 0 1.9984e-14
+18 TimeSeries Yr Vir Equ  1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 
+18 Timeseries SpawnBio  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+18 Timeseries Recruit  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+18 Timeseries TotBio  0 1.03261e+06 1.03261e+06 1.21872e+06 1.31469e+06 1.41952e+06 1.51972e+06 1.56432e+06 1.53312e+06 1.4521e+06 1.30273e+06 1.11052e+06 897143 698272 508335 363939 311666 317405 314746 303913 281070 255144 242278 236491 239260 248587 285424 325935 373480 416241 440130 454749 490067 405120 391817 392105 373565 359828 354060 345757 337104 330557
+18 Timeseries SmryBio-0  0 0 0 1.20037e+06 1.28025e+06 1.38698e+06 1.50001e+06 1.54437e+06 1.51884e+06 1.44356e+06 1.29661e+06 1.10653e+06 891675 691697 501414 353717 303813 310674 309630 298796 274618 248834 235702 229484 231763 239836 275581 314325 363753 408270 430110 444026 490067 405120 391817 392105 373565 359828 354060 345757 337104 330557
+18 Timeseries TotCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53086.9 31544 37036 36943 41222 46597 48870 32778 163184 98744 87807.8 109055 106325 99516.6 103095 104450 103153 103251
+18 Timeseries RetCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53086.9 31544 37036 36943 41222 46597 48870 32778 0 0 0 0 0 0 0 0 0 0
+18 Mgmt_Quant  976919 1.03261e+06 1.03261e+06 879272 390767 0.425337
+18 Parm Labels  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1 SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020 ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030 Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030 LnQ_base_Crucero(5) AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+18 Parm Values   0.33 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5  13.6868 0.654855 1.1383 0.6 0 0  -0.16792 0.287196 0.839236 1.04919 1.03551 1.12609 1.06922 0.567837 0.57995 0.245044 -0.268835 -0.601961 -1.02933 -0.714203 -0.555941 -0.482763 0.0655117 -0.0929541 -0.253085 -0.602124 -0.638552 -0.380863 -0.317348 -0.180928 -0.0908879 -0.035255 0.10497 0.127428 0.203918 -0.0806678 -0.377603 -0.235903 -0.193973  0 0 0 0 0 0 0 0 0 0  0 0 0 0 0 0 0 0 0 0  -0.180483  4.02413 1.5897 4.98893 1.71961 4.19775 1.65156 4.08692 1.78365 0.0136416 0.612626 -0.229643 -0.139346 -0.325755 -0.294623 0.0414489 0.117626 0.0331964 -0.197399 
+18 MG_parm  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1
+18 MG_parm  0.33 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5
+18 SR_parm  SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr
+18 SR_parm  13.6868 0.654855 1.1383 0.6 0 0 
+18 Recr_main  Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020
+18 Recr_main  -0.16792 0.287196 0.839236 1.04919 1.03551 1.12609 1.06922 0.567837 0.57995 0.245044 -0.268835 -0.601961 -1.02933 -0.714203 -0.555941 -0.482763 0.0655117 -0.0929541 -0.253085 -0.602124 -0.638552 -0.380863 -0.317348 -0.180928 -0.0908879 -0.035255 0.10497 0.127428 0.203918 -0.0806678 -0.377603 -0.235903 -0.193973
+18 Recr_fore  ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030
+18 Recr_fore  0 0 0 0 0 0 0 0 0 0
+18 Impl_err  Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030
+18 Impl_err  0 0 0 0 0 0 0 0 0 0
+18 init_F 
+18 init_F 
+18 Q_parm  LnQ_base_Crucero(5)
+18 Q_parm  -0.180483
+18 Sel_parm  AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+18 Sel_parm  4.02413 1.5897 4.98893 1.71961 4.19775 1.65156 4.08692 1.78365 0.0136416 0.612626 -0.229643 -0.139346 -0.325755 -0.294623 0.0414489 0.117626 0.0331964 -0.197399
+18 Index:5 Yr 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 2018.58 2019.58 2020.58 
+18 Index:5 OBS  198540 505765 712878 899207 891598 917122 272084 223721 266596 278700 313778 322729 284575 290331 273954 224977 204997 211884 242920 301330 304710 356883 354003
+18 Index:5 EXP  1.04239e+06 1.20896e+06 1.18112e+06 957405 791396 620384 243072 234722 239501 236834 222246 199362 183902 176023 174694 178773 199265 227917 262572 301644 329924 342986 363933
+18 Age:1 YR 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+18 Age:1 effN  146.802 121.936 21.592 74.0779 33.9182 48.2195 60.8904 40.4984 19.5834 33.9274 77.3448 15.8528 53.1775 25.6142 21.1587 12.0679 155.178 79.013 140.701 172.758 46.993 655.512 451.404 224.791 135.459 99.4645 199.203 48.9018 13.2512
+18 Age:2 YR 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+18 Age:2 effN  69.7408 30.4029 141.558 54.1877 49.9135 8.17563 26.4275 7.12412 33.7987 103.62 104.124 180.849 98.79 86.5264 25.463 404.751 106.156 38.1435 80.0755 151.097 44.3641 19.7533 65.4789
+18 Age:5 YR 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 
+18 Age:5 effN  1.73782 1.52323 5.31127 5.34478 59.5908 13.9337 6.89508 68.8138 39.7068 70.4165 30.1504 2.29231 1.97787 1.98055 2.24669 1.09235 1.10235 0.972763 1.8318 0.892992
+
+21 -logL: 120.918 SSB(Vir_Start_End): 976919 943241 480084
+21 Files: data.dat control.dat
+21 N_iter: 532 runtime(sec): 21 starttime: Tue Sep 21 16:59:39 2021
+21#V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+#This is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+21 F_Method: 3 Retro_YR: 2020 Forecast_Type: 1 MSY_Type: 2
+21 Comment S_1 #C starter comment here
+21 Comment D_1 #C this comment will be stored because it starts with #C.  It will be written to output files																																						
+21 Comment C_1 #C this is an example control file setup																	
+21 Comment F_1 #C generic forecast file
+21 Like_Emph Total 1 
+21 Like_Value Total 120.918
+21 Like_Emph Indices All  0 0 0 0 1
+21 Like_Value Indices -3.50787  0 0 0 0 -3.50787
+21 Like_Emph AgeComp All  1 1 0 0 0
+21 Like_Value AgeComp 96.092  48.3561 47.7359 0 0 249.697
+21 Like_Emph Catch All  1 1 1 1 1
+21 Like_Value Catch 4.13815e-10  2.83261e-10 3.88334e-11 4.45254e-11 4.71952e-11 0
+21 Like_Comp Equ_Catch Recruits Fcast_Recr Biasadj Priors ParmDevs CrashPen
+21 Like_Emph 1 1 1 1 1 1
+21 Like_Value*Emph 0 0.919797 0 27.3917 0 1.9984e-14
+21 TimeSeries Yr Vir Equ  1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 
+21 Timeseries SpawnBio  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+21 Timeseries Recruit  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+21 Timeseries TotBio  0 1.03261e+06 1.03261e+06 1.21872e+06 1.31469e+06 1.41952e+06 1.51972e+06 1.56432e+06 1.53312e+06 1.4521e+06 1.30273e+06 1.11052e+06 897143 698272 508335 363939 311666 317405 314746 303913 281070 255144 242278 236491 239260 248587 285424 325935 373480 416241 440130 454749 490067 405120 391817 392105 373565 359828 354060 345757 337104 330557
+21 Timeseries SmryBio-0  0 0 0 1.20037e+06 1.28025e+06 1.38698e+06 1.50001e+06 1.54437e+06 1.51884e+06 1.44356e+06 1.29661e+06 1.10653e+06 891675 691697 501414 353717 303813 310674 309630 298796 274618 248834 235702 229484 231763 239836 275581 314325 363753 408270 430110 444026 490067 405120 391817 392105 373565 359828 354060 345757 337104 330557
+21 Timeseries TotCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53086.9 31544 37036 36943 41222 46597 48870 32778 163184 98744 87807.8 109055 106325 99516.6 103095 104450 103153 103251
+21 Timeseries RetCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53086.9 31544 37036 36943 41222 46597 48870 32778 0 0 0 0 0 0 0 0 0 0
+21 Mgmt_Quant  976919 1.03261e+06 1.03261e+06 879272 390767 0.425337
+21 Parm Labels  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1 SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020 ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030 Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030 LnQ_base_Crucero(5) AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+21 Parm Values   0.33 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5  13.6868 0.654855 1.1383 0.6 0 0  -0.16792 0.287196 0.839236 1.04919 1.03551 1.12609 1.06922 0.567837 0.57995 0.245044 -0.268835 -0.601961 -1.02933 -0.714203 -0.555941 -0.482763 0.0655117 -0.0929541 -0.253085 -0.602124 -0.638552 -0.380863 -0.317348 -0.180928 -0.0908879 -0.035255 0.10497 0.127428 0.203918 -0.0806678 -0.377603 -0.235903 -0.193973  0 0 0 0 0 0 0 0 0 0  0 0 0 0 0 0 0 0 0 0  -0.180483  4.02413 1.5897 4.98893 1.71961 4.19775 1.65156 4.08692 1.78365 0.0136416 0.612626 -0.229643 -0.139346 -0.325755 -0.294623 0.0414489 0.117626 0.0331964 -0.197399 
+21 MG_parm  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1
+21 MG_parm  0.33 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5
+21 SR_parm  SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr
+21 SR_parm  13.6868 0.654855 1.1383 0.6 0 0 
+21 Recr_main  Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020
+21 Recr_main  -0.16792 0.287196 0.839236 1.04919 1.03551 1.12609 1.06922 0.567837 0.57995 0.245044 -0.268835 -0.601961 -1.02933 -0.714203 -0.555941 -0.482763 0.0655117 -0.0929541 -0.253085 -0.602124 -0.638552 -0.380863 -0.317348 -0.180928 -0.0908879 -0.035255 0.10497 0.127428 0.203918 -0.0806678 -0.377603 -0.235903 -0.193973
+21 Recr_fore  ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030
+21 Recr_fore  0 0 0 0 0 0 0 0 0 0
+21 Impl_err  Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030
+21 Impl_err  0 0 0 0 0 0 0 0 0 0
+21 init_F 
+21 init_F 
+21 Q_parm  LnQ_base_Crucero(5)
+21 Q_parm  -0.180483
+21 Sel_parm  AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+21 Sel_parm  4.02413 1.5897 4.98893 1.71961 4.19775 1.65156 4.08692 1.78365 0.0136416 0.612626 -0.229643 -0.139346 -0.325755 -0.294623 0.0414489 0.117626 0.0331964 -0.197399
+21 Index:5 Yr 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 2018.58 2019.58 2020.58 
+21 Index:5 OBS  198540 505765 712878 899207 891598 917122 272084 223721 266596 278700 313778 322729 284575 290331 273954 224977 204997 211884 242920 301330 304710 356883 354003
+21 Index:5 EXP  1.04239e+06 1.20896e+06 1.18112e+06 957405 791396 620384 243072 234722 239501 236834 222246 199362 183902 176023 174694 178773 199265 227917 262572 301644 329924 342986 363933
+21 Age:1 YR 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+21 Age:1 effN  146.802 121.936 21.592 74.0779 33.9182 48.2195 60.8904 40.4984 19.5834 33.9274 77.3448 15.8528 53.1775 25.6142 21.1587 12.0679 155.178 79.013 140.701 172.758 46.993 655.512 451.404 224.791 135.459 99.4645 199.203 48.9018 13.2512
+21 Age:2 YR 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+21 Age:2 effN  69.7408 30.4029 141.558 54.1877 49.9135 8.17563 26.4275 7.12412 33.7987 103.62 104.124 180.849 98.79 86.5264 25.463 404.751 106.156 38.1435 80.0755 151.097 44.3641 19.7533 65.4789
+21 Age:5 YR 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 
+21 Age:5 effN  1.73782 1.52323 5.31127 5.34478 59.5908 13.9337 6.89508 68.8138 39.7068 70.4165 30.1504 2.29231 1.97787 1.98055 2.24669 1.09235 1.10235 0.972763 1.8318 0.892992
+
+31 -logL: 120.918 SSB(Vir_Start_End): 976919 943241 480084
+31 Files: data.dat control.dat
+31 N_iter: 532 runtime(sec): 21 starttime: Tue Sep 21 17:16:17 2021
+31#V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+#This is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+31 F_Method: 3 Retro_YR: 2020 Forecast_Type: 1 MSY_Type: 2
+31 Comment S_1 #C starter comment here
+31 Comment D_1 #C this comment will be stored because it starts with #C.  It will be written to output files																																						
+31 Comment C_1 #C this is an example control file setup																	
+31 Comment F_1 #C generic forecast file
+31 Like_Emph Total 1 
+31 Like_Value Total 120.918
+31 Like_Emph Indices All  0 0 0 0 1
+31 Like_Value Indices -3.50787  0 0 0 0 -3.50787
+31 Like_Emph AgeComp All  1 1 0 0 0
+31 Like_Value AgeComp 96.092  48.3561 47.7359 0 0 249.697
+31 Like_Emph Catch All  1 1 1 1 1
+31 Like_Value Catch 4.13815e-10  2.83261e-10 3.88334e-11 4.45254e-11 4.71952e-11 0
+31 Like_Comp Equ_Catch Recruits Fcast_Recr Biasadj Priors ParmDevs CrashPen
+31 Like_Emph 1 1 1 1 1 1
+31 Like_Value*Emph 0 0.919797 0 27.3917 0 1.9984e-14
+31 TimeSeries Yr Vir Equ  1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 
+31 Timeseries SpawnBio  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+31 Timeseries Recruit  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+31 Timeseries TotBio  0 1.03261e+06 1.03261e+06 1.21872e+06 1.31469e+06 1.41952e+06 1.51972e+06 1.56432e+06 1.53312e+06 1.4521e+06 1.30273e+06 1.11052e+06 897143 698272 508335 363939 311666 317405 314746 303913 281070 255144 242278 236491 239260 248587 285424 325935 373480 416241 440130 454749 490067 405120 391817 392105 373565 359828 354060 345757 337104 330557
+31 Timeseries SmryBio-0  0 0 0 1.20037e+06 1.28025e+06 1.38698e+06 1.50001e+06 1.54437e+06 1.51884e+06 1.44356e+06 1.29661e+06 1.10653e+06 891675 691697 501414 353717 303813 310674 309630 298796 274618 248834 235702 229484 231763 239836 275581 314325 363753 408270 430110 444026 490067 405120 391817 392105 373565 359828 354060 345757 337104 330557
+31 Timeseries TotCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53086.9 31544 37036 36943 41222 46597 48870 32778 163184 98744 87807.8 109055 106325 99516.6 103095 104450 103153 103251
+31 Timeseries RetCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53086.9 31544 37036 36943 41222 46597 48870 32778 0 0 0 0 0 0 0 0 0 0
+31 Mgmt_Quant  976919 1.03261e+06 1.03261e+06 879272 390767 0.425337
+31 Parm Labels  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1 SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020 ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030 Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030 LnQ_base_Crucero(5) AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+31 Parm Values   0.33 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5  13.6868 0.654855 1.1383 0.6 0 0  -0.16792 0.287196 0.839236 1.04919 1.03551 1.12609 1.06922 0.567837 0.57995 0.245044 -0.268835 -0.601961 -1.02933 -0.714203 -0.555941 -0.482763 0.0655117 -0.0929541 -0.253085 -0.602124 -0.638552 -0.380863 -0.317348 -0.180928 -0.0908879 -0.035255 0.10497 0.127428 0.203918 -0.0806678 -0.377603 -0.235903 -0.193973  0 0 0 0 0 0 0 0 0 0  0 0 0 0 0 0 0 0 0 0  -0.180483  4.02413 1.5897 4.98893 1.71961 4.19775 1.65156 4.08692 1.78365 0.0136416 0.612626 -0.229643 -0.139346 -0.325755 -0.294623 0.0414489 0.117626 0.0331964 -0.197399 
+31 MG_parm  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1
+31 MG_parm  0.33 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5
+31 SR_parm  SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr
+31 SR_parm  13.6868 0.654855 1.1383 0.6 0 0 
+31 Recr_main  Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020
+31 Recr_main  -0.16792 0.287196 0.839236 1.04919 1.03551 1.12609 1.06922 0.567837 0.57995 0.245044 -0.268835 -0.601961 -1.02933 -0.714203 -0.555941 -0.482763 0.0655117 -0.0929541 -0.253085 -0.602124 -0.638552 -0.380863 -0.317348 -0.180928 -0.0908879 -0.035255 0.10497 0.127428 0.203918 -0.0806678 -0.377603 -0.235903 -0.193973
+31 Recr_fore  ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030
+31 Recr_fore  0 0 0 0 0 0 0 0 0 0
+31 Impl_err  Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030
+31 Impl_err  0 0 0 0 0 0 0 0 0 0
+31 init_F 
+31 init_F 
+31 Q_parm  LnQ_base_Crucero(5)
+31 Q_parm  -0.180483
+31 Sel_parm  AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003
+31 Sel_parm  4.02413 1.5897 4.98893 1.71961 4.19775 1.65156 4.08692 1.78365 0.0136416 0.612626 -0.229643 -0.139346 -0.325755 -0.294623 0.0414489 0.117626 0.0331964 -0.197399
+31 Index:5 Yr 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 2018.58 2019.58 2020.58 
+31 Index:5 OBS  198540 505765 712878 899207 891598 917122 272084 223721 266596 278700 313778 322729 284575 290331 273954 224977 204997 211884 242920 301330 304710 356883 354003
+31 Index:5 EXP  1.04239e+06 1.20896e+06 1.18112e+06 957405 791396 620384 243072 234722 239501 236834 222246 199362 183902 176023 174694 178773 199265 227917 262572 301644 329924 342986 363933
+31 Age:1 YR 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+31 Age:1 effN  146.802 121.936 21.592 74.0779 33.9182 48.2195 60.8904 40.4984 19.5834 33.9274 77.3448 15.8528 53.1775 25.6142 21.1587 12.0679 155.178 79.013 140.701 172.758 46.993 655.512 451.404 224.791 135.459 99.4645 199.203 48.9018 13.2512
+31 Age:2 YR 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+31 Age:2 effN  69.7408 30.4029 141.558 54.1877 49.9135 8.17563 26.4275 7.12412 33.7987 103.62 104.124 180.849 98.79 86.5264 25.463 404.751 106.156 38.1435 80.0755 151.097 44.3641 19.7533 65.4789
+31 Age:5 YR 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 
+31 Age:5 effN  1.73782 1.52323 5.31127 5.34478 59.5908 13.9337 6.89508 68.8138 39.7068 70.4165 30.1504 2.29231 1.97787 1.98055 2.24669 1.09235 1.10235 0.972763 1.8318 0.892992
+
+32 -logL: 105.881 SSB(Vir_Start_End): 1.39392e+06 1.37917e+06 502487
+32 Files: data.dat control.dat
+32 N_iter: 691 runtime(sec): 25 starttime: Tue Sep 21 17:21:36 2021
+32#V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+#This is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+32 F_Method: 3 Retro_YR: 2020 Forecast_Type: 1 MSY_Type: 2
+32 Comment S_1 #C starter comment here
+32 Comment D_1 #C this comment will be stored because it starts with #C.  It will be written to output files																																						
+32 Comment C_1 #C this is an example control file setup																	
+32 Comment F_1 #C generic forecast file
+32 Like_Emph Total 1 
+32 Like_Value Total 105.881
+32 Like_Emph Indices All  0 0 0 0 1
+32 Like_Value Indices -18.1297  0 0 0 0 -18.1297
+32 Like_Emph AgeComp All  1 1 0 0 0
+32 Like_Value AgeComp 93.4032  47.5873 45.8159 0 0 1258.3
+32 Like_Emph Catch All  1 1 1 1 1
+32 Like_Value Catch 1.16887e-09  8.27792e-10 1.15087e-10 1.14394e-10 1.11599e-10 0
+32 Like_Comp Equ_Catch Recruits Fcast_Recr Biasadj Priors ParmDevs CrashPen
+32 Like_Emph 1 1 1 1 1 1
+32 Like_Value*Emph 0 2.60309 0 27.9789 0 1.9984e-14
+32 TimeSeries Yr Vir Equ  1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 
+32 Timeseries SpawnBio  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+32 Timeseries Recruit  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+32 Timeseries TotBio  0 1.01442e+06 1.01442e+06 1.28615e+06 1.42409e+06 1.55527e+06 1.66112e+06 1.69334e+06 1.63804e+06 1.52722e+06 1.34885e+06 1.13408e+06 905582 697824 503032 356346 303222 308373 305271 293855 270364 243277 227794 217436 213749 214991 241764 269263 300687 326124 337119 343742 373564 344903 360486 360337 343635 327110 314155 298596 283295 269918
+32 Timeseries SmryBio-0  0 0 0 1.26125e+06 1.38286e+06 1.51761e+06 1.63898e+06 1.67158e+06 1.62304e+06 1.51817e+06 1.34219e+06 1.12968e+06 899544 690626 495427 344965 294395 300779 299562 288209 263375 236711 221173 210520 206483 206692 232691 258945 291960 318786 327487 333375 373564 344903 360486 360337 343635 327110 314155 298596 283295 269918
+32 Timeseries TotCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53086.9 31544 37036 36943 41222 46597 48870 32778 97542.6 55718.3 72140.6 90590.7 92782.9 91235.8 95892.4 97585.9 97290.7 97760.9
+32 Timeseries RetCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53086.9 31544 37036 36943 41222 46597 48870 32778 0 0 0 0 0 0 0 0 0 0
+32 Mgmt_Quant  1.39392e+06 1.01442e+06 1.01442e+06 1.25459e+06 557568 0.436701
+32 Parm Labels  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1 SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020 ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030 Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030 LnQ_base_Crucero(5) AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P1_Crucero(5)_BLK2mult_2003 AgeSel_P2_Crucero(5)_BLK2mult_2003
+32 Parm Values   0.33 30 65 0.15 0.063 0.085 1.8e-05 2.70001 35 -46.9 1 0 0 0 0 1 0.5  14.0423 0.6413 1.18536 0.6 0 0  -0.176885 0.41073 0.977452 1.20093 1.15229 1.19024 1.09963 0.568314 0.551064 0.179123 -0.326344 -0.63215 -1.0459 -0.7308 -0.559714 -0.47576 0.0920007 -0.0472318 -0.198661 -0.561301 -0.611662 -0.371984 -0.341707 -0.227835 -0.145607 -0.0879934 0.0595736 0.0576765 0.104056 -0.171697 -0.445288 -0.265814 -0.21875  0 0 0 0 0 0 0 0 0 0  0 0 0 0 0 0 0 0 0 0  0.297809  4.01975 1.5829 4.82049 1.63862 4.19775 1.65156 4.08692 1.78365 4.0234 0.0100931 -0.210438 -0.108509 -0.268758 -0.209049 0.0186468 0.227614 -0.0433776 -0.0213969 -0.708124 -0.0571799 
+32 MG_parm  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1
+32 MG_parm  0.33 30 65 0.15 0.063 0.085 1.8e-05 2.70001 35 -46.9 1 0 0 0 0 1 0.5
+32 SR_parm  SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr
+32 SR_parm  14.0423 0.6413 1.18536 0.6 0 0 
+32 Recr_main  Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020
+32 Recr_main  -0.176885 0.41073 0.977452 1.20093 1.15229 1.19024 1.09963 0.568314 0.551064 0.179123 -0.326344 -0.63215 -1.0459 -0.7308 -0.559714 -0.47576 0.0920007 -0.0472318 -0.198661 -0.561301 -0.611662 -0.371984 -0.341707 -0.227835 -0.145607 -0.0879934 0.0595736 0.0576765 0.104056 -0.171697 -0.445288 -0.265814 -0.21875
+32 Recr_fore  ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030
+32 Recr_fore  0 0 0 0 0 0 0 0 0 0
+32 Impl_err  Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030
+32 Impl_err  0 0 0 0 0 0 0 0 0 0
+32 init_F 
+32 init_F 
+32 Q_parm  LnQ_base_Crucero(5)
+32 Q_parm  0.297809
+32 Sel_parm  AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P1_Crucero(5)_BLK2mult_2003 AgeSel_P2_Crucero(5)_BLK2mult_2003
+32 Sel_parm  4.01975 1.5829 4.82049 1.63862 4.19775 1.65156 4.08692 1.78365 4.0234 0.0100931 -0.210438 -0.108509 -0.268758 -0.209049 0.0186468 0.227614 -0.0433776 -0.0213969 -0.708124 -0.0571799
+32 Index:5 Yr 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 2018.58 2019.58 2020.58 
+32 Index:5 OBS  198540 505765 712878 899207 891598 917122 272084 223721 266596 278700 313778 322729 284575 290331 273954 224977 204997 211884 242920 301330 304710 356883 354003
+32 Index:5 EXP  496031 548185 792716 899793 771390 651857 309451 271154 298417 305351 294916 255991 219817 205874 196208 191031 209272 232840 263277 296312 334033 348197 355877
+32 Age:1 YR 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+32 Age:1 effN  135.899 125.277 26.373 102.375 34.7171 47.1912 75.5025 54.9586 23.6022 38.5418 99.1853 17.0441 47.9589 25.7336 21.2215 12.0021 149.919 81.5709 125.246 155.756 47.0592 616.939 399.788 290.729 134.618 93.3891 191.898 41.895 11.736
+32 Age:2 YR 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+32 Age:2 effN  78.5466 33.5127 154.74 61.5448 52.7239 9.08168 28.1528 7.33728 36.4398 95.3546 101.455 158.706 91.1016 82.6306 26.0155 434.333 106.8 38.5662 87.1455 188.795 47.2197 19.08 79.4936
+32 Age:5 YR 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 
+32 Age:5 effN  5.34687 1.56703 2.83097 4.05917 3.98525 2.44806 46.7448 3.61333 17.8797 7.48788 4.37396 21.1021 22.8233 28.7032 96.7125 6.89136 8.54997 7.71717 41.1763 5.10366
+
+34 -logL: 119.052 SSB(Vir_Start_End): 968369 935168 458447
+34 Files: data.dat control.dat
+34 N_iter: 564 runtime(sec): 31 starttime: Tue Sep 21 18:57:37 2021
+34#V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+#This is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+34 F_Method: 3 Retro_YR: 2020 Forecast_Type: 1 MSY_Type: 2
+34 Comment S_1 #C starter comment here
+34 Comment D_1 #C this comment will be stored because it starts with #C.  It will be written to output files																																						
+34 Comment C_1 #C this is an example control file setup																	
+34 Comment F_1 #C generic forecast file
+34 Like_Emph Total 1 
+34 Like_Value Total 119.052
+34 Like_Emph Indices All  0 0 0 0 1
+34 Like_Value Indices -6.11686  0 0 0 0 -6.11686
+34 Like_Emph AgeComp All  1 1 0 0 0
+34 Like_Value AgeComp 95.6369  48.231 47.4059 0 0 220.473
+34 Like_Emph Catch All  1 1 1 1 1
+34 Like_Value Catch 4.70097e-10  3.22271e-10 4.43679e-11 5.04412e-11 5.30167e-11 0
+34 Like_Comp Equ_Catch Recruits Fcast_Recr Biasadj Priors ParmDevs CrashPen
+34 Like_Emph 1 1 1 1 1 1
+34 Like_Value*Emph 0 1.19567 0 28.3114 0 1.9984e-14
+34 TimeSeries Yr Vir Equ  1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 
+34 Timeseries SpawnBio  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+34 Timeseries Recruit  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+34 Timeseries TotBio  0 1.02356e+06 1.02356e+06 1.21458e+06 1.31567e+06 1.42523e+06 1.52788e+06 1.57343e+06 1.54131e+06 1.45845e+06 1.30687e+06 1.11278e+06 898016 698225 507702 362918 310416 316062 313362 302466 279478 253248 239818 233170 234807 242745 277849 316090 360835 400647 422314 435524 470013 392139 385430 385102 366574 352597 345902 336500 326928 319449
+34 Timeseries SmryBio-0  0 0 0 1.19555e+06 1.28107e+06 1.39253e+06 1.50822e+06 1.55357e+06 1.52719e+06 1.45e+06 1.30081e+06 1.10882e+06 892574 691682 500809 352714 302575 309347 308271 297382 273084 247032 233369 226315 227491 234236 268325 304913 351469 392958 412544 425053 470013 392139 385430 385102 366574 352597 345902 336500 326928 319449
+34 Timeseries TotCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53086.9 31544 37036 36943 41222 46597 48870 32778 154940 90131.3 86114.4 106682 104220 98185.4 102056 103341 102153 102329
+34 Timeseries RetCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53086.9 31544 37036 36943 41222 46597 48870 32778 0 0 0 0 0 0 0 0 0 0
+34 Mgmt_Quant  968369 1.02356e+06 1.02356e+06 871577 387348 0.425375
+34 Parm Labels  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1 SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020 ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030 Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030 LnQ_base_Crucero(5) AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P1_Crucero(5)_BLK2mult_2003 AgeSel_P2_Crucero(5)_BLK2mult_2003
+34 Parm Values   0.33 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5  13.6781 0.654525 1.13719 0.6 0 0  -0.170465 0.2899 0.851189 1.07228 1.06202 1.13946 1.08297 0.57431 0.584255 0.243661 -0.270941 -0.602248 -1.0278 -0.710354 -0.551786 -0.479263 0.07076 -0.0872071 -0.247846 -0.599368 -0.637683 -0.382692 -0.324442 -0.191096 -0.101541 -0.0453017 0.09542 0.113759 0.185968 -0.0985386 -0.394162 -0.243058 -0.200171  0 0 0 0 0 0 0 0 0 0  0 0 0 0 0 0 0 0 0 0  -0.070081  4.02661 1.58893 4.97337 1.71449 4.19775 1.65156 4.08692 1.78365 0.128871 5.99636 -0.22852 -0.135689 -0.320497 -0.287497 0.0404451 0.12552 0.0262134 -0.181994 -0.00746124 -0.908996 
+34 MG_parm  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1
+34 MG_parm  0.33 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5
+34 SR_parm  SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr
+34 SR_parm  13.6781 0.654525 1.13719 0.6 0 0 
+34 Recr_main  Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020
+34 Recr_main  -0.170465 0.2899 0.851189 1.07228 1.06202 1.13946 1.08297 0.57431 0.584255 0.243661 -0.270941 -0.602248 -1.0278 -0.710354 -0.551786 -0.479263 0.07076 -0.0872071 -0.247846 -0.599368 -0.637683 -0.382692 -0.324442 -0.191096 -0.101541 -0.0453017 0.09542 0.113759 0.185968 -0.0985386 -0.394162 -0.243058 -0.200171
+34 Recr_fore  ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030
+34 Recr_fore  0 0 0 0 0 0 0 0 0 0
+34 Impl_err  Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030
+34 Impl_err  0 0 0 0 0 0 0 0 0 0
+34 init_F 
+34 init_F 
+34 Q_parm  LnQ_base_Crucero(5)
+34 Q_parm  -0.070081
+34 Sel_parm  AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P1_Crucero(5)_BLK2mult_2003 AgeSel_P2_Crucero(5)_BLK2mult_2003
+34 Sel_parm  4.02661 1.58893 4.97337 1.71449 4.19775 1.65156 4.08692 1.78365 0.128871 5.99636 -0.22852 -0.135689 -0.320497 -0.287497 0.0404451 0.12552 0.0262134 -0.181994 -0.00746124 -0.908996
+34 Index:5 Yr 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 2018.58 2019.58 2020.58 
+34 Index:5 OBS  198540 505765 712878 899207 891598 917122 272084 223721 266596 278700 313778 322729 284575 290331 273954 224977 204997 211884 242920 301330 304710 356883 354003
+34 Index:5 EXP  951657 1.10274e+06 1.12005e+06 937697 786219 623476 254049 239572 245544 245144 232196 208028 189098 179076 176280 178981 199348 227426 261367 298923 328949 344945 365965
+34 Age:1 YR 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+34 Age:1 effN  145.666 123.394 21.8066 78.1548 32.9332 47.5168 62.588 41.7957 20.0181 34.3334 80.8806 16.092 52.4105 25.5523 21.1125 12.0715 154.22 78.6847 140.292 174.037 46.8065 651.837 446.367 231.621 135.647 99.1001 198.938 47.9962 13.0654
+34 Age:2 YR 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+34 Age:2 effN  71.6744 30.5847 142.016 54.8966 50.8164 8.30877 26.7433 7.14794 34.013 103.075 103.549 177.471 98.2284 87.1885 25.4053 409.982 106.394 38.374 81.8839 157.362 44.8887 19.6761 67.1884
+34 Age:5 YR 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 
+34 Age:5 effN  2.06414 1.94644 7.5956 7.12069 94.3127 14.2973 9.3122 37.9117 61.9308 63.0756 20.6807 2.78963 2.45963 2.47502 2.84302 1.30737 1.31582 1.1582 2.26095 1.07071
+
+35 -logL: 119.052 SSB(Vir_Start_End): 968369 935168 458447
+35 Files: data.dat control.dat
+35 N_iter: 564 runtime(sec): 30 starttime: Tue Sep 21 19:04:23 2021
+35#V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+#This is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+35 F_Method: 3 Retro_YR: 2020 Forecast_Type: 1 MSY_Type: 2
+35 Comment S_1 #C starter comment here
+35 Comment D_1 #C this comment will be stored because it starts with #C.  It will be written to output files																																						
+35 Comment C_1 #C this is an example control file setup																	
+35 Comment F_1 #C generic forecast file
+35 Like_Emph Total 1 
+35 Like_Value Total 119.052
+35 Like_Emph Indices All  0 0 0 0 1
+35 Like_Value Indices -6.11686  0 0 0 0 -6.11686
+35 Like_Emph AgeComp All  1 1 0 0 0
+35 Like_Value AgeComp 95.6369  48.231 47.4059 0 0 220.473
+35 Like_Emph Catch All  1 1 1 1 1
+35 Like_Value Catch 4.70097e-10  3.22271e-10 4.43679e-11 5.04412e-11 5.30167e-11 0
+35 Like_Comp Equ_Catch Recruits Fcast_Recr Biasadj Priors ParmDevs CrashPen
+35 Like_Emph 1 1 1 1 1 1
+35 Like_Value*Emph 0 1.19567 0 28.3114 0 1.9984e-14
+35 TimeSeries Yr Vir Equ  1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 
+35 Timeseries SpawnBio  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+35 Timeseries Recruit  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+35 Timeseries TotBio  0 1.02356e+06 1.02356e+06 1.21458e+06 1.31567e+06 1.42523e+06 1.52788e+06 1.57343e+06 1.54131e+06 1.45845e+06 1.30687e+06 1.11278e+06 898016 698225 507702 362918 310416 316062 313362 302466 279478 253248 239818 233170 234807 242745 277849 316090 360835 400647 422314 435524 470013 392139 385430 385102 366574 352597 345902 336500 326928 319449
+35 Timeseries SmryBio-0  0 0 0 1.19555e+06 1.28107e+06 1.39253e+06 1.50822e+06 1.55357e+06 1.52719e+06 1.45e+06 1.30081e+06 1.10882e+06 892574 691682 500809 352714 302575 309347 308271 297382 273084 247032 233369 226315 227491 234236 268325 304913 351469 392958 412544 425053 470013 392139 385430 385102 366574 352597 345902 336500 326928 319449
+35 Timeseries TotCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53086.9 31544 37036 36943 41222 46597 48870 32778 154940 90131.3 86114.4 106682 104220 98185.4 102056 103341 102153 102329
+35 Timeseries RetCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53086.9 31544 37036 36943 41222 46597 48870 32778 0 0 0 0 0 0 0 0 0 0
+35 Mgmt_Quant  968369 1.02356e+06 1.02356e+06 871577 387348 0.425375
+35 Parm Labels  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1 SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020 ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030 Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030 LnQ_base_Crucero(5) AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P1_Crucero(5)_BLK2mult_2003 AgeSel_P2_Crucero(5)_BLK2mult_2003
+35 Parm Values   0.33 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5  13.6781 0.654525 1.13719 0.6 0 0  -0.170465 0.2899 0.851189 1.07228 1.06202 1.13946 1.08297 0.57431 0.584255 0.243661 -0.270941 -0.602248 -1.0278 -0.710354 -0.551786 -0.479263 0.07076 -0.0872071 -0.247846 -0.599368 -0.637683 -0.382692 -0.324442 -0.191096 -0.101541 -0.0453017 0.09542 0.113759 0.185968 -0.0985386 -0.394162 -0.243058 -0.200171  0 0 0 0 0 0 0 0 0 0  0 0 0 0 0 0 0 0 0 0  -0.070081  4.02661 1.58893 4.97337 1.71449 4.19775 1.65156 4.08692 1.78365 0.128871 5.99636 -0.22852 -0.135689 -0.320497 -0.287497 0.0404451 0.12552 0.0262134 -0.181994 -0.00746124 -0.908996 
+35 MG_parm  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1
+35 MG_parm  0.33 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5
+35 SR_parm  SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr
+35 SR_parm  13.6781 0.654525 1.13719 0.6 0 0 
+35 Recr_main  Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020
+35 Recr_main  -0.170465 0.2899 0.851189 1.07228 1.06202 1.13946 1.08297 0.57431 0.584255 0.243661 -0.270941 -0.602248 -1.0278 -0.710354 -0.551786 -0.479263 0.07076 -0.0872071 -0.247846 -0.599368 -0.637683 -0.382692 -0.324442 -0.191096 -0.101541 -0.0453017 0.09542 0.113759 0.185968 -0.0985386 -0.394162 -0.243058 -0.200171
+35 Recr_fore  ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030
+35 Recr_fore  0 0 0 0 0 0 0 0 0 0
+35 Impl_err  Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030
+35 Impl_err  0 0 0 0 0 0 0 0 0 0
+35 init_F 
+35 init_F 
+35 Q_parm  LnQ_base_Crucero(5)
+35 Q_parm  -0.070081
+35 Sel_parm  AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P1_Crucero(5)_BLK2mult_2003 AgeSel_P2_Crucero(5)_BLK2mult_2003
+35 Sel_parm  4.02661 1.58893 4.97337 1.71449 4.19775 1.65156 4.08692 1.78365 0.128871 5.99636 -0.22852 -0.135689 -0.320497 -0.287497 0.0404451 0.12552 0.0262134 -0.181994 -0.00746124 -0.908996
+35 Index:5 Yr 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 2018.58 2019.58 2020.58 
+35 Index:5 OBS  198540 505765 712878 899207 891598 917122 272084 223721 266596 278700 313778 322729 284575 290331 273954 224977 204997 211884 242920 301330 304710 356883 354003
+35 Index:5 EXP  951657 1.10274e+06 1.12005e+06 937697 786219 623476 254049 239572 245544 245144 232196 208028 189098 179076 176280 178981 199348 227426 261367 298923 328949 344945 365965
+35 Age:1 YR 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+35 Age:1 effN  145.666 123.394 21.8066 78.1548 32.9332 47.5168 62.588 41.7957 20.0181 34.3334 80.8806 16.092 52.4105 25.5523 21.1125 12.0715 154.22 78.6847 140.292 174.037 46.8065 651.837 446.367 231.621 135.647 99.1001 198.938 47.9962 13.0654
+35 Age:2 YR 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+35 Age:2 effN  71.6744 30.5847 142.016 54.8966 50.8164 8.30877 26.7433 7.14794 34.013 103.075 103.549 177.471 98.2284 87.1885 25.4053 409.982 106.394 38.374 81.8839 157.362 44.8887 19.6761 67.1884
+35 Age:5 YR 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 
+35 Age:5 effN  2.06414 1.94644 7.5956 7.12069 94.3127 14.2973 9.3122 37.9117 61.9308 63.0756 20.6807 2.78963 2.45963 2.47502 2.84302 1.30737 1.31582 1.1582 2.26095 1.07071
+
+38 -logL: 119.052 SSB(Vir_Start_End): 968369 935168 458447
+38 Files: data.dat control.dat
+38 N_iter: 564 runtime(sec): 26 starttime: Thu Sep 23 11:50:23 2021
+38#V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+#This is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+38 F_Method: 3 Retro_YR: 2020 Forecast_Type: 1 MSY_Type: 2
+38 Comment S_1 #C starter comment here
+38 Comment D_1 #C this comment will be stored because it starts with #C.  It will be written to output files																																						
+38 Comment C_1 #C this is an example control file setup																	
+38 Comment F_1 #C generic forecast file
+38 Like_Emph Total 1 
+38 Like_Value Total 119.052
+38 Like_Emph Indices All  0 0 0 0 1
+38 Like_Value Indices -6.11686  0 0 0 0 -6.11686
+38 Like_Emph AgeComp All  1 1 0 0 0
+38 Like_Value AgeComp 95.6369  48.231 47.4059 0 0 220.473
+38 Like_Emph Catch All  1 1 1 1 1
+38 Like_Value Catch 4.70097e-10  3.22271e-10 4.43679e-11 5.04412e-11 5.30167e-11 0
+38 Like_Comp Equ_Catch Recruits Fcast_Recr Biasadj Priors ParmDevs CrashPen
+38 Like_Emph 1 1 1 1 1 1
+38 Like_Value*Emph 0 1.19567 0 28.3114 0 1.9984e-14
+38 TimeSeries Yr Vir Equ  1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 
+38 Timeseries SpawnBio  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+38 Timeseries Recruit  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+38 Timeseries TotBio  0 1.02356e+06 1.02356e+06 1.21458e+06 1.31567e+06 1.42523e+06 1.52788e+06 1.57343e+06 1.54131e+06 1.45845e+06 1.30687e+06 1.11278e+06 898016 698225 507702 362918 310416 316062 313362 302466 279478 253248 239818 233170 234807 242745 277849 316090 360835 400647 422314 435524 470013 392139 385430 385102 366574 352597 345902 336500 326928 319449
+38 Timeseries SmryBio-0  0 0 0 1.19555e+06 1.28107e+06 1.39253e+06 1.50822e+06 1.55357e+06 1.52719e+06 1.45e+06 1.30081e+06 1.10882e+06 892574 691682 500809 352714 302575 309347 308271 297382 273084 247032 233369 226315 227491 234236 268325 304913 351469 392958 412544 425053 470013 392139 385430 385102 366574 352597 345902 336500 326928 319449
+38 Timeseries TotCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53086.9 31544 37036 36943 41222 46597 48870 32778 154940 90131.3 86114.4 106682 104220 98185.4 102056 103341 102153 102329
+38 Timeseries RetCatch  0 0 0 90428 106443 111833 118933 116493 121456 134267 137092 147599 144018 169246 162795 101299 60891 59464 57059 60730 66435 60949 57783.9 54040.9 53086.9 31544 37036 36943 41222 46597 48870 32778 0 0 0 0 0 0 0 0 0 0
+38 Mgmt_Quant  968369 1.02356e+06 1.02356e+06 871577 387348 0.425375
+38 Parm Labels  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1 SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020 ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030 Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030 LnQ_base_Crucero(5) AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P1_Crucero(5)_BLK2mult_2003 AgeSel_P2_Crucero(5)_BLK2mult_2003
+38 Parm Values   0.33 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5  13.6781 0.654525 1.13719 0.6 0 0  -0.170465 0.2899 0.851189 1.07228 1.06202 1.13946 1.08297 0.57431 0.584255 0.243661 -0.270941 -0.602248 -1.0278 -0.710354 -0.551786 -0.479263 0.07076 -0.0872071 -0.247846 -0.599368 -0.637683 -0.382692 -0.324442 -0.191096 -0.101541 -0.0453017 0.09542 0.113759 0.185968 -0.0985386 -0.394162 -0.243058 -0.200171  0 0 0 0 0 0 0 0 0 0  0 0 0 0 0 0 0 0 0 0  -0.070081  4.02661 1.58893 4.97337 1.71449 4.19775 1.65156 4.08692 1.78365 0.128871 5.99636 -0.22852 -0.135689 -0.320497 -0.287497 0.0404451 0.12552 0.0262134 -0.181994 -0.00746124 -0.908996 
+38 MG_parm  NatM_p_1_Fem_GP_1 L_at_Amin_Fem_GP_1 L_at_Amax_Fem_GP_1 VonBert_K_Fem_GP_1 CV_young_Fem_GP_1 CV_old_Fem_GP_1 Wtlen_1_Fem_GP_1 Wtlen_2_Fem_GP_1 Mat50%_Fem_GP_1 Mat_slope_Fem_GP_1 Eggs_scalar_Fem_GP_1 Eggs_exp_len_Fem_GP_1 RecrDist_GP_1 RecrDist_Area_1 RecrDist_month_1 CohortGrowDev FracFemale_GP_1
+38 MG_parm  0.33 30 65 0.15 0.063 0.085 1.8e-05 2.79999 35 -46.9 1 0 0 0 0 1 0.5
+38 SR_parm  SR_LN(R0) SR_RkrPower_steep SR_RkrPower_gamma SR_sigmaR SR_regime SR_autocorr
+38 SR_parm  13.6781 0.654525 1.13719 0.6 0 0 
+38 Recr_main  Main_InitAge_4 Main_InitAge_3 Main_InitAge_2 Main_InitAge_1 Main_RecrDev_1992 Main_RecrDev_1993 Main_RecrDev_1994 Main_RecrDev_1995 Main_RecrDev_1996 Main_RecrDev_1997 Main_RecrDev_1998 Main_RecrDev_1999 Main_RecrDev_2000 Main_RecrDev_2001 Main_RecrDev_2002 Main_RecrDev_2003 Main_RecrDev_2004 Main_RecrDev_2005 Main_RecrDev_2006 Main_RecrDev_2007 Main_RecrDev_2008 Main_RecrDev_2009 Main_RecrDev_2010 Main_RecrDev_2011 Main_RecrDev_2012 Main_RecrDev_2013 Main_RecrDev_2014 Main_RecrDev_2015 Main_RecrDev_2016 Main_RecrDev_2017 Main_RecrDev_2018 Main_RecrDev_2019 Main_RecrDev_2020
+38 Recr_main  -0.170465 0.2899 0.851189 1.07228 1.06202 1.13946 1.08297 0.57431 0.584255 0.243661 -0.270941 -0.602248 -1.0278 -0.710354 -0.551786 -0.479263 0.07076 -0.0872071 -0.247846 -0.599368 -0.637683 -0.382692 -0.324442 -0.191096 -0.101541 -0.0453017 0.09542 0.113759 0.185968 -0.0985386 -0.394162 -0.243058 -0.200171
+38 Recr_fore  ForeRecr_2021 ForeRecr_2022 ForeRecr_2023 ForeRecr_2024 ForeRecr_2025 ForeRecr_2026 ForeRecr_2027 ForeRecr_2028 ForeRecr_2029 ForeRecr_2030
+38 Recr_fore  0 0 0 0 0 0 0 0 0 0
+38 Impl_err  Impl_err_2021 Impl_err_2022 Impl_err_2023 Impl_err_2024 Impl_err_2025 Impl_err_2026 Impl_err_2027 Impl_err_2028 Impl_err_2029 Impl_err_2030
+38 Impl_err  0 0 0 0 0 0 0 0 0 0
+38 init_F 
+38 init_F 
+38 Q_parm  LnQ_base_Crucero(5)
+38 Q_parm  -0.070081
+38 Sel_parm  AgeSel_P1_Industrial_declarado(1) AgeSel_P2_Industrial_declarado(1) AgeSel_P1_Artesanal_declarado(2) AgeSel_P2_Artesanal_declarado(2) AgeSel_P1_Industrial_nd(3) AgeSel_P2_Industrial_nd(3) AgeSel_P1_Artesanal_nd(4) AgeSel_P2_Artesanal_nd(4) AgeSel_P1_Crucero(5) AgeSel_P2_Crucero(5) AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 AgeSel_P1_Industrial_nd(3)_BLK2mult_2003 AgeSel_P2_Industrial_nd(3)_BLK2mult_2003 AgeSel_P1_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P2_Artesanal_nd(4)_BLK2mult_2003 AgeSel_P1_Crucero(5)_BLK2mult_2003 AgeSel_P2_Crucero(5)_BLK2mult_2003
+38 Sel_parm  4.02661 1.58893 4.97337 1.71449 4.19775 1.65156 4.08692 1.78365 0.128871 5.99636 -0.22852 -0.135689 -0.320497 -0.287497 0.0404451 0.12552 0.0262134 -0.181994 -0.00746124 -0.908996
+38 Index:5 Yr 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 2018.58 2019.58 2020.58 
+38 Index:5 OBS  198540 505765 712878 899207 891598 917122 272084 223721 266596 278700 313778 322729 284575 290331 273954 224977 204997 211884 242920 301330 304710 356883 354003
+38 Index:5 EXP  951657 1.10274e+06 1.12005e+06 937697 786219 623476 254049 239572 245544 245144 232196 208028 189098 179076 176280 178981 199348 227426 261367 298923 328949 344945 365965
+38 Age:1 YR 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+38 Age:1 effN  145.666 123.394 21.8066 78.1548 32.9332 47.5168 62.588 41.7957 20.0181 34.3334 80.8806 16.092 52.4105 25.5523 21.1125 12.0715 154.22 78.6847 140.292 174.037 46.8065 651.837 446.367 231.621 135.647 99.1001 198.938 47.9962 13.0654
+38 Age:2 YR 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
+38 Age:2 effN  71.6744 30.5847 142.016 54.8966 50.8164 8.30877 26.7433 7.14794 34.013 103.075 103.549 177.471 98.2284 87.1885 25.4053 409.982 106.394 38.374 81.8839 157.362 44.8887 19.6761 67.1884
+38 Age:5 YR 1993.58 1995.58 1997.58 1999.58 2000.58 2001.58 2004.58 2005.58 2006.58 2007.58 2008.58 2009.58 2010.58 2011.58 2012.58 2013.58 2014.58 2015.58 2016.58 2017.58 
+38 Age:5 effN  2.06414 1.94644 7.5956 7.12069 94.3127 14.2973 9.3122 37.9117 61.9308 63.0756 20.6807 2.78963 2.45963 2.47502 2.84302 1.30737 1.31582 1.1582 2.26095 1.07071
+
