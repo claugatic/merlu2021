@@ -1,0 +1,4 @@
+"Fleet" "N" "Npos" "min_inputN" "mean(inputN*Adj)" "HarMean(effN)" "Curr_Var_Adj" "HarMean(effN)/mean(inputN*Adj)" "Recommend_Var_Adj" "Fleet_name"
+"1332" 1 29 29 20 20 46.1319 0.44 2.306595 1.0149018 "Industrial_declarado"
+"1333" 2 15 15 20 20 28.6958 0.29 1.43479 0.4160891 "Artesanal_declarado"
+"1336" 5 20 20 30 32.75 2.4269 1 0.0741038167938931 0.0741038167938931 "Crucero"

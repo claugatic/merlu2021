@@ -1,0 +1,8 @@
+
+m00 =  modelo capturas oficiales , 2 flotas y S logistica.
+m01 =  modelo capturas corregidas, 2 flotas y S logística.
+m1  =  modelo captura con 2 flotas y 2 fracciones No declaradas y S logística.
+m2  =  modelo captura con 2 flotas y 2 fracciones No declaradas y S logística con extra sd en capturabilidad (q)
+m3  =  modelo captura con 2 flotas y 2 fracciones No declaradas y S exponential-logistic in age para crucero
+m4  =  modelo captura con 2 flotas y 2 fracciones No declaradas y S double logistic - smooth transition
+m5  =  modelo captura con 2 flotas y 2 fracciones No declaradas y S simple 4-parm double logistic with starting age
