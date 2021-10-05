@@ -1,0 +1,458 @@
+---
+title: "Evaluación de stock de merluza común 2020 en plataforma Stock Synthesis"
+##documentclass: article
+#version imprimir a dos caras
+classoption: a4paper
+#####
+fontsize: 12pt # 10pt,11pt
+geometry: margin = 2.5cm
+
+output: 
+  pdf_document: 
+    keep_tex: no
+    number_sections: yes
+    fig_caption: yes
+    includes:
+      
+      #before_body: portada/latex_paginatitulo_modTFMUM.tex
+      #\SetWatermarkText{version inicial}
+header-includes:
+#-  \usepackage{draftwatermark}
+- \usepackage{placeins}
+- \usepackage[spanish,es-tabla]{babel}
+- \usepackage[utf8]{inputenc}
+- \renewcommand{\contentsname}{Indice documento}
+- \renewcommand{\listfigurename}{Indice de figuras}
+- \renewcommand{\listtablename}{Indice de tablas}
+
+---
+
+\newpage
+
+\tableofcontents
+\listoftables{lista}
+\listoffigures{lista}
+
+---
+
+
+# Análisis desempeño para modelo evaluación población de merluza común 
+
+##	Área de estudio
+
+El área de estudio comprende la principal área de operación de la flota arrastrera correspondiente a la zona centro sur de Chile entre el límite norte de la IV región y los 41°28'S (DS 354 de 1993, MINECOM). 
+
+## Información 
+
+a.	Informaciones correspondientes al desembarque corregido del período (1992-2015), provenientes de proyecto FIPA de corrección de captura para la pesquería de merluza común (Figura \ref{desembarque})(Arancibia et al. 2017), adicionalmente de datos corregidos por parte del CCT hasta el año 2020.
+
+b.	Informaciones correspondientes al desembarque industrial y artesanal del período (1992-2020) provenientes del Servicio Nacional de Pesca (SERNAPESCA).
+
+c.	Información de proyectos financiados por el Fondo de Investigación Pesquera (FIP y FIPA), correspondiente a cruceros de evaluación acústica, y específicamente a estimados de biomasa y composiciones por edad. 
+
+d.	Información del Programa de Seguimiento de la pesquería y Sistema de Información de Merluza Común (SIMEC) del Instituto de Investigación Pesquera, VIII región (1997-2020). La información principal del modelo de evaluación corresponde a aquella generada por el monitoreo de la actividad industrial sobre la merluza común, en la zona centro-sur de Chile, a partir de la cual se conocer la composición por tamaños y edades , y se generan datos biológicos relacionados con el proceso de crecimiento en longitud y peso.
+
+##	Dinámica poblacional
+
+El modelo de dinámica poblacional implementado, corresponde a un enfoque de evaluación del tipo estadístico con estructura de edad, donde no se considera separación por sexos. Luego, dada la disponibilidad de datos de desembarque corregidos de las flotas artesanal e Industrial y la existencia de datos estimados del desembarque ilegal, se construye un modelo que da cuenta de ambas fuentes de remoción. La composición por edades de la flota con operación ilegal es asumida corresponde a las observada en la flota artesanal, ya que serian este tipo de embarcaciones la que operan fuera de norma.
+
+La dinámica esta modelada por un reclutamiento tipo Ricker, selectividad logística por bloques (1992-2002, 2003-2020). Los tamaños de muestra son estimados y corregidos siguiendo el método de Francis, y corrección por sesgo para las estimaciones de la relación Stock-recluta. El modelo es implementado en la Stock Synthesis y la totalidad del proceso de simulación es realizado por medio de boostrap para generar set de datos simulados (1000).
+
+## Condicionamiento modelo
+
+### Selectividad
+
+Modelo logístico por bloques entre 1992-2002, 2003-2020.
+
+### Crecimiento
+
+En la estimación del crecimiento para la M el rango de estimación varía entre 0.1-0.35. La longitud máxima en edades tempranas y finales 2-12 son 25 y 75 cm con valor de k entre 0.1 y 0.2 con CV de 20%. La madurez al 50% es estimada entre 33 a 40 cm.
+
+### Relación stock-recluta
+Es modelada siguiendo una función tipo Ricker (Punt & Cope, 2019)
+$$
+R_y=R_0(1-temp)+e^{{ln(5h)(1-SB_y/SB_0)^\gamma}/0.8^\gamma}              
+$$
+
+
+$$
+temp=\begin{cases}
+1-SB_y/SB_0 & si\,\,\,\, 1-SB_y/SB_0 > 0\,\,\,\\
+%\\
+0.001 & si\,\,\,\, 1-SB_y/SB_0 \leq 0\,\,\,\\
+\end{cases}
+$$
+
+### Ponderación información
+
+Existen 3 métodos de ponderación de los datos utilizados en la evaluación de stock, estos son:
+
+1. McAllister - Ianelli: El tamaño de muestra efectivo es calculado a partir del ajuste observado y estimado en los datos de composiciones de tamaños o edades.El algoritmo de sintonización es destinado a utilizar la media aritmética como tamaño de muestra equivalente a la media armónica del tamaño de muestra efectivo (McAllister and Ianelli,1997).
+
+2. Francis: Basado en la variabilidad en la longitud o edad de la media observada por año, donde el tamaño de muestra es ajustado de tal forma que el ajuste de la media esperada edad o longitud, la cual se podría ajustar dentro del intervalo de incertidumbre a una tasa a la cual es consistente con la variabilidad esperada basada en el ajuste de tamaño de muestra (Francis & Hilborn, 2011).
+
+3. Dirichlet-Multinomial: Una nueva verosimilitud (opuesta a la estandar multinomial) la cual incluye un parámetro estimable (theta) el cual escala el tamaño de muestra de entrada. En este caso, "el tamaño de muestra efectivo" tiene una interpretación distinta al enfoque de McAllister-Ianelli (Thorson et al., 2017).
+
+### Modelamiento por flotas e incorporación de descarte
+
+El esquema considera un enfoque de modelación por flotas, esto es una flota mixta (artesanal e industrial) que aporta capturas y desembarques oficiales. Adicionalmente, se incluye una flota con operación ilegal para la cual existen estimaciones de desembarque, los cuales son incluidos como otra fuente de remoción. Un componente que se evalua, es la existencia de descarte por parte de la flota que opera sobre el recurso, incluyendose un modelo 1 el cual no incorpora información de descarte, y un modelo 2 que incluye información parcial de niveles de descarte para determinados años.
+
+### Correción por sesgo
+
+El reclutamiento en SS es definido como una desviación de tipo log-normal de una curva-stock recluta ajustada con sesgo-log. La magnitud del sesgo-log es calculada desde el nivel de $\sigma_R$, el cual corresponde a la desviación estandar de las desviaciones del reclutamiento (en espacio logaritmico). Existen 5 segmentos en la serie de tiempo a considerar el efecto de sesgo-logaritmico: virginal, equilibrio inicial, periodo temprano de datos escasos (pobres), periodo abundante en datos, proyección reciente. La alternativa de puntos de quiebre entre estos segmentos no requiere corresponder directamente al condicionamiento de ajuste por sesgo, no obstante algunos alineamientos son deseables. Methot et al. 2011 provee mayores detalles del ajuste por sesgo.
+
+
+
+
+### Análisis del desempeño y sesgo del modelo
+
+Datos simulados son obtenidos por simulación Monte Carlo simulation. Este procedimiento involucra adicionar error (acorde al modelo de probabilidad asumido para el error de observación) para los datos predichos o estimaciones (i.e. composiciones por edad, desembarques e indices de abundancia). Las estimaciones de variables poblacionales son asumidas como verdaderas y son empleadas para evaluar sesgo. Las variables evaludas son biomasa desovante, mortalidad por pesca y reclutamiento. El sesgo y la precisión fueron evaluadas por el promedio del error relativo
+(MRE) y el promedio del error absoluto (MARE).
+
+$$
+E_{i,j}=\frac{Q_{i,j}^{estimado}-Q_j^{verdadero}}{Q_j^{verdadero}}
+$$
+Donde $E_{i,j}$ es el error relatico al tiempo $j$ para la simulación $i$ para la variable poblacional de interés.
+
+
+#	RESULTADO MODELO EVALUACION
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=6in,width=6in]{c:/CEGM/MODEL/merluza/M21/EPBR/boot/plots/data_plot.png}
+\caption{Análisis de sesgo por error relativo en biomasa. Linea roja corresponde a valor verdadero)}
+\label{cm}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=6in,width=6in]{c:/CEGM/MODEL/merluza/M21/EPBR/boot/plots/catch1 landings.png}
+\caption{CAPTURAS POR FLOTA}
+\label{cm}
+\end{figure}
+ 
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=6in,width=6in]{c:/CEGM/MODEL/merluza/M21/EPBR/boot/plots/catch7 discards stacked plot (depends on multiple fleets).png}
+\caption{CAPTURAS POR FLOTA}
+\label{cm}
+\end{figure}
+
+
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=6in,width=6in]{c:/CEGM/MODEL/merluza/M21/EPBR/Metodos/Figuras/recruit_fit_bias_adjust.png}
+\caption{corrección por sesgo}
+\label{cm}
+\end{figure}
+
+
+## Comparación evaluación asociada a descartes
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=6in,width=6in]{c:/CEGM/MODEL/merluza/M21/EPBR/sitiocompara2/compare1_spawnbio.png}
+\caption{Biomasa desovante modelos 1 y 2}
+\label{cm}
+\end{figure}
+
+## Análisis sesgo en la biomasa
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=6in,width=6in]{c:/CEGM/MODEL/merluza/M21/EPBR/Metodos/Figuras/1.pdf}
+\caption{Análisis de sesgo por error relativo en biomasa. Linea roja corresponde a valor verdadero)}
+\label{cm}
+\end{figure}
+
+\newpage
+
+## Análisis sesgo del reclutamiento
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=6in,width=6in]{c:/CEGM/MODEL/merluza/M21/EPBR/Metodos/Figuras/2.pdf}
+\caption{Análisis de sesgo por error relatico en reclutamiento. Linea roja corresponde a valor verdadero}
+\label{ha}
+\end{figure}
+
+\newpage
+
+## Analisis sesgo mortalidad por pesca
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=6in,width=6in]{c:/CEGM/MODEL/merluza/M21/EPBR/Metodos/Figuras/3.pdf}
+\caption{Análisis de sesgo por error relatico en mortalidad por pesca. Linea roja corresponde a valor verdadero}
+\label{b}
+\end{figure}
+
+\newpage
+
+## Error Relativo biomasa
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=6in,width=6in]{c:/CEGM/MODEL/merluza/M21/EPBR/Metodos/Figuras/B.pdf}
+\caption{Frecuencia del error relativo para la biomasa.}
+\label{b}
+\end{figure}
+
+\newpage
+
+## Error Relativo Reclutamiento
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=6in,width=6in]{c:/CEGM/MODEL/merluza/M21/EPBR/Metodos/Figuras/R.pdf}
+\caption{Frecuencia del error relativo para el reclutamiento.}
+\label{b}
+\end{figure}
+
+
+\newpage
+
+## Error Relativo Mortalidad por Pesca
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=6in,width=6in]{c:/CEGM/MODEL/merluza/M21/EPBR/Metodos/Figuras/F.pdf}
+\caption{Frecuencia del error relativo para mortalidad por pesca}
+\label{b}
+\end{figure}
+
+\newpage
+
+### Tablas variables interes
+
+\begin{table}[ht]
+\centering
+\caption{Biomasa total, desovante y reclutamientos} 
+\label{Tablavariables}
+\begin{tabular}{rrrrr}
+  \hline
+ & Año & BT & BD & R \\ 
+  \hline
+1 & 1990 & 1798430 & 1644160 &   0 \\ 
+  2 & 1991 & 1798430 & 1644160 &   0 \\ 
+  3 & 1992 & 2922830 & 1596830 & 2657980 \\ 
+  4 & 1993 & 3193430 & 1685820 & 2955240 \\ 
+  5 & 1994 & 3459940 & 1953380 & 3166770 \\ 
+  6 & 1995 & 3288330 & 2187770 & 1934510 \\ 
+  7 & 1996 & 3164220 & 2389520 & 2087810 \\ 
+  8 & 1997 & 2860740 & 2615630 & 1454760 \\ 
+  9 & 1998 & 2406630 & 2568880 & 814258 \\ 
+  10 & 1999 & 1950960 & 2374550 & 595537 \\ 
+  11 & 2000 & 1516750 & 2101010 & 382075 \\ 
+  12 & 2001 & 1197520 & 1668920 & 485568 \\ 
+  13 & 2002 & 965668 & 1216070 & 512756 \\ 
+  14 & 2003 & 768299 & 753503 & 503998 \\ 
+  15 & 2004 & 711652 & 414999 & 781343 \\ 
+  16 & 2005 & 675409 & 293242 & 603049 \\ 
+  17 & 2006 & 665023 & 279845 & 550437 \\ 
+  18 & 2007 & 614138 & 326175 & 420251 \\ 
+  19 & 2008 & 566625 & 363351 & 402250 \\ 
+  20 & 2009 & 562950 & 353113 & 526781 \\ 
+  21 & 2010 & 564845 & 301074 & 546844 \\ 
+  22 & 2011 & 593947 & 252875 & 612540 \\ 
+  23 & 2012 & 624414 & 244889 & 621781 \\ 
+  24 & 2013 & 656455 & 265477 & 635358 \\ 
+  25 & 2014 & 721996 & 298756 & 763426 \\ 
+  26 & 2015 & 789163 & 372032 & 746002 \\ 
+  27 & 2016 & 832837 & 424344 & 732614 \\ 
+  28 & 2017 & 831185 & 490851 & 621146 \\ 
+  29 & 2018 & 849936 & 546203 & 709967 \\ 
+  30 & 2019 & 919610 & 572433 & 902713 \\ 
+  31 & 2020 & 978284 & 565478 & 902667 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\newpage
+% latex table generated in R 3.6.2 by xtable 1.8-4 package
+% Thu Mar 04 19:00:33 2021
+\begin{table}[ht]
+\centering
+\caption{Mortalidad por pesca} 
+\label{TablaF}
+\begin{tabular}{rrrrrr}
+  \hline
+ & Yr & Seas & F\_report & PESQUERIA1 & PESQUERIA2 \\ 
+  \hline
+898 & 1992 &   1 & 0.24 & 0.16 & 0.03 \\ 
+  899 & 1993 &   1 & 0.24 & 0.18 & 0.08 \\ 
+  900 & 1994 &   1 & 0.23 & 0.18 & 0.08 \\ 
+  901 & 1995 &   1 & 0.23 & 0.18 & 0.06 \\ 
+  902 & 1996 &   1 & 0.21 & 0.18 & 0.03 \\ 
+  903 & 1997 &   1 & 0.21 & 0.14 & 0.06 \\ 
+  904 & 1998 &   1 & 0.26 & 0.12 & 0.09 \\ 
+  905 & 1999 &   1 & 0.28 & 0.17 & 0.06 \\ 
+  906 & 2000 &   1 & 0.35 & 0.20 & 0.07 \\ 
+  907 & 2001 &   1 & 0.46 & 0.27 & 0.05 \\ 
+  908 & 2002 &   1 & 0.79 & 0.37 & 0.18 \\ 
+  909 & 2003 &   1 & 1.36 & 0.57 & 0.26 \\ 
+  910 & 2004 &   1 & 1.32 & 0.68 & 0.31 \\ 
+  911 & 2005 &   1 & 0.93 & 0.58 & 0.23 \\ 
+  912 & 2006 &   1 & 0.93 & 0.60 & 0.20 \\ 
+  913 & 2007 &   1 & 0.72 & 0.50 & 0.18 \\ 
+  914 & 2008 &   1 & 0.78 & 0.47 & 0.18 \\ 
+  915 & 2009 &   1 & 0.93 & 0.49 & 0.27 \\ 
+  916 & 2010 &   1 & 1.03 & 0.60 & 0.19 \\ 
+  917 & 2011 &   1 & 1.11 & 0.64 & 0.26 \\ 
+  918 & 2012 &   1 & 0.96 & 0.59 & 0.31 \\ 
+  919 & 2013 &   1 & 0.86 & 0.53 & 0.26 \\ 
+  920 & 2014 &   1 & 0.43 & 0.20 & 0.20 \\ 
+  921 & 2015 &   1 & 0.43 & 0.17 & 0.21 \\ 
+  922 & 2016 &   1 & 0.38 & 0.15 & 0.16 \\ 
+  923 & 2017 &   1 & 0.37 & 0.14 & 0.17 \\ 
+  924 & 2018 &   1 & 0.39 & 0.13 & 0.19 \\ 
+  925 & 2019 &   1 & 0.40 & 0.14 & 0.16 \\ 
+  926 & 2020 &   1 & 0.58 & 0.20 & 0.22 \\ 
+
+   \hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+
+\begin{table}[ht]
+\centering
+\caption{Componentes de verosimilitud,parámetros interés y Puntos Biológicos de Referencia} 
+\scalebox{0.8}{
+\begin{tabular}{rlrr}
+  \hline
+ & Label & model1 & model2 \\ 
+  \hline
+1 & TOTAL\_like & 85.69 & 167.50 \\ 
+  2 & Survey\_like & -0.31 & -3.67 \\ 
+  3 & Age\_comp\_like & 84.26 & 118.73 \\ 
+  4 & Parm\_priors\_like & 0.71 & 0.19 \\ 
+  5 & Recr\_Virgin\_billions & 1.21 & 1.29 \\ 
+  6 & SR\_LN(R0) & 14.00 & 14.07 \\ 
+  7 & SR\_RkrPower\_steep & 0.68 & 0.82 \\ 
+  8 & NatM\_p\_1\_Fem\_GP\_1 & 0.30 & 0.29 \\ 
+  9 & L\_at\_Amax\_Fem\_GP\_1 & 65.00 & 65.00 \\ 
+  10 & VonBert\_K\_Fem\_GP\_1 & 0.15 & 0.15 \\ 
+  11 & SSB\_Virgin\_thousand\_mt & 1644.16 & 1824.84 \\ 
+  12 & Bratio\_2017 & 0.75 & 0.87 \\ 
+  13 & SPRratio\_2016 & 0.67 & 0.73 \\ 
+   \hline
+\end{tabular}}
+\end{table}
+
+\newpage
+
+\begin{table}[ht]
+\centering
+\caption{Tamaños de muestra y valores de ajustes de varianza} 
+\scalebox{0.6}{
+\begin{tabular}{rrrrrrrrrrl}
+  \hline
+ & Fleet & N & Npos & min\_inputN & mean.inputN.Adj. & HarMean.effN. & Curr\_Var\_Adj & HarMean.effN..mean.inputN.Adj. & Recommend\_Var\_Adj & Fleet\_name \\ 
+  \hline
+ &   1 &  29 &  29 &  20 &  20 & 44.65 & 0.44 & 2.23 & 0.98 & PESQUERIA1 \\ 
+   &   2 &  15 &  15 &  20 &  20 & 28.25 & 0.29 & 1.41 & 0.41 & PESQUERIA2 \\ 
+   &   3 &  20 &  20 &  30 &  30 & 4.18 & 0.07 & 0.14 & 0.01 & CRUCERO \\ 
+   \hline
+\end{tabular}}
+\end{table}
+
+\newpage
+
+
+% latex table generated in R 3.6.2 by xtable 1.8-4 package
+% Fri Mar 12 14:16:45 2021
+\begin{table}[ht]
+\centering
+\scalebox{0.6}{
+\begin{tabular}{rrrrlrrrrrrrlll}
+  \hline
+ & X.Factor & Fleet & New\_Var\_adj & hash & Old\_Var\_adj & New\_Francis & New\_MI & Francis\_mult & Francis\_lo & Francis\_hi & MI\_mult & Type & Name & Note \\ 
+  \hline
+ &   5 &   1 & 0.35 & \# & 0.44 & 0.35 & 0.98 & 0.80 & 0.61 & 1.30 & 2.23 & age & PESQUERIA1   \\ 
+   &   5 &   2 & 0.17 & \# & 0.29 & 0.17 & 0.41 & 0.60 & 0.39 & 2.19 & 1.41 & age & PESQUERIA2  \\ 
+   &   5 &   3 & 0.01 & \# & 0.07 & 0.01 & 0.01 & 0.16 & 0.11 & 0.35 & 0.14 & age & CRUCERO   \\ 
+   \hline
+\end{tabular}}
+\end{table}
+
+
+
+
+
+## MRE Y MARE
+
+### SERIE CM
+
+La información provista por el análisis de simulación, permite estimar indices de desempeño para las biomasas, reclutamiento y mortalidad (Tabla\ref{Tablacm}). El mayor sesgo se encuentra en los estimados de mortalidad por pesca.
+
+\begin{table}[ht]
+\centering
+\caption{MRE y MARE biomasa, reclutamiento y mortalidad} 
+\label{Tablacm}
+\scalebox{1}{
+\begin{tabular}{rrrrrrrrrrrrr}
+  \hline
+ & MRE1 & sd1 & MRE2 & sd2 & MRE3 & sd3 & MARE1 & sd1.1 & MARE2 & sd2.1 & MARE3 & sd3.1 \\ 
+  \hline
+1 & 0.00 & 0.15 & -0.14 & 0.58 & 0.61 & 0.46 & 0.12 & 0.10 & 0.49 & 0.34 & 0.63 & 0.44 \\ 
+   \hline
+\end{tabular}}
+\end{table}
+
+
+\newpage
+
+# REFERENCIAS
+
+Anon, M., 1996.Report of the comprehensive fishery evaluation working group. ICES.C.M. 20(1),1-68.
+
+Akaike, H. 1973. Information theory as an extension of the maximum likelihood principle. In B. N. Petrov and F. Csaki eds. Second International Symposium on Information Theory 267-81. Budapest: Akademiai Kiado.
+
+Arancibia, H., H. Robotham, R. Alarcón, M. Barros, O. Santis, C. Sagua. 2017. Informe Final Proyecto FIP N 2015-45. Metodología para la estandarización de capturas totales anuales históricas. Casos de estudio: pesquerías merluza común y merluza del sur.
+Universidad de Concepción, 215 p. + Anexos.
+
+Beyer, J. 1991. On the length-weight relationship. Part II. Computing mean weights from length statistics. Fyshbite 9(2):50-54.
+
+Booth, A., 2004. Determination of cichlid-specific biological reference points. Fish. Res. 67(1), 307-316.
+
+Clark, W., 1991. Groundfish explotation rates based on life history parameters. Can.J.Fish.Aquat.Sci. 48(1),734-750.
+
+
+Brooks, E., Powers,J., 2007. Generalized compensation in stock-recruit functions: propertie and implications for management. Ices. J. Mar. Sci. 64 (1), 413-424.
+
+Dorn, M., M. Saunders., D.  Wilson., M. Guttormsen., K. Cooke., R. Kieser., E. Wilkins. 1999. Status of the Coastal Pacific hake/whiting stock In U.S. and Canada in 1998. Report NMFS, Seattle 101 p.
+
+Fournier, D.A., J.R Sibert., J. Majkowski., J. Hampton.1990. MULTIFAN a likelihood-based method for estimating growth parameters and age composition from multiple length frequency data sets illustrated using data for bluefin tuna (Thunnus maccoyii). Can. J. Fish. Aquat. Sci. 47, 301-317.
+
+Kimura, D.K. 1990. Approaches to age-structured separable sequential population analysis. Can. J. Fish. Aquat. Sci, 47(12):2364-2374.
+
+Helu S. L., D. B. Sampson, and Y. Yin. 2000. Application of statistical model selection criteria to the Stock Synthesis assessment program. Canadian Journal of Fisheries and Aquatic Sciences 57:1784-1793.
+
+Lillo, S., J. Giakoni., A. Paillaman., I. Payá., S. Mora., C. Cerda., J. Blanco., H. Arancibia. 1993.  Evaluación directa del stock de merluza común en la zona centro-sur. Informes Técnicos FIP. FIP-IT / 93-03, 131 p+anexos y figuras.
+Lillo, S., J. Cordova., M. Rojas., V. Ojeda., J. Olivares., R. Tascheri., R. Alarcón., L. Miranda., M. Braun., S. Nuñez., J. Ortiz. 1998. Evaluación hidroacústica del stock de merluza común explotado en la zona centro-sur. Informes Técnicos FIP. FIP-IT /97-12, 125 p+anexos. 
+
+Lillo, S., R. Vega., V. Ojeda., J. Olivares., R. Tascheri., M. Braun., V. Valenzuela., S.Nuñez., J. Ortiz. 2000. Evaluación acústica del recurso merluza común en la zona centro-sur. Informes Técnicos FIP. FIP-IT/ 99-04.132 p+anexos y figuras.
+
+Lillo, S., V. Ojeda., J. Olivares., R. Tascheri., M. Braun., S. Nuñez., J. Ortiz., P. Torres. 2001. Evaluación acústica de merluza común en la zona centro-sur, año 2000. IFOP. Informes Técnicos FIP. FIP-IT/2000-04.
+Lillo, S., J. Olivares., M. Braun., E. Diaz., S. Nuñez., A. Saavedra, J. Saavedra., R. Tasheri. 2004. Evaluación hidroacústica de merluza común, año 2004. Proy. FIP N 2004-09.
+
+Lillo, S., J. Olivares., M. Braun., S. Nuñez., A. Saavedra, J. Saavedra., E. Molina. 2005. Evaluación hidroacústica de merluza común, año 2005. Proy. FIP N 2005-05.
+
+Lillo, S., R. Bahamonde., J. Olivares., J. Saavedra, E. Molina., E. Diaz., E. Molina., M. Braun., S, Nuñez., E. Navarro., S.Vásquez., A. Sepúlveda., R. Alarcón., A. Saavedra. 2006. Evaluaciones hidroacústicas de merluza común. Proy. FIP N 2006-03.
+
+Meyers,R., Cadigan, N., 1993. Density-dependent juvenile mortality in marine demersal fish. Can.J.Fish.Aquat.Sci. 50(1),1576-1590.
+
+Punt, A.E. and Cope, J.M. 2019. Extending integrated stock assessment models to use non-depensatory three-parameter stock-recruitment relationships. Fisheries Research 217: 46–57. doi:10.1016/j.fishres.2017.07.007.
+
+Schwartz, G. 1978. Estimating the dimension of a model. Annals of Statistics 6:461-464.
+
+
+
+

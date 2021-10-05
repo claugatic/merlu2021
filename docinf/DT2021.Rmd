@@ -1,0 +1,261 @@
+---
+title: "Evaluación de stock de la merluza común (*Merluccius gayi*) entre 1992 y 2021"
+##documentclass: article
+#version imprimir a dos caras
+classoption: a4paper
+#####
+fontsize: 12pt # 10pt,11pt
+geometry: margin = 2.5cm
+
+output: 
+  pdf_document: 
+    keep_tex: no
+    number_sections: yes
+    fig_caption: yes
+    includes:
+      
+      #before_body: portada/latex_paginatitulo_modTFMUM.tex
+      #\SetWatermarkText{version inicial}
+header-includes:
+#-  \usepackage{draftwatermark}
+- \usepackage{placeins}
+- \usepackage[spanish,es-tabla]{babel}
+- \usepackage[utf8]{inputenc}
+- \renewcommand{\contentsname}{Indice documento}
+- \renewcommand{\listfigurename}{Indice de figuras}
+- \renewcommand{\listtablename}{Indice de tablas}
+
+---
+
+\newpage
+
+\tableofcontents
+\listoftables{lista}
+\listoffigures{lista}
+
+---
+
+\newpage
+
+# Evaluación de stock de merluza común 1992-2021
+
+##	Área de estudio
+
+El área de estudio comprende la principal área de operación de la flota arrastrera correspondiente a la zona centro sur de Chile entre el límite norte de la IV región y los 41°28'S. Donde a lo largo de la costa operan las flotas artesanal con redes de enmalle y espinel, mientras que la flota de arrastre desarrolla su operación de capturas con arrastre. 
+
+##  Datos utilizados 
+
+a. Desembarque corregido del período (1992-2015), provenientes de proyecto FIPA de corrección de captura para la pesquería de merluza común.
+
+b. Desembarque informado por Comité de Manejo (CM) disponible entre los años 1993-2015.
+
+c. Desembarque corregido total y por flotas desde Comité Científco Técnico (CCT) entre los años 2002 y 2019.
+
+b.	Informaciones desembarque industrial y artesanal del período 1992-2020, provenientes del Servicio Nacional de Pesca. 
+
+c.	Información de cruceros de evaluación acústica financiados por el Fondo de Investigación Pesquera (FIP y FIPA) entre 1993 y 2020. 
+
+d.	Información del Programa de Seguimiento de la pesquería y Sistema de Información de Merluza Común (SIMEC) del Instituto de Investigación Pesquera, VIII región (1997-2021). La información proviene del monitoreo industrial en la zona centro-sur de Chile, obteniendose datos de: i) estructura de tamaños, ii) matrices talla-edad, iii) composiciones por edad, iv) parámetros de crecimiento y  v) peso anuales por edad/talla y años.
+
+### Datos para modelamiento por flotas 
+
+El esquema considera un enfoque de modelación por flotas artesanal e industrial. Al disponer de los desembarques oficiales por flota y las correcciones por parte del CCT, es posible tener un estimado de las capturas no reportada por flotas. La captura no reportada y su desembarque, se encuentra asociada a fuentes de ilegalidad como: sub-reporte, robo y descarte. Por lo tanto, es posible segregar información oficial y corregida por flotas, siendo posible a la vez disponer de datos oficiales (reportados) y el complemento en ilegalidad o fracción de flota con desembarques fuera de norma. En este sentido, las series corregidas incluyen descarte en su corrección aunque este no es reportado a la forma de serie, ni su estructura asociada (tamaños).
+
+
+##	Dinámica poblacional
+
+El modelo de dinámica poblacional, corresponde a un enfoque de evaluación del tipo estadístico con estructura de edad, donde la dinámica progresa avanzando en el tiempo $t$, y las fuente de remoción son a causa de mortalidad por pesca $F$, la mortalidad natural es constante $M=0.33$. La relación entre la población y las capturas responde a la base de la ecuación de Baranov, y se consideran para el modelo y estimaciones el rango de edad entre 2 a 12+ (años).Sin embargo, las estimaciones del modelo tienen su origen en la edad cero sobre la base de una condición inicial estado estable.
+
+La dinámica esta modelada por un reclutamiento tipo Ricker, selectividad por bloques para los períodos 1992-2002 y 2003-2020 para los desembarque de flotas. Los tamaños de muestra son estimados  siguiendo el método de Francis, y se realiza una corrección por sesgo de la relación S-R. 
+
+Luego, dada la disponibilidad de datos de desembarque corregidos de las flotas artesanal e Industrial y la existencia de datos estimados del desembarque ilegal, se construye un modelo que da cuenta de ambas fuentes de remoción. La falta de información estructurada para las capturas no reportadas determinó que estas fueran modeladas como una fracción de las flotas industrial y artesanal, ajustadas al desembarque no reportado. Luego, con fines comparativos se configuro un modelo por flotas, donde un modelo utiliza las capturas oficiales (no corregidas), mientras que un segundo modelo emplea los desembarques corregidos por flotas. De tal forma, que los modelos por flotas y fracciones, permiten disponer de estimaciones de las mortalidades por pesca reportada y no reportada. Una sintesis y nomenclatura de los modelos implementados corresponde a:
+
+
+**m00** =  capturas oficiales  + 2 flotas y S logistica.
+
+**m01** =  capturas corregidas + 2 flotas y S logística.
+
+**m1**  =  2 flotas y 2 fracciones No declaradas y S logística.
+
+**m2**  =  2 flotas y 2 fracciones No declaradas y S logística con extra sd en (q).
+
+**m3**  =  2 flotas y 2 fracciones No declaradas y S logística exponencial para crucero.
+
+**m4**  =  2 flotas y 2 fracciones No declaradas y S doble logística y transición suavizada artesanal.
+
+**m5**  =  2 flotas y 2 fracciones No declaradas y S simple logística con edad inicial artesanal.
+
+
+
+
+## Condicionamiento del modelo(s)
+
+
+\begin{table}[ht]
+\centering
+\caption{Condicionamiento del modelo de evaluación y parámetros básicos; donde (*) implica parámetro activo} 
+\label{tablasetting}
+\begin{tabular}{rlrrrrr}
+  \hline
+ & Item  & modelo  \\ 
+   \hline
+ & periodo & 1992-2021 \\ 
+  & flotas & 2 \\
+   & crucero & 1 \\
+    & selectividad flotas & boques(1992-2002;2003-2021) (*)\\ 
+     & tipo S & logística \\ 
+    & selectividad crucero & 1 bloque (*)\\
+    & crecimiento & Von Bertalanfi (k=0.15;Loo=65) \\
+    & peso  & $W=aL^b;\,\,(prior) a=1.8e-05;b=2.79$ (*) \\
+    & relación S-R  & $Ricker$ \\
+    & $ln(R_0)$  & 13 (*) \\
+    & $\sigma_{R}$  & 0.8 (*)\\
+    & stepness ($h$)  & 0.75 (*) \\
+    & condición inicial  & $R_0;N_{i,j}:1-12$ (*) \\  
+    & bycath  & $NA$ \\ 
+    & M  & $0.33$ \\ 
+    & $L_{50\%}$  & $35$ \\ 
+    \hline
+\end{tabular}
+\end{table}
+
+### Selectividad
+
+Se utiliza un esquema de modelación por bloques entre 1992-2002, 2003-2020. Las funciones de selectividad exploradas son: i) logistica, empirica de caminata aleatoria, doble logistica de transicion suavizada y doble normal usando joiners. Finalmente, se adopta una función logística para las flotas artesanal e industrial en sus componentes reportados y no reportados.
+
+### Crecimiento
+
+La longitud máxima en edades tempranas y finales 2-12 son 25 y 75 cm con valor de k entre 0.1 y 0.2 con CV de 0.2. La madurez al 50% es estimada entre 33 a 40 cm. En la (Tabla \ref{tablasetting}) se presenta la configuración del modelo (s) implementados, especificando que parámetros son activos o fijos. Así como, características de los periodos de selectividad por bloques y funciones asociadas.
+
+\newpage
+
+## Tamaños de muestra
+
+El tamaño de muestra inicial es re-estimado utilizando la aproximación de (Francis, 2011). En este se utiliza el método para estado 2 para ponderación de datos de composición desde un modelo de Stock Synthesis. El resultado es un multiplicador, $w$ (con intervalo al 95% desde bootstrap), donde $N_2y=w*N_1y$ con $N_1y$ y $N_2y$ siendo las etapas 1 y 2 de la muestra multinomial en el año $y$. Los tamaños de muestra iniciales correspondieron a Nf=80 para la pesquería industrial y artesanal, y un Ns=50 para la composición del crucero acústico.
+
+
+
+\begin{table}[ht]
+\centering
+\caption{Tamaños de muestra por flota para la composición por edad Y factores de ajuste} 
+\label{tablasetting}
+\scalebox{0.5}{
+\begin{tabular}{rrrrrrrrrrl}
+  \hline
+  & N & Npos & minN & mean.N.Adj. & HarMean.effN. & Curr\_Var\_Adj & HarMean.effN.mean.N.Adj. & Recommend\_Var\_Adj & flota \\ 
+  \hline
+  &  29 &  29 &  20 & 20.00 & 46.13 & 0.44 & 2.31 & 1.01 & Industrial\_declarado \\ 
+    &  15 &  15 &  20 & 20.00 & 28.70 & 0.29 & 1.43 & 0.42 & Artesanal\_declarado \\ 
+    &  20 &  20 &  30 & 32.75 & 2.43 & 1.00 & 0.07 & 0.07 & Crucero \\ 
+   \hline
+\end{tabular}}
+\end{table}
+
+### Correción por sesgo
+
+El reclutamiento en SS es definido como una desviación de tipo log-normal de una curva-stock recluta ajustada con sesgo-log. La magnitud del sesgo-log es calculada desde el nivel de $\sigma_R$, el cual corresponde a la desviación estandar de las desviaciones del reclutamiento (en espacio logaritmico). Existen 5 segmentos en la serie de tiempo a considerar el efecto de sesgo-logaritmico: virginal, equilibrio inicial, periodo temprano de datos escasos (pobres), periodo abundante en datos, proyección reciente. La alternativa de puntos de quiebre entre estos segmentos no requiere corresponder directamente al condicionamiento de ajuste por sesgo, no obstante algunos alineamientos son deseables. Methot et al. 2011 provee mayores detalles del ajuste por sesgo.
+
+#	RESULTADOs
+
+XX
+
+# REFERENCIAS
+
+Arancibia, H., H. Robotham, R. Alarcón, M. Barros, O. Santis, C. Sagua. 2017. Informe Final Proyecto FIP N 2015-45. Metodología para la estandarización de capturas totales anuales históricas. Casos de estudio: pesquerías merluza común y merluza del sur.
+Universidad de Concepción, 215 p. + Anexos.
+
+
+Francis, R.I.C.C. (2011). Data weighting in statistical fisheries stock assessment models. Can. J.
+Fish. Aquat. Sci. 68: 1124-1138.
+
+Fournier, D.A., J.R Sibert., J. Majkowski., J. Hampton.1990. MULTIFAN a likelihood-based method for estimating growth parameters and age composition from multiple length frequency data sets illustrated using data for bluefin tuna (Thunnus maccoyii). Can. J. Fish. Aquat. Sci. 47, 301-317.
+
+Kimura, D.K. 1990. Approaches to age-structured separable sequential population analysis. Can. J. Fish. Aquat. Sci, 47(12):2364-2374.
+
+Helu S. L., D. B. Sampson, and Y. Yin. 2000. Application of statistical model selection criteria to the Stock Synthesis assessment program. Canadian Journal of Fisheries and Aquatic Sciences 57:1784-1793.
+
+
+McAllister, M.K. and Ianelli, J.N. 1997. Bayesian stock assessment using catch-age data and the
+sampling - importance resampling algorithm. Canadian Journal of Fisheries and Aquatic Sciences
+54: 284–300.
+
+Methot, R.D., Taylor, I.G., and Chen, Y. 2011. Adjusting for bias due to variability of estimated
+recruitments in fishery assessment models. Canadian Journal of Fisheries and Aquatic Sciences
+68(10): 1744–1760. doi:10.1139/f2011-092.
+
+Meyers,R., Cadigan, N., 1993. Density-dependent juvenile mortality in marine demersal fish. Can.J.Fish.Aquat.Sci. 50(1),1576-1590.
+
+Punt, A.E. and Cope, J.M. 2019. Extending integrated stock assessment models to use non-depensatory three-parameter stock-recruitment relationships. Fisheries Research 217: 46–57. doi:10.1016/j.fishres.2017.07.007.
+
+Schwartz, G. 1978. Estimating the dimension of a model. Annals of Statistics 6:461-464.
+
+Thorson, J.T., Johnson, K.F.,Methot, R.D., and Taylor, I.G. 2017. Model-based estimates of effective
+sample size in stock assessment models using the Dirichlet-multinomial distribution. Fisheries
+Research 192: 84–93. doi:10.1016/j.fishres.2016.06.005
+
+\newpage
+
+# Figuras
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M21/ES/m1sd/plots/catch1 landings.png}
+\caption{Información de desembarque declarado y no declarado entre 1992-2021}
+\label{}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M21/ES/m1sd/plots/data_plot.png}
+\caption{Datos utilizados en implementación de modelo para año 2021}
+\label{cm}
+\end{figure}
+
+\newpage
+
+# Tablas
+
+\begin{table}[ht]
+\centering
+\caption{Capturas industriales y artesanales, oficiales y no declaradas.} 
+\label{t1}
+\scalebox{0.6}{
+\begin{tabular}{rrrrrrrr}
+  \hline
+ & year & Ind\_decla & art\_decla & Ind\_ndecla & art\_ndecla & Total\_ind & Total\_art \\ 
+  \hline
+1 & 1992 & 54324 & 8320 & 3784 & 24000 & 58108 & 32320 \\ 
+  2 & 1993 & 51654 & 12608 & 16745 & 25436 & 68399 & 38044 \\ 
+  3 & 1994 & 54620 & 13487 & 17242 & 26484 & 71862 & 39971 \\ 
+  4 & 1995 & 58832 & 16571 & 17593 & 25937 & 76425 & 42508 \\ 
+  5 & 1996 & 64721 & 27403 & 10136 & 14233 & 74857 & 41636 \\ 
+  6 & 1997 & 69035 & 18585 & 9011 & 24825 & 78046 & 43410 \\ 
+  7 & 1998 & 68532 & 11619 & 17746 & 36370 & 86278 & 47989 \\ 
+  8 & 1999 & 76042 & 27747 & 12051 & 21252 & 88093 & 48999 \\ 
+  9 & 2000 & 82397 & 27746 & 12448 & 25008 & 94845 & 52754 \\ 
+  10 & 2001 & 88979 & 32221 & 3565 & 19253 & 92544 & 51474 \\ 
+  11 & 2002 & 89222 & 26818 & 19533 & 33673 & 108755 & 60491 \\ 
+  12 & 2003 & 89592 & 25751 & 18544 & 28908 & 108136 & 54659 \\ 
+  13 & 2004 & 57345 & 16253 & 23098 & 4603 & 80443 & 20856 \\ 
+  14 & 2005 & 47436 & 4580 & 6054 & 2821 & 53490 & 7401 \\ 
+  15 & 2006 & 47958 & 4273 & 4726 & 2507 & 52684 & 6780 \\ 
+  16 & 2007 & 39681 & 6167 & 5463 & 5748 & 45144 & 11915 \\ 
+  17 & 2008 & 35144 & 12812 & 6712 & 6062 & 41856 & 18874 \\ 
+  18 & 2009 & 33524 & 13620 & 2673 & 16618 & 36197 & 30238 \\ 
+  19 & 2010 & 33801 & 15396 & 5274 & 6478 & 39075 & 21874 \\ 
+  20 & 2011 & 28747 & 16858 & 3070 & 9109 & 31817 & 25967 \\ 
+  21 & 2012 & 25360 & 14269 & 5435 & 8977 & 30795 & 23246 \\ 
+  22 & 2013 & 23618 & 13309 & 5488 & 10672 & 29106 & 23981 \\ 
+  23 & 2014 & 10889 & 7684 & 2392 & 10579 & 13281 & 18263 \\ 
+  24 & 2015 & 11638 & 7771 & 1084 & 16543 & 12722 & 24314 \\ 
+  25 & 2016 & 13453 & 7456 & 1687 & 14347 & 15140 & 21803 \\ 
+  26 & 2017 & 13654 & 7778 & 1512 & 18278 & 15166 & 26056 \\ 
+  27 & 2018 & 13833 & 8290 & 1341 & 23133 & 15174 & 31423 \\ 
+  28 & 2019 & 17648 & 8333 & 746 & 22143 & 18394 & 30476 \\ 
+  29 & 2020 & 13831 & 5021 & 585 & 13341 & 14416 & 18362 \\ 
+   \hline
+\end{tabular}}
+\end{table}
+
+
+

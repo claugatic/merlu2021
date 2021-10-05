@@ -1,0 +1,70 @@
+---
+documentclass: article
+#version imprimir a dos caras
+classoption: a4paper
+#####
+fontsize: 12pt # 10pt,11pt
+geometry: margin = 2.5cm
+
+output: 
+  pdf_document: 
+    keep_tex: no
+    number_sections: yes
+    fig_caption: yes
+    includes:
+      
+      before_body: portada/latex_paginatitulo_modTFMUM.tex
+
+
+      
+header-includes:
+- \usepackage{placeins}
+- \usepackage[spanish,es-tabla]{babel}
+- \usepackage[utf8]{inputenc}
+- \renewcommand{\contentsname}{Indice documento}
+- \renewcommand{\listfigurename}{Indice de figuras}
+- \renewcommand{\listtablename}{Indice de tablas}
+
+---
+
+
+
+
+\vspace{3cm}
+\begin{center}
+ANÁLISIS DE LA SITUACIÓN DEL STOCK DE MERLUZA COMÚN  
+ENTRE 1992 Y 2021
+\end{center}
+
+---
+
+\vspace{2cm}
+
+\begin{center}
+\includegraphics[width=3cm,height=3cm]{logo}\\
+\end{center}
+
+\vspace{2cm}
+
+\begin{center}
+
+Septiembre 2021
+
+
+\vspace{4cm}
+
+\end{center}
+
+*Este documento contiene los resultados de los trabajos de InvestigaciÓn desarrollados por los investigadores del Instituto o cientÍficos auspiciados por el mismo*
+
+
+
+Los Documentos Técnicos no constituyen necesariamente una publicación final de los resultados presentados.
+
+Este trabajo debe ser citado como:
+
+
+**Gatica, C.,A. Zúñiga.,M. Neira. 2021**. Análisis de situación del stock de merluza común entre 1992 y 2021. Doc. Téc. Inst. Invest. Pesq. (IIP), Talcahuano, 30(2):Informe Avance, 36 p.
+
+
+---

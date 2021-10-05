@@ -1,0 +1,682 @@
+---
+classoption: a4paper
+fontsize: 12pt
+geometry: margin = 2.5cm
+header-includes:
+- \usepackage{placeins}
+- \usepackage[spanish,es-tabla]{babel}
+- \usepackage[utf8]{inputenc}
+- \renewcommand{\contentsname}{Indice documento}
+- \renewcommand{\listfigurename}{Indice de figuras}
+- \renewcommand{\listtablename}{Indice de tablas}
+output:
+  word_document: default
+  pdf_document:
+    fig_caption: yes
+    includes: null
+    keep_tex: no
+    number_sections: yes
+---
+
+\newpage
+
+# Resumen Ejecutivo
+
+Se presenta la evaluación para el stock de la merluza común (*Merluccius gayi gayi*) entre 1992 a 2020 en la zona centro sur de Chile.Es aplicado un modelo estadístico con estructura de edades, ajustado a composiciones por edad de la pesquería industrial, cruceros de evaluación acústica, desembarques y estimaciones de biomasa acústica. El modelo de evaluación asume una sola unidad poblacional y la estructura es representada por la captura realizada por la flota industrial arrastrera. El modelo incluye un efecto por depredación por jibia (*Dosidicus gigas*), asumiendo una relación entre la cpue de jibia y la mortalidad que ejerce sobre la población de merluza. Se dispone de 4 series de desembarques disponibles una oficial de estadísticas del Servicio Nacional de Pesca, una correguida en un proyecto FIPA de investigación, otra proporcionada por el Comité de Manejo de la Pesquería y la más reciente elaborada por un trabajo desarrollado al interior del Comité Científico, que es la utilizada para establecer el estatus del stock en este estudio en combinación con la serie del Comité de Manejo.
+
+Los resultados de la evaluación de stock señalan:
+
+a)	Biomasa desovante en torno a 137 mil toneladas 
+b)	Reclutamiento estimado entre  273 millones
+c)	Mortalidad por jibia ($M_{jib}$=1.04 año$^{-1}$).
+d)	El recurso se califica en condición de *sobre-explotado y riesgo de agotamiento* (desembarques proyecto corrección). 
+e)	La mortalidad por pesca (*F*) se estima en niveles 0.4 año$^{-1}$ para el 2020.
+
+\newpage
+
+# EVALUACIÓN DE STOCK 
+
+##	Área de estudio
+
+El área de estudio comprende la principal área de operación de las flotas arrastrera correspondiente a la zona centro sur de Chile entre el límite norte de la IV región y los 41°28'S (DS 354 de 1993, MINECOM), y donde en la zona costera opera principalmente la flota artesanal que opera con artes de pesca de espinel, palangre y enmalle. 
+
+## Información 
+
+a.	Informaciones correspondientes al desembarque corregido del período (1992-2015), provenientes de proyecto FIPA de corrección de captura para la pesquería de merluza común (Arancibia et al. 2017).
+
+b.	Informaciones correspondientes al desembarque corregido del período (1993-2015), provenientes del Comite de Manejo de la pesquería. 
+
+c.	Informaciones correspondientes al desembarque industrial y artesanal del período (1992-2020) provenientes del Servicio Nacional de Pesca (SERNAPESCA).
+
+d.	Informaciones correspondientes al desembarque corregido del período (2002-2019), generado por el Comité Científico Técnico de la pesquería.
+
+e.	Información de proyectos financiados por el Fondo de Investigación Pesquera (FIP y FIPA), correspondiente a cruceros de evaluación acústica, y específicamente a estimados de biomasa y composiciones por edad. 
+
+f.	Información del Programa de Seguimiento de la pesquería y Sistema de Información de Merluza Común (SIMEC) del Instituto de Investigación Pesquera, VIII región (1997-2020 (hasta agosto)). La información corresponde a aquella generada por el monitoreo de la actividad industrial sobre la merluza común, en la zona centro-sur de Chile a partir de la cual se conoce la composición por tamaños y edades, y se generan datos biológicos relacionados con el proceso de crecimiento en longitud y peso.
+
+En relación con los desembarques,la existencia de diferentes series (Tabla \ref{tablaY}) que responden a diferentes grupos y enfoques metodológicos, además de cubrir períodos anuales específicos, implicó la necesidad de adoptar un criterio experto y basado en los resultados del Comité Científico, siendo esta la principal serie utilizada en conjunto con las serie del Comité de Manejo, resultando en una serie para la evaluación que para el 2020, implicó una aproximación basada en la razón entre serie de CCT y la oficial para proyectar la serie. Luego, con el objeto de la presente evaluación se determino utilizar la serie 1992-2001 proporcionada por el CM y la serie generada por el CCT desde el 2002 al 2020.
+
+##	Dinámica poblacional
+
+El modelo de dinámica poblacional implementado, corresponde a un enfoque de evaluación del tipo estadístico con estructura de edad, donde no se considera separación por sexos o flotas.
+
+###	 Reclutamiento (Abundancia inicial)
+La abundancia inicial para cada uno de las cohortes modeladas, se estima por:
+$$
+N_{i,2}=Re^{\epsilon}, {\epsilon}\sim N=(0,\sigma^2) 
+$$
+Con $N_{i,2}$ la abundancia del año *i* a la edad 2 y $R$ el reclutamiento medio. De forma similar, las abundancias iniciales para el primer año entre edades 3-12+, son estimadas por:
+$$
+N_{i,j}=R_{ini}\times {\epsilon},{\epsilon}\sim N=(0,\sigma^2) 
+$$
+Adicionalmente, los reclutamientos son condicionados a seguir una relación SR tipo ricker con CV=0.5.
+
+$$
+R=\alpha*S*exp(-\beta*S)
+$$
+
+
+### Abundancia
+
+La abundancia $N_{i,j}$corresponde a una expresión de decaimiento exponencial de la forma:
+$$
+{N_{i+1,a+1}={N_{i,a}}exp^{-(Z_{i,a})}} 
+$$
+Con *n*  representa el número total de años, *m*  el número total de edades (12), $Z$  es la tasa de mortalidad total,  $F$ es la tasa de mortalidad por pesca, y $M$ es la tasa de mortalidad natural.
+$$
+{N_{i+1,m}={N_{i,m-1}}exp^{-(Z_{i,a})} + {N_{i,m}}exp^{-(Z_{i,m})}}
+$$
+La tasa de mortalidad natural $M$ es asumida constante desde los grupos de edad 2 a 12+ (principales grupos de edad presentes en la pesquería)  y entre años. La mortalidad por pesca utiliza un modelo multiplicativo compuesto por un componente edad específico $S_{a}$  y otro año específico $F_{i}$. El modelo agregado utiliza un valor de mortalidad natural ($M=0.33año^{-1}$).
+$$
+{F_{i,a}={F_{i}S_{a}}}
+$$
+
+### Mortalidad de jibia
+
+La jibia ha sido una fuente de mortalidad en el período analizado, para la cual existe un índice de abundancia relativa proveniente de la operación de la flota de arrastre industrial monitoreada por el programa de observación del Instituto de Investigación Pesquera, este índice de jibia $J_{i,a}$, es incorporado a la mortalidad total $Z_{i,j}$ como:
+$$
+{{J_{i,a}={qI_{i}}}}
+$$
+Donde $q$ coeficiente de proporcionalidad de la jibia. Por lo tanto, la mortalidad total se expresa:
+$$
+{Z_{i,a}={F_{i,a}+J_{i,a}+{M}}}
+$$
+De esta forma, el estimado de consumo de merluza a causa de jibia corresponde a la expresión:
+$$
+Cj_{i,a}=(\frac{J_{i,a}}{Z_{i,a}})N_{i,a}^{-Z_{i,a}}w_{i,a}
+$$
+
+### Patrón de explotación
+
+Considera una función logística:
+$$
+V_i=\frac{1} {1+exp^{{-ln(19)} {(\frac{a-\alpha50}{\alpha95-\alpha 50 })}}}
+$$
+Biomasa Total
+$$
+BT_{i,a}=w_{i,a}N_{i,a}
+$$
+
+Biomasa adulta
+$$
+BA_{i,a}=w_{i,a}\mu_{i,a}N_{i,a}
+$$
+Donde $w_{i,j}$  corresponde a peso y  a la madurez $\mu_{i,a}$ correspondiente al año i  y edad j.
+
+Biomasa desovante
+$$
+BD_{i,a}=w_{i,a}\mu_{i,a}N_{i,a}\exp^{(-(Ts)Z_{i,a})}
+$$
+Donde $w_{i,j}$  corresponde a peso y  a la madurez $\mu_{i,a}$ y $Ts$ la fracción del año correspondiente al período de desove equivalente a $7.5/12$correspondiente al año i  y edad j.
+
+Abundancia hidro-acústica
+
+$$
+Ns_{i,a}=q_{s}S_{a}N_{i,a}\exp^{(-(Ts)Z_{i,a})}
+$$
+Mientras que la biomasa hidro-acústica equivale a:
+$$
+Bs_{i,a}=Ns_{i,a}w_{i,a}
+$$
+
+Con $q_{s}$ coeficiente capturabilidad crucero, $S_a$ la selectividad, y $Ts$ la fecha de realización que coincide con el período de desove.
+
+Captura y composición por edades
+
+La captura en número por edad $C_{i,j}$ es modelada según la ecuación de Baranov:
+
+$$
+C_{i,a}=\frac{F_{i,a}}{Z_{i,a}}(1-e^{-Z_{i,a}})N_{i,a}
+$$
+La composición por edades viene dada por:
+$$
+p_{i,a}=\frac{C_{i,a}}{C_i}
+$$
+Con:
+$$
+C_i=\sum_{a=2}^{A}C_{i,a}
+$$
+
+
+### Funciones de log-verosimilitud
+
+**Composición por edad pesquerías**
+Para ambos modelos la distribución del error en las composiciones por edad adopta una función de densidad de probabilidad de tipo multi-nomial (Kimura, 1990; Fournier et al. 1990).
+$$
+LL1=
+\sum_{i=1}^{I}
+\tau^f_i\sum_{a=1}^{A}
+p_{i,a}\ln{\widehat{p}_{i,a}}
+$$
+Donde $i$ es el índice relacionado con el año, y $a$ el correspondiente a la edad, $\tau$ representa el tamaño muestral del componente.
+
+**Composición por edad cruceros**
+$$
+LL2=
+\sum_{i=1}^{I}
+\tau^s_i\sum_{a=1}^{A}
+s_{i,a}\ln{\widehat{s}_{i,a}}
+$$
+**Indice crucero**
+$$
+LL3=
+\frac{1}{2\sigma^2}
+\sum_{i=1}^{n}\ln\displaystyle{\left( {B_{i}\over \widehat{B}_{i}} \right)} %(\frac{n}{2})
+$$
+**Desembarque**
+$$
+LL4=
+\frac{1}{2\sigma^2}
+\sum_{i=1}^{n}\ln\displaystyle{\left( {Y_{i}\over \widehat{Y_{i}}} \right)}
+$$
+
+## Punto biologico de referencia
+
+Los Puntos Biológicos de Referencia (PBR) son usualmente aplicados a decisiones de manejo (Booth,2004) y comunmente utilizados para establecer el estatus del stock. Una aplicación es la estimación de niveles de mortalidad por pesca $F$ que pueden maximizar el rendimiento en el largo plazo. Sin embargo, alcanzar estimaciones realistas de $F_{msy}$ es complejo producto de limitada información de contraste de la relación  stock-recluta (Clark, 1991). Estas estimaciones pueden tambien ser confundidas debido a procesos de compensación (Meyers & Cadigan,1993, Brooks & Powers,2007). Bajo este escenario el problema es establecer el valor de $F$ que proporcina alto rendimiento y bajo riesgo (Clark, 1991), mientras la alternativa es un manejo del stock basado en biomasas de referencia precautorias. 
+El estatus es evaluado por la razon entre la biomasa desovante ($B_i$) y la biomasa desovante personal ($B_{0}$) para el eje x y $F/F_{msy}$. En este análisis son aplicados dos modelos de pool dinámico
+, rendimiento por recluta ($YPR$) y biomasa desovante por recluta ($SPR$). El análisis de $YPR$ es utilizado para estimar la producción por recluta como función de la mortalidad por pesca  ($F$), la abundancia ($N$) y el peso a la edad $a$ ($w_{a}$).
+
+$$
+N=\begin{cases}
+R & \,\,\,1\\
+%\\
+N_{a-1}\exp^{(-M+F)} & \,\,\,0<a<A\\
+%\\
+N_{a-1}\exp^{(-M+F)} /{1-\exp^{(-M+F)}} & \,\,\, a=A\\
+\end{cases}
+$$
+Donde  $R$ es el reclutamiento, $A$ corresponde a la edad y $S_a$ la selectividad.
+$$
+YPR_{F}=\sum_{a=0}^{max}\begin{cases}
+w_{a}N\frac{S_{a}F}{S_{a}F+M_{a}}\left(1-e^{-S_{a}F-M_{a}}\right)\end{cases}
+$$
+
+$$
+SPR_{F}=\sum_{a=0}^{max}{w_{a}N_{a}\mu_{a}\exp^{(-M+F)T_s}}
+$$
+En esta expresión la madurez es $\mu_{a}$ y $T_s$ es el período del desove como fracción (7.5/12).
+
+### Stock recluta
+
+Las características de canibalismo en merluza común, sugiren una relación funcional tipo Ricker para la relación stock recluta de la forma: 
+$$
+R=\alpha S^{-\beta S}
+$$
+Donde $\alpha$, $\beta$, son parámetros  y $R$ corresponde al reclutamiento a un nivel específico de biomasa $S$. La función re-parametrizada es:
+$$
+\alpha= {(R_0/S_0)}e^{(\ln(5h)/0.8)}
+$$
+$$
+\beta= {\ln(5h)}/(0.8S_0)
+$$
+Donde $h$ ("escarpamiento") es asumido como una prior del tipo $h\sim N (\mu,\sigma^{2})$. Luego, bajo una condición de equilibrio la biomasa del stock ($S_{e}$) puede ser representada por {Anon_1996}:
+$$
+S_{e}=\frac{\ln{(\alpha(SPR)})}{\beta}.
+$$
+Substituyendo ($S/R$) a partir del método de biomasa desovante por recluta se estiman los valores de ($S_{e}$) en función de $F$  y es estima reclutamiento en condición de equilibrio ($R_{e}$):
+$$
+R_{e}=\alpha S_{e}^{-\beta S}
+$$
+y $YPR_{e}$ (Clark,1991). La biomasa no explotada ($S_0$) es estimada a partir de un análisis por recluta $R=1$ como:
+%\begin{equation} 
+$$
+N_{0,j}=\begin{cases}
+R & \,\,\,\\
+%\\
+N_{0,j}\exp^{(-M)} & \,\,\,\\
+\end{cases}
+$$
+Considerando las notables diferencias en los datos de entrada relacionados con los desembarques los PBR fueron estimados de forma independiente y actualizados para los diagramas de fase. Esto es, para cada salida de configuración de los datos (ponderación CV y tamaños de muestra), posteriorment se revisan los valores obtenidos, indagando en la variabilidad entre casos, y conocimiento de la historia de vida de tipo media de la merluza común. Finalmente, se establecer un valor de compromiso en relación al rango de valores obtenidos desde las series del desembarque corregido o desde el Comité de Manejo.
+
+### Configuracion del modelo 
+
+La configuración del modelo implica la asignación de determinados CV asociados a las piezas de información. Las asignaciones son basadas en criterios del analista sobre el peso que se le asigna a la pieza de información, y evaluadas en relación al desempeño del modelo (ajuste). Se implementó, un total de 8 casos (Tabla \ref{Tablaseteo}), cuyo condicionamiento se determina por los tamaños de muestras de las funciones multi-nomial y coeficientes de variación en desembarques, cruceros. 
+
+\begin{table}[ht]
+\centering
+\caption{Tamaños de muestra, coeficiente de variación y serie de captura} 
+\label{Tablaseteo}
+\scalebox{0.8}{
+\begin{tabular}{rrrrrrr}
+  \hline
+ & Caso & Npesq & Ncru & CVpesq & CVcru &  \\ 
+  \hline
+  1 &   1 &  15 &  20 & 0.1-0.15(2) & 0.15 &  \\ 
+  2 &   2 &  20 &  40 & 0.1-0.15(2) & 0.15 &   \\ 
+  3 &   3 &  20 &  40 & 0.2 & 0.2 & \\
+
+
+   \hline
+\end{tabular}}
+\end{table}
+
+### Desempeño del modelo
+
+La selección de modelos de evaluación de stock integrados, es realiza por criterios de desempeño y de la calidad de ajuste expresada en los componentes de verosimilitud. Helu et al. (2000) evaluaron el desempeño del criterio de información de akaike (AIC; Akaike 1973) y Schwartz's con el criterio de información bayesiano (BIC; Schwartz, 1978) encontrando que el AIC y BIC, tienen un buen desempeño en la selección de modelos candidatos que tienen el mismo modelo de generación de datos en la mayoría de escenarios.
+
+### Calificación de estatus
+
+La calificación de estatus se basa en Puntos Biológicos de Referencias (Booth, 2004). Un enfoque corresponde a estimar el nivel de mortalidad por pesca ($F$) que permite maximizar el rendimiento. Sin embargo, lograr una estimación confiable de Fmrs, es difícil producto de la limitada información funcional de la relación S-R. La estimación es tambien confundida con procesos de compensación (Brooks y Powers, 2007). En el caso del recurso merluza común, el estatus se califica según la razón entre la biomasa desovante (SSBi) y la biomasa en nivel de máximo rendimiento sostenido (Bmrs) o para el eje X, y la razón entre $F_i$ y $F_{mrs}$(Tabla\ref{Tablaestados}). De esta forma, los indicadores de calificación de estatus quedan dadas por:
+
+\begin{table}[ht]
+\centering
+\caption{Calificación para diagrama de fase} 
+\label{Tablaestados}
+\scalebox{0.8}{
+\begin{tabular}{rrrrrrr}
+  \hline
+ & INDICANDOR & Condición \\ 
+  \hline
+  & F/Fmrs >=1 &   Sobrepesca &   \\ 
+  & Bd/Bmrs    <=  0.25 &   Agotado o colapsado &   \\ 
+  & 0.25<Bd/Bmrs<=0.5 &   Sobre-explotado y riesgo agotamiento &   \\ 
+  & 0.5<Bd/Bmrs<=0.95 &   Sobre-explotado &   \\
+  & 0.95<Bd/Bmrs<=1.05 &   Plena explotación &   \\
+  & Bd/Bmrs>1.05 &   Sub-explotado &   \\
+ 
+   \hline
+\end{tabular}}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=5in]{2020.pdf}
+\caption{Diagrama de fase en pesquería de merluza común}
+\label{desembarque}
+\end{figure}
+
+
+Dada esta calificación, la confección de un diagrama de fase entre $B_i/B_{mrs}$ y $F/F_{mrs}$ para la serie analizada, permite calificar el estatus de la población. La incorporación de un procedimiento Montecarlo (MCMC), permite estimar la probabilidad relacionada con la calificación del estatus para el año de interés que en este caso corresponde al último año en la serie.
+ 
+**Implementación**
+El modelo estadístico de evaluación de stock es codificado en AD Model Builder de la Otter Research Ltd (otter@island.net). AD Model Builder utiliza derivadas exactas respecto de los parámetros del modelo. Además, es muy útil para modelos con una gran cantidad de parámetros, provee estimaciones rápidas y precisas de la matriz Hessiana, lo que permite contar con la matriz de covarianza y correlación. El modelo y algoritmo para la estimación de los Puntos Biológicos de Referencia es codificado en R (R Project for Statistical Computing, https://www.r-project.org/).
+<!-- (Figure\ref{fig1}.). -->
+
+
+#	RESULTADOS
+##	Estructura de tamaños
+
+La estructura de tamaños genera diferentes indicadores por sexo que se resumen en la (Tabla \ref{Tablaind}). En los inicios de la serie 1997-2003 la longitud promedio de los ejemplares fluctua por sobre los 42 cm en machos y 45 cm en hembras, cambiando a menores tamaños a partir de año 2004,tendencia que se mantiene hasta el año 2016 donde gradualmente hay un mejoramiento del indicador. En particular, En el año 1997, la longitud media de machos fue 42 cm y de hembras 44.5 cm, en el 2020 la longitud media es 38.6 cm (machos) y 42.7cm (hembras). Es posible apreciar que entre los años 2004 y 2013, se observan la mayor disminución en el tamaño de los ejemplares, condición que comienza a mostrar un cambio de tendencia desde el año 2014. Luego, se mantiene una baja amplitud de tamaños mínimos y máximos, y un alto porcentaje de ejemplares inmaduros en las capturas.La proporción de juveniles es otro indicador que ha presentado importantes fluctuaciones con bajos porcentajes al comienzo de la serie, que se incrementan de forma considerable a partir del año 2004.
+
+## Desembarque
+
+Para la pesquería de merluza común se dispone de diferentes series de desembarque (Tabla \ref{tablaY}) (Figura \ref{desembarque}). Esta disponibilidad implica adoptar un criterio para adoptar la serie a ser utilizada en la evaluación de stock. Para el 2020, el trabajo de un grupo de investigadores permitió disponer de una serie de desembarque corregido la cual sirvio de base para el modelo, en conjunto con la serie del comité de manejo en los años previos no disponibles por el CCT. Destaca en las series las notables diferencias entre ellas, siendo la serie del Proyectp FIPA la que presente mayores valores con respecto a las series oficiales, CCM y CCT.
+
+### Biomasa acústica
+
+La serie de biomasas acústicas se encuentra disponible desde 1993 (199 mil t), al inicio muestra una tendencia positiva con incrementos de los valores estimados entre 891 - 917 mil t entre los años 1999-2001. La estimación del año 2002, no es utilizada por encontrarse sobre-estimada. El año 2003 no se realizó crucero acústico y desde el 2004 al presente el valor medio fue de 280 mil t. Entre los años 2004 al 2013, la biomasa acústica ha fluctuado alrededor de 275 mil t. Sin embargo, para el 2013 la acustica muestra una baja en relación al valor promedio cercana al 16%. En el año 2015 el estimado acústico es de 211884 t, mientras que el 2016 muestra un incremento a 242920 t (Figura \ref{bcrucero}). Desde el año 2017 el estimado de biomasa se incremente a niveles de 350 mil toneladas. Para el año 2020, se asume tanto la biomasa como composición por edad del crucer 2019 a la espera de disponibilidad del dato para fines de análisis y actualización modelo.
+
+###	Madurez 
+El patrón de madurez utiliza información de madurez macroscópica por longitud, a partir del cual y empleando parámetros:  $L_\infty$= 60.13,  $K$= 0.239,  $t_0$= -0.15, se obtiene una estimación de la edad, para el cual se realiza el proceso de ajuste de una curva de madurez logística. Los patrones de madurez estimados entre 1992-1999, muestran baja variabilidad inter-anual, patrón que se modifica desde el año 2000 al 2005 cuando se presenta una alta variabilidad inter-anual en el patrón de selectividad, especialmente asociado a edades juveniles (2-3 años). A partir del 2006, el patrón estimado se modifica y se asemeja más a lo observado en los primeros años de la serie, pero aún con una mayor proporción de madurez a edades juveniles. Entre los años 2007 y 2011, el patrón de madurez estimado indica que entre los 2-4 años se produce la transición a madurez del 100% de ejemplares sobre la edad de 5 años. Luego, para el 2012-2016 este patrón se modifica parcialmente extendiéndose el proceso de madurez hasta los 6-7 años (Figura \ref{mat}). El patrón de madurez estimado desde el año 2017, muestra un desplazamiento hacia ejemplares de mayores edades por sobre los 3 años.
+
+###	Desempeño de los modelos
+
+La selección de modelos de evaluación fue realiza por criterios de desempeño y la calidad del ajuste de los componentes de verosimilitud, criterio de información de akaike (AIC) y (BIC; Schwartz, 1978). Las tablas (\ref{like1},\ref{like2},\ref{like3}), presentan los resultados en términos de desempeño, resultando el caso 1 superior en términos estadísticos. Sin embargo, tanto la verosimilitud total, akaike y BIC muestran un grado de equivalencia, ya que las diferencias son menores entre los diferentes modelos. Además, los supuestos para completar la serie el 2020 en especial la información del crucero acústico, implican la necesidad de re-evaluar la información con la información completa y actualizada.
+
+### Ajuste desembarques y biomasa acústica
+
+La serie de ajuste del desembarque entre casos se presenta en (Figura  \ref{fity1},\ref{fity2},\ref{fity3}), siendo los mejores ajustes presentados en los casos 1 y 2. Con respecto al crucero acústico el ajuste es regular, sin destacar ninguno de los modelos (Figura \ref{fitS1},\ref{fitS2},\ref{fitS3}).  
+
+### Ajuste composición por edad pesquería
+
+La calidad de los ajustes entre los diferentes casos evaluados por el modelo Inpesca, presentan resultados similares, pero con un mejor ajuste por parte el caso 3. En general, los ajustes a la composición por edad en la pesquería y los cruceros acústicos son altos, y los desajustes son moderados no observándose patrones atípicos. Los principales problemas corresponden a los años 2000 a 2003 para la CE  (Figura \ref{fitce1},\ref{fitce2},\ref{fitce3}). 
+
+### Ajuste composición por edad crucero
+
+La calidad de los ajustes entre los diferentes casos evaluados es aceptable. Los valores atipicos o desajustes son pocos y en general recoge adecuadamente la estructura del crucero (Figura \ref{fitces1},\ref{fitces2},\ref{fitces3}). En el caso de la acústica las mayores diferencias se observan en la fracción juvenil edad 2 entre los años 2005 y 2008. Los ajustes entre el año 2008-2019 son adecuados. En este sentido, las mejores tendencias de ajustes se verifican para los casos 2 y 3.
+
+## Variables de estado y flujo
+
+### Patrón de explotación
+
+El patron de explotación de la pesquería (Figura \ref{S1},\ref{S2},\ref{S3}) y del crucero (Figura \ref{SS1},\ref{SS2},\ref{SS3}), muestra dos periodos para la pesquería siendo el primero de ellos caracterizado por un patrón de explotación orientado a ejemplares de mayores edades (> 6 años), mientras que el segundo período este se desplaza en ejemplares mas jovenes a partir de 2-3 años. El patrón del crucero,es fijo para todo el período siendo los ejemplares seleccionados mayormente desde los 3 años. Los patrones de explotación son coherentes con las características de crecimiento de la merluza común, siendo las curvas representativas de una pesquería de arrastre con un fuerte componente selectivo asociado a la edad del ejemplar y su tamaño.
+
+### Biomasa y mortalidad
+
+Las salidas que determinan la condición de la población entre los años 1992 - 2019 se presenta en la (Tabla \ref{res1},\ref{res2},\ref{res3}). En general se aprecia la baja en la biomasa total, adulta y en los estimados de reclutamientos (Figura \ref{ind1},\ref{ind2},\ref{ind3}). La razón entre la biomasa desovante y $B_0$, fluctúa entre 0.12, dependiendo del caso analizado. La mortalidad por pesca muestra una baja dependiendo del caso (Figura \ref{fmort1},\ref{fmort2},\ref{fmort3}).
+
+### Reclutamientos
+
+El patrón de reclutamiento estimado correspondiente a la abundancia del grupo de edad 2, mostró fuertes fluctuaciones en la magnitud de las distintas clases anuales que reclutan a la pesquería (Figura \ref{re1},\ref{re2},\ref{re3}.Los años de mayor reclutamiento, se producen entre 1996 y 2000, y 2003 y 2016 con reclutamientos por sobre los 800 mill de individuos. Por otra parte, años con reclutamientos hacia la baja se producen los años 2001-2002, 2009-2010, 2014 y 2019. El año 2020, muestra alta incertidumbre dependiendo del caso, pero debe considerarse no informativo a la espera de datos del 2020 del crucero y composición acústico.
+
+### Diagrama de Fase 
+
+A partir de la información de los modelos seleccionados, se desarrollaron los diagramas de fase para el establecimiento de la condición de stock (Figura \ref{di1},\ref{di2},\ref{di3}). Estos indican la zona donde se ubica la población y las probabilidades asociadas dada la configuración del modelo(s) seleccionado para el establecimiento del estatus. Para construir los diagramas de fase, fueron utilizados los PBR para las evaluaciones del año 2019 (Tabla \ref{pbr1},\ref{pbr1m},\ref{pbr2},\ref{pbr2m},\ref{pbr3},\ref{pbr3m},\ref{pbr4},\ref{pbr4m}), con valor de referencia para $B_0=1.150.000$mill y $F_{msy}$=0.55. La actualización de PBR podrá ser realizada cuando se disponga de la información completa el 2020, permitiendo estimar el estado del recurso sin supuestos para composición y estimado de biomasa acústica
+
+### Indicador condición
+ 
+La calificación del estatus es determinada por el diagrama de fase y el estado del recurso merluza común para el último año de la evaluación. Para la totalidad de los casos la condición se califica como "Sobre-explotado y riesgo de agotamiento", la condición de sobre pesca tambien es probable dada la distribución de probabilidad presente.
+
+#	CONCLUSIONES
+a. La población de merluza común se califica en condición de "Sobre-explotado y riesgo de agotamiento".
+b. La estructura de la población muestra una baja en la proporción de ejemplares juveniles con incremento de las fracciones adultas en los últimos años, generándose un desplazamiento y mayor proporción de fracciones adultas en las capturas.
+c. El reclutamiento estimado para el año 2018 al 2020 fluctúa sobre 273 millones.
+d. La mortalidad por jibia se incrementa con respecto a años previos, determinando mortalidades altas $0.9$año$^{-1}$.
+e. La condición del recurso se mantiene en estado de riesgo de agotamiento y señales de sobre-pesca. La incertidumbre en las capturas por subdeclaraciones, pesca ilegal y/o descarte es una problemática presente para determinación de estatus y recomendaciones
+
+# Anexo figuras
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=5in]{c:/CEGM/MODEL/merluza/M20/mods/d1/Figuras/plot2020eval.pdf}
+\caption{Desembarque merluza común oficial, proyecto corrección FIPA y Comite Manejo}
+\label{desembarque}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=5in]{c:/CEGM/MODEL/merluza/M20/mods/d1/Figuras/1.pdf}
+\caption{Biomasa crucero}
+\label{bcrucero}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d1/Figuras/5.pdf}
+\caption{Composición por edad crucero}
+\label{ccrucero}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d1/Figuras/4.pdf}
+\caption{Composición por edad pesquería}
+\label{cfish}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d1/Figuras/13.pdf}
+\caption{Peso a la edad}
+\label{peso}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=6in,width=6in]{c:/CEGM/MODEL/merluza/M20/datosevaluacion2020/madurez/asigna/proporcionh2020.pdf}
+\caption{Madurez a la edad}
+\label{mat}
+\end{figure}
+
+
+<!-- capturas -->
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=3in,width=3in]{c:/CEGM/MODEL/merluza/M20/mods/d1/Figuras/2.pdf}
+\caption{Ajuste capturas caso 1}
+\label{fity1}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=3in,width=3in]{c:/CEGM/MODEL/merluza/M20/mods/d2/Figuras/2.pdf}
+\caption{Ajuste capturas caso 2}
+\label{fity2}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=3in,width=3in]{c:/CEGM/MODEL/merluza/M20/mods/d3/Figuras/2.pdf}
+\caption{Ajuste capturas caso 3}
+\label{fity3}
+\end{figure}
+<!-- crucero ajuste -->
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=3in,width=3in]{c:/CEGM/MODEL/merluza/M20/mods/d1/Figuras/3.pdf}
+\caption{Ajuste biomasa crucero caso 1}
+\label{fitS1}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=3in,width=3in]{c:/CEGM/MODEL/merluza/M20/mods/d2/Figuras/3.pdf}
+\caption{Ajuste biomasa crucero caso 2}
+\label{fitS2}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=3in,width=3in]{c:/CEGM/MODEL/merluza/M20/mods/d3/Figuras/3.pdf}
+\caption{Ajuste biomasa crucero caso 3}
+\label{fitS3}
+\end{figure}
+
+<!-- ajuste ce pesqueria -->
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d1/Figuras/8.pdf}
+\caption{Ajuste composición por edad capturas CASO 1}
+\label{fitce1}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d2/Figuras/8.pdf}
+\caption{Ajuste composición por edad capturas CASO 2}
+\label{fitce2}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d3/Figuras/8.pdf}
+\caption{Ajuste composición por edad capturas CASO 3}
+\label{fitce3}
+\end{figure}
+<!-- ajuste ce crucero -->
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d1/Figuras/9.pdf}
+\caption{Ajuste composición por edad crucero CASO 1}
+\label{fitces1}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d2/Figuras/9.pdf}
+\caption{Ajuste composición por edad crucero CASO 2}
+\label{fitces2}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d3/Figuras/9.pdf}
+\caption{Ajuste composición por edad crucero CASO 3}
+\label{fitces3}
+\end{figure}
+<!-- selectividad pesqueria-->
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d1/Figuras/12.pdf}
+\caption{Selectividad pesquería c1}
+\label{S1}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d2/Figuras/12.pdf}
+\caption{Selectividad pesquería c2}
+\label{S2}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d3/Figuras/12.pdf}
+\caption{Selectividad pesquería c3}
+\label{S3}
+\end{figure}
+
+<!-- selectividad crucero-->
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d1/Figuras/15.pdf}
+\caption{Selectividad crucero c1}
+\label{SS1}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d2/Figuras/15.pdf}
+\caption{Selectividad crucero c2}
+\label{SS2}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d3/Figuras/15.pdf}
+\caption{Selectividad crucero c3}
+\label{SS3}
+\end{figure}
+
+<!-- PRINCIPALES INDICADORES -->
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d1/Figuras/1banda.pdf}
+\caption{Biomasa total, adulta y desovante con banda incertidubre CASO 1}
+\label{ind1}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d2/Figuras/1banda.pdf}
+\caption{Biomasa total, adulta y desovante con banda incertidubre CASO 2}
+\label{ind2}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d3/Figuras/1banda.pdf}
+\caption{Biomasa total, adulta y desovante con banda incertidubre CASO 3}
+\label{ind3}
+\end{figure}
+<!-- mortalidad -->
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d1/Figuras/2banda.pdf}
+\caption{Mortalidad por pesca e indice de redución con banda incertidubre CASO 1}
+\label{fmort1}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d2/Figuras/2banda.pdf}
+\caption{Mortalidad por pesca e indice de redución con banda incertidubre CASO 2}
+\label{fmort2}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d2/Figuras/2banda.pdf}
+\caption{Mortalidad por pesca e indice de redución con banda incertidubre CASO 3}
+\label{fmort3}
+\end{figure}
+
+<!-- reclutamiento -->
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d1/Figuras/3banda.pdf}
+\caption{Reclutamiento (millones) con banda incertidubre caso 1}
+\label{re1}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d2/Figuras/3banda.pdf}
+\caption{Reclutamiento (millones) con banda incertidubre caso 2}
+\label{re2}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d3/Figuras/3banda.pdf}
+\caption{Reclutamiento (millones) con banda incertidubre caso 3}
+\label{re3}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d1/diagrama/d1.pdf}
+\caption{diagrama 1}
+\label{di1}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d2/diagrama/d2.pdf}
+\caption{diagrama 2}
+\label{di2}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/MODEL/merluza/M20/mods/d3/diagrama/d3.pdf}
+\caption{diagrama 3}
+\label{di3}
+\end{figure}
+
+
+\newpage
+
+# Anexo tablas
+\input{tablas/tabla_y_2020.tex}
+
+\newpage
+
+\input{tablas/tablaind20.tex}
+
+\newpage
+
+\input{c:/CEGM/MODEL/merluza/M20/mods/d1/Tablas/LIKE1.tex}
+\input{c:/CEGM/MODEL/merluza/M20/mods/d2/Tablas/LIKE2.tex}
+\input{c:/CEGM/MODEL/merluza/M20/mods/d3/Tablas/LIKE3.tex}
+
+\newpage
+
+\input{c:/CEGM/MODEL/merluza/M20/mods/d1/Tablas/RES1.tex}
+
+\newpage
+
+\input{c:/CEGM/MODEL/merluza/M20/mods/d2/Tablas/RES2.tex}
+
+\newpage
+
+\input{c:/CEGM/MODEL/merluza/M20/mods/d3/Tablas/RES3.tex}
+
+\input{c:/CEGM/MODEL/merluza/M19/Model2019/correc/TablasPBR/tablac1.tex}
+\input{c:/CEGM/MODEL/merluza/M19/Model2019/correc/TablasPBR/tablac1m.tex}
+\input{c:/CEGM/MODEL/merluza/M19/Model2019/correc/TablasPBR/tablac2.tex}
+\input{c:/CEGM/MODEL/merluza/M19/Model2019/correc/TablasPBR/tablac2m.tex}
+\input{c:/CEGM/MODEL/merluza/M19/Model2019/correc/TablasPBR/tablac3.tex}
+\input{c:/CEGM/MODEL/merluza/M19/Model2019/correc/TablasPBR/tablac3m.tex}
+\input{c:/CEGM/MODEL/merluza/M19/Model2019/correc/TablasPBR/tablac4.tex}
+\input{c:/CEGM/MODEL/merluza/M19/Model2019/correc/TablasPBR/tablac4m.tex}
+
