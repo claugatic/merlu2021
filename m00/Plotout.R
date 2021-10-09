@@ -11,6 +11,10 @@ setwd(WD)
 repfile <- SS_output(dir=WD)
 SS_plots(repfile)
 
+
+
+SS_tune_comps(repfile, fleets = "all", option = "Francis",
+digits = 6, write = TRUE)
 SSMethod.TA1.8(repfile, "age", 3)
 
 
@@ -22,12 +26,9 @@ SStableComparisons(mod.sum)
 
 
 
-SS_tune_comps(repfile, fleets = "all", option = "Francis",
-digits = 6, write = TRUE)
 
 
 
 
 
-SS_plots(tmp, uncertainty=T,datplot = T, png=T, aalresids = T,btarg=0.4,
-         minbthresh=0.2,  forecast=T)
+

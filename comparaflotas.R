@@ -25,7 +25,7 @@ m2 <- 'c:/CEGM/MODEL/merluza/M21/E2021/m2/'
 m3 <- 'c:/CEGM/MODEL/merluza/M21/E2021/m3/'
 m4 <- 'c:/CEGM/MODEL/merluza/M21/E2021/m4/'
 m5 <- 'c:/CEGM/MODEL/merluza/M21/E2021/m5/'
-
+#m6 <- 'c:/CEGM/MODEL/merluza/M21/E2021/m00bad/'
 
 dc='c:/CEGM/MODEL/merluza/M21/E2021/scompara/'
 
@@ -40,9 +40,11 @@ m2 <- SS_output(dir=m2)
 m3 <- SS_output(dir=m3)
 m4 <- SS_output(dir=m4)
 m5 <- SS_output(dir=m5)
-
+#m6 <- SS_output(dir=m6)
 mod.sum <- SSsummarize(list(m00,m01,m1,m2,m3,m4,m5));
 
+t1=SStableComparisons(mod.sum)
+t1
 
 
 # Tablas de likelihood
@@ -58,7 +60,7 @@ mod.sum <- SSsummarize(list(m00,m01,m1,m2,m3,m4,m5));
 #SSplotComparisons(mod.sum)
 
 SSplotComparisons(mod.sum, subplots = 1:20, plot = TRUE,
-print = TRUE, png = TRUE, models = "all",
+print = TRUE, png = TRUE, models = "all",legendlabels=c("m00","m01","m1","m2","m3","m4","m5"),
 endyrvec = "default", indexfleets = NULL, indexUncertainty = FALSE,
 indexQlabel = TRUE, indexQdigits = 4, indexSEvec = "default",
 indexPlotEach = FALSE, labels = c("Year", "Spawning biomass (t)",
@@ -70,7 +72,7 @@ lty = 1, lwd = 2, spacepoints = 10, staggerpoints = 1,
 initpoint = 0, tickEndYr = TRUE, shadeForecast = TRUE,
 xlim = "default", ylimAdj = 1.05, xaxs = "i", yaxs = "i",
 type = "o", uncertainty = TRUE, shadealpha = 0.1, legend = TRUE,
-legendlabels = "default", legendloc = "topright",
+legendloc = "topright",
 legendorder = "default", legendncol = 1, sprtarg = NULL,
 btarg = NULL, minbthresh = NULL, pwidth = 6.5, pheight = 5,
 punits = "in", res = 300, ptsize = 10, cex.main = 1,

@@ -246,10 +246,13 @@
  #_7=mult_by_generalized_sizecomp
 #_Factor  Fleet  Value
 #1	     2	.2	    # Survey CV for survey/fleet 1
-5	     1	1.014902    # age comp data for fleet 1 legal
-5	     2	0.416089	# age comp data for fleet 2 ilegal
-5	     3	0.074104	# age comp data for fleet 3 crucero
+5	     1	.59    # age comp data for fleet 1 legal
+5	     2	0.37	# age comp data for fleet 2 ilegal
+5	     3	0.064	# age comp data for fleet 3 crucero
  -9999   0    0  # terminator
+
+
+
 #
 4 #_maxlambdaphase 1
 1 #_sd_offset; must be 1 if any growthCV, sigmaR, or survey extraSD is an estimated parameter 0

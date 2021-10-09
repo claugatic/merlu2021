@@ -170,6 +170,7 @@
 #_Q_parms(if_any);Qunits_are_ln(q)
 #_          LO            HI          INIT         PRIOR         PR_SD       PR_type      PHASE    env-var    use_dev   dev_mnyr   dev_mxyr     dev_PH      Block    Blk_Fxn  #  parm_name
            -15            15      0.893645             0             1             0          3          0          0          0          0          0          0          0  #  LnQ_base_SURVEY1(2)
+#             0           0.5          0.01             0             1             0          3          0          0          0          0          0          0          0  #  Extra Survey1 (2)
 #_no timevary Q parameters
 
 #
@@ -224,18 +225,16 @@
 
 #_no timevary selex parameters
 #_          LO            HI          INIT         PRIOR         PR_SD       PR_type      PHASE    env-var    use_dev   dev_mnyr   dev_mxyr     dev_PH      Block    Blk_Fxn  #  parm_name
-          0.01             6       4.19775           0.2            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P1_Industrial_declarado(1)
-          0.01             6       1.65156           1.8            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P2_Industrial_declarado(1)
-          0.01             6       4.08692           0.2            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P1_Artesanal_declarado(2)
-          0.01             6       1.78365           1.8            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P2_Artesanal_declarado(2)
-          0.01             6       4.19775           0.2            99             0          -2          0          0          0          0        0.5          2          0  #  AgeSel_P1_Industrial_declarado(1)
-          0.01             6       1.65156           1.8            99             0          -2          0          0          0          0        0.5          2          0  #  AgeSel_P2_Industrial_declarado(1)
-          0.01             6       4.08692           0.2            99             0          -2          0          0          0          0        0.5          2          0  #  AgeSel_P1_Artesanal_declarado(2)
-          0.01             6       1.78365           1.8            99             0          -2          0          0          0          0        0.5          2          0  #  AgeSel_P2_Artesanal_declarado(2)
-          0.01             6       4.19775           0.2            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P1_Industrial_declarado(1)
-          0.01             6       1.65156           1.8            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P2_Industrial_declarado(1)
-#          0.01             6     0.0246497           0.2            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P1_Crucero(5)
- #         0.01             6      0.415929           1.5            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P2_Crucero(5)
+          0.01             6       4.19775           0.2            99             0          2          0          0          0          0        0.5          2          0  #  
+          0.01             6       1.65156           1.8            99             0          2          0          0          0          0        0.5          2          0  #  
+          0.01             6       4.08692           0.2            99             0          2          0          0          0          0        0.5          2          0  #  
+          0.01             6       1.78365           1.8            99             0          2          0          0          0          0        0.5          2          0  #  
+          0.01             6       4.19775           0.2            99             0          -2          0          0          0          0        0.5          2          0  # 
+          0.01             6       1.65156           1.8            99             0          -2          0          0          0          0        0.5          2          0  # 
+          0.01             6       4.08692           0.2            99             0          -2          0          0          0          0        0.5          2          0  #  
+          0.01             6       1.78365           1.8            99             0          -2          0          0          0          0        0.5          2          0  #  
+          0.01             6       4.19775           0.2            99             0          2          0          0          0          0        0.5          2          0  #  
+          0.01             6       1.65156           1.8            99             0          2          0          0          0          0        0.5          2          0  #  
 #
 0   #  use 2D_AR1 selectivity(0/1):  experimental feature
 #_no 2D_AR1 selex offset used
@@ -258,9 +257,9 @@
 #_Factor  Fleet  Value
 1	     2	.2	    # Survey CV for survey/fleet 1
 #1	     2	0.3	    # Survey CV for survey/fleet 1-
-5	     1	0.44    # age comp data for fleet 1 legal
-5	     2	0.29	# age comp data for fleet 2 ilegal
-5	     3	1	# age comp data for fleet 3 crucero
+5	     1	1.014902    # age comp data for fleet 1 legal
+5	     2	0.416089	# age comp data for fleet 2 ilegal
+5	     3	0.074104	# age comp data for fleet 3 crucero
  -9999   0    0  # terminator
 #
 4 #_maxlambdaphase 1
