@@ -1,0 +1,8 @@
+#V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+#This is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+Sat Oct  9 19:48:52 2021
+
+Block:2 1 ends in: 2020 after retroyr+1:  2017
+ N warnings: 1
+Number_of_active_parameters_on_or_near_bounds: 2
