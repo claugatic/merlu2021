@@ -1,0 +1,40 @@
+---
+title: "Evaluación de stock para Merluza común año 2021"
+header-includes:
+- \usepackage[spanish,es-tabla]{babel}
+- \usepackage[utf8]{inputenc}
+output:
+  beamer_presentation:
+    theme: Boadilla
+  ioslides_presentation: default
+  slidy_presentation: default
+subtitle: INSTITUTO INVESTIGACION PESQUERA
+<!-- font: futura -->
+---
+
+# Presentación
+
+En el año 2021 se adoptó un cambio en el modelo de evaluación de Inpesca, con el objeto de conocer el efecto de capturas no reportadas. Para ello se cambio de un modelo agregado de flotas industrial y artesanal, a uno con flotas y adicionalmente a un modelo por flotas y fracciones no reportadas. Esta implementación, permite además de realizar comparaciones entre modelos con desembarques oficiales y corregidos, generar estimaciones de mortalidad por pesca por flotas y fracciones no reportadas. Este punto es importante, ya que las capturas no reportadas se distribuyen de forma diferenciada entre flotas siendo mayor en años recientes en aquellas de características artesanales, y facilita la interpretación y conocimiento de la tendencia y magnitud de capturas oficiales y no reportadas.
+
+---
+
+# Modelo evaluación
+
+## Datos
+
+a. Desembarque corregido del período (1992-2015), provenientes de proyecto FIPA de corrección de captura para la pesquería de merluza común (Arancibia et al. 2017).
+
+b. Desembarque informado por Comité de Manejo (CM) disponible entre los años 1993-2015 (Subsecretaria de Pesca, 2019).
+
+c. Desembarque corregido total y por flotas desde Comité Científco Técnico (CCT) entre los años 2002 y 2019.
+
+b. Informaciones desembarque industrial y artesanal del período 1992-2020, provenientes del Servicio Nacional de Pesca. 
+
+c. Información de cruceros de evaluación acústica financiados por el Fondo de Investigación Pesquera (FIP y FIPA) entre 1993 y 2020. 
+
+d.	Información del Programa de Seguimiento de la pesquería Instituto de Investigación Pesquera, VIII región (1997-2021). 
+
+---
+
+
+

@@ -1,7 +1,7 @@
 library(r4ss)
 
 mydir <- "c:/CEGM/MODEL/merluza/M21/E2021/m00/"
-SS_doRetro(masterdir=mydir, oldsubdir="", newsubdir="retrospectives", years=0:-5)
+#SS_doRetro(masterdir=mydir, oldsubdir="", newsubdir="retrospectives", years=0:-5)
 # okey
 retroModels <- SSgetoutput(dirvec=file.path(mydir, "retrospectives",paste("retro",0:-5,sep="")))
 

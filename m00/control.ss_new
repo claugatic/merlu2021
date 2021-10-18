@@ -199,7 +199,7 @@
 #
 #_          LO            HI          INIT         PRIOR         PR_SD       PR_type      PHASE    env-var    use_dev   dev_mnyr   dev_mxyr     dev_PH      Block    Blk_Fxn  #  parm_name
           0.01             6       4.03297           0.2            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P1_Industrial_declarado(1)
-          0.01             6       1.61389           1.8            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P2_Industrial_declarado(1)
+          0.01             6       1.61388           1.8            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P2_Industrial_declarado(1)
           0.01             6       4.75979           0.2            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P1_Artesanal_declarado(2)
           0.01             6       1.61111           1.8            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P2_Artesanal_declarado(2)
           0.01             6       1.99884           0.2            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P1_Crucero(3)
@@ -211,7 +211,7 @@
       -6.01296      0.383968     -0.271755             0      0.191984             6      4  # AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003
       -5.18383        1.2131     -0.232635             0      0.606549             6      4  # AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003
       -6.03972      0.357211    -0.0145515             0      0.178605             6      4  # AgeSel_P1_Crucero(3)_BLK2mult_2003
-      -5.10689       1.29004   -0.00311792             0       0.64502             6      4  # AgeSel_P2_Crucero(3)_BLK2mult_2003
+      -5.10689       1.29004   -0.00311795             0       0.64502             6      4  # AgeSel_P2_Crucero(3)_BLK2mult_2003
 # info on dev vectors created for selex parms are reported with other devs after tag parameter section 
 #
 0   #  use 2D_AR1 selectivity(0/1):  experimental feature

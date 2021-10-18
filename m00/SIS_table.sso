@@ -1,7 +1,7 @@
 #V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
 #This is a work of the U.S. Government and is not subject to copyright protection in the United States.
 #Foreign copyrights may apply. See copyright.txt for more information.
-StartTime: Sat Oct  9 14:03:34 2021
+StartTime: Mon Oct 18 15:48:47 2021
 
 Data_File: data.dat
 Control_File: control.dat
@@ -77,5 +77,5 @@ _ 2026 288706 288706 0 0  0 0 0 0 0 0 0 0.807691 0.747995  0 0
 _ 2027 281937 281937 0 0  0 0 0 0 0 0 0 0.850129 0.846348  0 0
 _ 2028 272494 272494 0 0  0 0 0 0 0 0 0 0.889251 0.934337  0 0
 _ 2029 262602 262602 0 0  0 0 0 0 0 0 0 0.928232 1.02685  0 0
-_ 2030 252865 252865 0 0  0 0 0 0 0 0 0 0.968146 1.13185  0 0
+_ 2030 252866 252866 0 0  0 0 0 0 0 0 0 0.968146 1.13185  0 0
 _ 2031 243295 243295 0 0  0 0 0 0 0 0 0 1.00788 1.24667  0 0

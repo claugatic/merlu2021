@@ -3,7 +3,7 @@
 #Foreign copyrights may apply. See copyright.txt for more information.
 data.dat #_DataFile 
 control.dat #_Control 
-Run_Date: Sat Oct  9 14:03:34 2021
+Run_Date: Mon Oct 18 15:48:47 2021
 #_LIKELIHOOD 
 Label logL*Lambda
 TOTAL_LogL 276.283
@@ -27,7 +27,7 @@ VonBert_K_Fem_GP_1 0.15 0 Fix 0.499995
 CV_young_Fem_GP_1 0.063 0 Fix 0.0866661
 CV_old_Fem_GP_1 0.085 0 Fix 0.233332
 Wtlen_1_Fem_GP_1 1.8e-05 1e-06 Act 0.333333
-Wtlen_2_Fem_GP_1 2.79998 0.00475948 Act 0.999839
+Wtlen_2_Fem_GP_1 2.79998 0.00475949 Act 0.999839
 Mat50%_Fem_GP_1 35 0 Fix 0.285714
 Mat_slope_Fem_GP_1 -46.9 0 Fix 0.05
 Eggs_scalar_Fem_GP_1 1 0 Fix 0.666667
@@ -103,17 +103,17 @@ LnQ_base_Crucero(3) 0.329469 0.125875 Act 0.510982
 Q_extraSD_Crucero(3) 0.187574 0.0738119 Act 0.375148
 #_Selectivity
 AgeSel_P1_Industrial_declarado(1) 4.03297 0.140295 Act 0.671614
-AgeSel_P2_Industrial_declarado(1) 1.61389 0.14736 Act 0.26776
+AgeSel_P2_Industrial_declarado(1) 1.61388 0.14736 Act 0.26776
 AgeSel_P1_Artesanal_declarado(2) 4.75979 0.289422 Act 0.792953
 AgeSel_P2_Artesanal_declarado(2) 1.61111 0.334097 Act 0.267297
-AgeSel_P1_Crucero(3) 1.99884 0.00576173 Act 0.332027
-AgeSel_P2_Crucero(3) 0.0116509 0.0532579 Act 0.000275604
+AgeSel_P1_Crucero(3) 1.99884 0.00576171 Act 0.332027
+AgeSel_P2_Crucero(3) 0.0116509 0.0532577 Act 0.000275603
 AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003 -0.229286 0.0417108 Act 0.908316
 AgeSel_P2_Industrial_declarado(1)_BLK2mult_2003 -0.162704 0.109885 Act 0.7729
 AgeSel_P1_Artesanal_declarado(2)_BLK2mult_2003 -0.271755 0.0662101 Act 0.897494
-AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 -0.232635 0.218038 Act 0.773996
-AgeSel_P1_Crucero(3)_BLK2mult_2003 -0.0145515 0.0803012 Act 0.941884
-AgeSel_P2_Crucero(3)_BLK2mult_2003 -0.00311792 0.643791 Act 0.797847
+AgeSel_P2_Artesanal_declarado(2)_BLK2mult_2003 -0.232635 0.218038 Act 0.773995
+AgeSel_P1_Crucero(3)_BLK2mult_2003 -0.0145515 0.080301 Act 0.941884
+AgeSel_P2_Crucero(3)_BLK2mult_2003 -0.00311795 0.643792 Act 0.797847
 #_Derived_Quantities
 #_Spawn_Bio
 SSB_Virgin 719599 75275.3
@@ -351,7 +351,7 @@ ForeCatch_2029 68703.9 9888.44
 ForeCatch_2030 69889.8 9456.77
 ForeCatch_2031 70794.5 9310.41
 OFLCatch_2022 112039 30946.1
-OFLCatch_2023 80191.6 20529.3
+OFLCatch_2023 80191.7 20529.3
 OFLCatch_2024 70938 11067.2
 OFLCatch_2025 71955.3 9837.24
 OFLCatch_2026 77061.2 13403.1
@@ -406,7 +406,7 @@ TotBio_2026 288706 0.0
 TotBio_2027 281937 0.0
 TotBio_2028 272494 0.0
 TotBio_2029 262602 0.0
-TotBio_2030 252865 0.0
+TotBio_2030 252866 0.0
 TotBio_2031 243295 0.0
 SmryBio_Virgin 0 0.0
 SmryBio_Initial 0 0.0
@@ -448,7 +448,7 @@ SmryBio_2026 288706 0.0
 SmryBio_2027 281937 0.0
 SmryBio_2028 272494 0.0
 SmryBio_2029 262602 0.0
-SmryBio_2030 252865 0.0
+SmryBio_2030 252866 0.0
 SmryBio_2031 243295 0.0
 TotCatch_Virgin 0 0.0
 TotCatch_Initial 0 0.0

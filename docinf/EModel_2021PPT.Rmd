@@ -1,0 +1,54 @@
+---
+title: "Habits"
+author: "John Doe"
+date: "March 22, 2005"
+output:
+  slidy_presentation: default
+  powerpoint_presentation: default
+  ioslides_presentation: default
+---
+
+
+## Presentación
+
+En el año 2021 se adoptó un cambio en el modelo de evaluación de Inpesca, con el objeto de conocer el efecto de capturas no reportadas. Para ello se cambio de un modelo agregado de flotas industrial y artesanal, a uno con flotas y adicionalmente a un modelo por flotas y fracciones no reportadas. Esta implementación, permite además de realizar comparaciones entre modelos con desembarques oficiales y corregidos, generar estimaciones de mortalidad por pesca por flotas y fracciones no reportadas. Este punto es importante, ya que las capturas no reportadas se distribuyen de forma diferenciada entre flotas siendo mayor en años recientes en aquellas de características artesanales, y facilita la interpretación y conocimiento de la tendencia y magnitud de capturas oficiales y no reportadas.
+
+---
+
+## Datos
+
+a. Desembarque corregido del período (1992-2015), provenientes de proyecto FIPA de corrección de captura para la pesquería de merluza común (Arancibia et al. 2017).
+
+b. Desembarque informado por Comité de Manejo (CM) disponible entre los años 1993-2015 (Subsecretaria de Pesca, 2019).
+
+c. Desembarque corregido total y por flotas desde Comité Científco Técnico (CCT) entre los años 2002 y 2019.
+
+b. Informaciones desembarque industrial y artesanal del período 1992-2020, provenientes del Servicio Nacional de Pesca. 
+
+c. Información de cruceros de evaluación acústica financiados por el Fondo de Investigación Pesquera (FIP y FIPA) entre 1993 y 2020. 
+
+d.	Información del Programa de Seguimiento de la pesquería Instituto de Investigación Pesquera, VIII región (1997-2021). 
+
+---
+
+## Modelamiento por flotas 
+
+El esquema considera un enfoque de modelación por flotas artesanal e industrial. Al disponer de los desembarques oficiales por flota y las correcciones por parte del CCT, es posible tener un estimado de las capturas no reportada por flotas. La captura no reportada y su desembarque, se encuentra asociada a fuentes de ilegalidad como: sub-reporte, robo y descarte. Por lo tanto, es posible segregar información oficial y corregida por flotas, siendo posible a la vez disponer de datos oficiales (reportados) y el complemento en ilegalidad o fracción de flota con desembarques fuera de norma. En este sentido, las series corregidas incluyen descarte en su corrección aunque este no es reportado a la forma de serie, ni su estructura asociada (tamaños).
+
+---
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=2in,width=2in]{c:/CEGM/MODEL/merluza/M21/E2021/m00/plots/catch1 landings.png}
+\label{Yflotas}
+\end{figure}
+
+---
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=2in,width=2in]{c:/CEGM/MODEL/merluza/M21/E2021/m1/plots/catch1 landings.png}
+\label{Yflotasyno}
+\end{figure}
+
+---
